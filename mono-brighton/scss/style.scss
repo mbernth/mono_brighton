@@ -1,7 +1,7 @@
 /* # Genesis Child Theme 
-Theme Name: mono pro
-Theme URI: https://github.com/mbernth/mono-pro
-Description: This is starter theme created for the Genesis Framework.
+Theme Name: Brighton by mono voce
+Theme URI: https://github.com/mbernth/mono_brighton
+Description: This is css grid build starter theme created for the Genesis Framework.
 Author: mono voce aps
 Author URI: http://www.monovoce.com/
 Template: genesis
@@ -25,7 +25,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 	@import "mixins";
 	@import "tint_shade";
+/*
 	@import "swatches";
+*/
 /*
 
 - Defaults
@@ -41,6 +43,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 	@import "defaults";
 	@import "svg_icons";
+/*
 	@import "gravity_forms";
 /*
 - Structure and Layout
@@ -50,6 +53,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Site Grid
 */
 	@import "structure_layout";
+/*
 	@import "site_grid";
 /*
 - Common Classes
@@ -72,6 +76,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Owl Slider
 */
 	@import "plugins";
+/*
 	@import "owl_carousel";
 	@import "owl_theme";
 	@import "owl_transitions";
@@ -82,6 +87,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "slider_custom";
 	@import "preview";
 	@import "flickity";
+*/
 /*
 - Site Header
 	- Title Area
@@ -90,7 +96,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Search Menu
 */
 	@import "site_header";
+/*
 	@import "search_menu";
+*/
 /*
 - Site Navigation
 	- Accessible Menu
@@ -108,9 +116,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Comments
 */
 	@import "content_area";
-	/* @import "site_team"; */
+/*
+	@import "site_team";
 	@import "site_team_slide";
 	@import "pin";
+*/
 /*
 - Sidebars
 */
@@ -126,56 +136,59 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /*
 - Pages
 	- Frontpage
-*/
+
 	@import "page_frontpage";
+*/
 /*
 - Post Types
 	- Cases
-*/
+
 	@import "posttype_cases";
+*/
 /*
 - Animations
-*/
+
 	@import "animation_keyframes";
+*/
 /*
 - Media Queries
 	- Retina Display
 	- Max-width: 1500px
-*/
+
 	@import "1500";
-/*
+
 	- Max-width: 1280px
-*/
+
 	@import "1280";
-/*
+
 	- Max-width: 1200px
-*/
+
 	@import "1200";
-/*
+
 	- Max-width: 1024px
-*/
+
 	@import "1024";
-/*
+
 	- Max-width: 960px
-*/
+
 	@import "960";
-/*
+
 	- Max-width: 800px
-*/
+
 	@import "800";
-/*
+
 	- Max-width: 767px
-*/
+
 	@import "767";
-/*
+
 	- Max-width: 600px
-*/
+
 	@import "600";
-/*
+
 	- Max-width: 480px
-*/
+
 	@import "480";
-/*
+
 - Print Styles
 */
 	@import "print_styles";

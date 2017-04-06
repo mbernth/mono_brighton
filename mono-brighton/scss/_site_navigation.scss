@@ -191,8 +191,7 @@
 --------------------------------------------- */
 
 .nav-secondary {
-	position:fixed;
-	margin-top:77px;
+	position:relative;
 	width:100%;
 	background-color: $color-primary-one;
 	z-index:10;
