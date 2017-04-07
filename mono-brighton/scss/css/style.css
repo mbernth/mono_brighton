@@ -184,6 +184,7 @@ input[type="search"] {
 
 /* ## Float Clearing
 --------------------------------------------- */
+/*
 .author-box:before,
 .clearfix:before,
 .entry:before,
@@ -197,8 +198,9 @@ input[type="search"] {
 .site-header:before,
 .site-inner:before,
 .wrap:before {
-  content: " ";
-  display: table; }
+	content: " ";
+	display: table;
+}
 
 .author-box:after,
 .clearfix:after,
@@ -213,10 +215,11 @@ input[type="search"] {
 .site-header:after,
 .site-inner:after,
 .wrap:after {
-  clear: both;
-  content: " ";
-  display: table; }
-
+	clear: both;
+	content: " ";
+	display: table;
+}
+*/
 /*
 - Mixins
 - Tint and Shade
@@ -735,9 +738,20 @@ th {
 .more-link {
   position: relative; }
 
+/* # Icomoon SVG styles
+---------------------------------------------------------------------------------------------------- */
+.svgwrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  grid-gap: 30px; }
+  .svgwrap .svgbox {
+    display: flex; }
+    .svgwrap .svgbox svg {
+      margin-right: 10px; }
+
 [class^="icon-"], [class*=" icon-"] {
   display: inline-block;
-  color: inherit;
+  color: #000000;
   fill: currentColor; }
 
 .icon-phone {
@@ -1885,6 +1899,9 @@ th {
 	- Column Classes
 	- Site Grid
 */
+/*
+	@import "structure_layout";
+*/
 /* # Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
 /* ## Site Containers
@@ -1895,72 +1912,61 @@ th {
   max-width: 1328px; }
 
 .site-inner {
+  display: grid;
   width: 90%;
   max-width: 1328px; }
 
-.site-inner {
-  clear: both;
-  padding-top: 80px;
-  margin-top: 118px; }
+.content-sidebar-sidebar .site-inner {
+  grid-template-columns: 5fr 1fr; }
+
+.sidebar-sidebar-content .site-inner {
+  grid-template-columns: 1fr 5fr; }
+  .sidebar-sidebar-content .site-inner .content-sidebar-wrap {
+    order: 2; }
+  .sidebar-sidebar-content .site-inner .sidebar-secondary {
+    order: 1; }
+
+.sidebar-content-sidebar .site-inner {
+  grid-template-columns: 1fr 5fr; }
+  .sidebar-content-sidebar .site-inner .content-sidebar-wrap {
+    order: 2; }
+  .sidebar-content-sidebar .site-inner .sidebar-secondary {
+    order: 1; }
 
 /* ## Column Widths and Positions
 --------------------------------------------- */
 /* ### Wrapping div for .content and .sidebar-primary */
-.content-sidebar-sidebar .content-sidebar-wrap,
-.sidebar-content-sidebar .content-sidebar-wrap,
-.sidebar-sidebar-content .content-sidebar-wrap {
-  width: 82.8313253012%; }
+.content-sidebar .content-sidebar-wrap {
+  display: grid;
+  grid-template-columns: 4fr 1fr; }
+
+.sidebar-content .content-sidebar-wrap {
+  display: grid;
+  grid-template-columns: 1fr 4fr; }
+  .sidebar-content .content-sidebar-wrap .content {
+    order: 2; }
+  .sidebar-content .content-sidebar-wrap .sidebar-primary {
+    order: 1; }
 
 .content-sidebar-sidebar .content-sidebar-wrap {
-  float: left; }
+  display: grid;
+  grid-template-columns: 3fr 1fr; }
+  .content-sidebar-sidebar .content-sidebar-wrap .content {
+    order: 2; }
+  .content-sidebar-sidebar .content-sidebar-wrap .sidebar-primary {
+    order: 1; }
 
-.sidebar-content-sidebar .content-sidebar-wrap,
 .sidebar-sidebar-content .content-sidebar-wrap {
-  float: right; }
+  display: grid;
+  grid-template-columns: 1fr 3fr; }
+  .sidebar-sidebar-content .content-sidebar-wrap .content {
+    order: 2; }
+  .sidebar-sidebar-content .content-sidebar-wrap .sidebar-primary {
+    order: 1; }
 
-/* ### Content */
-.content {
-  float: right;
-  width: 65.6626506024%; }
-
-.content-sidebar .content,
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content {
-  float: left; }
-
-.content-sidebar-sidebar .content,
-.sidebar-content-sidebar .content,
-.sidebar-sidebar-content .content {
-  width: 58.5454545455%; }
-
-.full-width-content .content {
-  width: 100%; }
-
-/* ### Primary Sidebar */
-.sidebar-primary {
-  float: right;
-  width: 31.4759036145%; }
-
-.content-sidebar-sidebar .sidebar-primary,
-.sidebar-content-sidebar .sidebar-primary {
-  float: right;
-  width: 38%; }
-
-.sidebar-content .sidebar-primary {
-  float: left;
-  width: 31.4759036145%; }
-
-.sidebar-sidebar-content .sidebar-primary {
-  float: left;
-  width: 38%; }
-
-/* ### Secondary Sidebar */
-.sidebar-secondary {
-  float: left;
-  width: 14.156626506%; }
-
-.content-sidebar-sidebar .sidebar-secondary {
-  float: right; }
+.sidebar-content-sidebar .content-sidebar-wrap {
+  display: grid;
+  grid-template-columns: 4fr 1fr; }
 
 /*
 	@import "site_grid";
@@ -2644,7 +2650,7 @@ div.cd-box {
 /* ## Before header
 --------------------------------------------- */
 .before-header {
-  position: fixed;
+  position: relative;
   width: 100%;
   float: left;
   background-color: #a56927;
