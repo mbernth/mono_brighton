@@ -10,15 +10,15 @@ html {
 
 /* Chrome fix */
 body > div {
-    @include font(1.8, 2.6);
+    @include font(1.6, 2.6);
 }
 
 body {
 	background-color: $color-white;
 	color: $color-black;
 	font-family: $font-bread;
-	@include font(1.8, 2.6);
-	font-weight: 300;
+	@include font(1.6, 2.4);
+	font-weight: 400;
 	margin: 0;
 }
 
@@ -56,13 +56,13 @@ a:focus {
 }
 
 p {
-	margin: 0 0 30px 0;
+	margin: 0 0 24px 0;
 	padding: 0;
 }
 
 mark {
-	background: $color-primary-two;
-	color: $color-grey;
+	background: $color-black;
+	color: $color-white;
 	padding:0 2px;
 }
 
@@ -104,7 +104,7 @@ blockquote::before {
 	content: "\201C";
 	display: block;
 	@include font(6, 1);
-	font-weight:bold;
+	font-weight:600;
 	left: -50px;
 	position: relative;
 	top: 30px;
@@ -123,7 +123,7 @@ h5,
 h6 {
 	color: $color-black;
 	font-family: $font-headlines;
-	font-weight: 200;
+	font-weight: 600;
 	margin: 0 0 30px 0;
 }
 
@@ -170,62 +170,6 @@ img {
 .featured-content img,
 .gallery img {
 	width: auto;
-}
-
-/* ## Gallery
---------------------------------------------- */
-
-.gallery {
-	overflow: hidden;
-}
-
-.gallery-item {
-	float: left;
-	margin: 0 0 28px;
-	text-align: center;
-}
-
-.gallery-columns-2 .gallery-item {
-	width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-	width: 33%;
-}
-
-.gallery-columns-4 .gallery-item {
-	width: 25%;
-}
-
-.gallery-columns-5 .gallery-item {
-	width: 20%;
-}
-
-.gallery-columns-6 .gallery-item {
-	width: 16.6666%;
-}
-
-.gallery-columns-7 .gallery-item {
-	width: 14.2857%;
-}
-
-.gallery-columns-8 .gallery-item {
-	width: 12.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-	width: 11.1111%;
-}
-
-.gallery img {
-	border: 1px solid $color-black;
-	height: auto;
-	padding: 4px;
-}
-
-.gallery img:hover,
-.gallery img:focus {
-	border: 1px solid #999;
 }
 
 /* ## Forms
@@ -331,7 +275,7 @@ select,
 textarea {
 	color: $color-black;
 	@include font(1.6, 2.4);
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .Black input,
@@ -356,13 +300,13 @@ input[type="radio"] {
 
 ::-moz-placeholder {
 	color: $color-black;
-	font-weight: 300;
+	font-weight: 400;
 	opacity: 1;
 }
 
 ::-webkit-input-placeholder {
 	color: $color-black;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 button,
@@ -375,7 +319,7 @@ input[type="submit"],
 	color: $color-white;
 	cursor: pointer;
 	@include font(1.6, 2.4);
-	font-weight: 300;
+	font-weight: 400;
 	padding: 20px 24px;
 	width: 100%;
 	max-width:270px;

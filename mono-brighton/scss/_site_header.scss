@@ -6,7 +6,7 @@
 	margin-top:0px;
 	width:100%;
 	float:left;
-	background-color: $color-grey;
+	background-color: tint($color-black, 60%);
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
@@ -92,10 +92,9 @@
 --------------------------------------------- */
 
 .before-header {
-	position: relative;
+	padding:10px 15px;
 	width:100%;
-	float:left;
-	background-color: $color-primary-two;
+	background-color: tint($color-black, 40%);
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
@@ -104,13 +103,9 @@
 	z-index:1000;
 }
 
-.has-push-top .before-header {
-	margin-top:160px;
-}
 .before-header .wrap{
 	margin:0 auto;
 	max-width:90%;
-	padding:10px 15px;
 }
 .before-header .widget{
 	@include font(1, 1);

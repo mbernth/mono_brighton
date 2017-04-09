@@ -3,13 +3,16 @@
 
 .site-footer {
 	position:relative;
-	background-color: $color-primary-one;
+	background-color: tint($color-black, 20%);
 	@include font(1.0, 1.2);
 	font-weight:400;
 	color:$color-white;
 	line-height: 1;
-	padding: 25px 0;
+	padding: 15px 0;
 	text-align: center;
+	a{
+		color: $color-white;
+	}
 }
 
 .site-footer p {

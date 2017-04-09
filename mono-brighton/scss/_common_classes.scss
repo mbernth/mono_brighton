@@ -30,6 +30,7 @@
 
 .breadcrumb {
 	margin-bottom: 20px;
+	@include font(1.4, 2.2);
 }
 
 .archive-description,
@@ -99,7 +100,7 @@
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: $color-primary-one;
+	color: $color-black;
 }
 
 .widget-title {
@@ -108,7 +109,6 @@
 }
 
 .footer-widgets .widget-title {
-	color: $color-white;
 }
 
 /* ## WordPress

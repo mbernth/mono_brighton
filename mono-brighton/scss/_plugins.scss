@@ -24,7 +24,7 @@
 }
 
 .enews-widget input[type="submit"] {
-	background-color: $color-primary-one;
+	background-color: $color-black;
 	color: $color-white;
 	margin: 0;
 	width: 100%;
@@ -92,7 +92,7 @@
 
 .tablepress tbody td,
 .tablepress tfoot th {
-    border-top: 1px solid $color-grey;
+    border-top: 1px solid $color-black;
 }
 
 .tablepress tbody tr:first-child td {
@@ -100,7 +100,7 @@
 }
 
 .tablepress thead th {
-    border-bottom: 1px solid $color-grey;
+    border-bottom: 1px solid $color-black;
 }
 
 .tablepress tfoot th,
@@ -111,14 +111,14 @@
 }
 
 .tablepress tfoot th{
-	background-color:shade($color-grey, 40%);
-	color: tint($color-grey, 10%);
+	background-color:tint($color-black, 80%);
+	color: $color-black;
 	@include font(1.6, 2.4);
 	font-weight: 400;
 }
 
 .tablepress .odd td {
-    background-color: tint($color-grey, 20%);
+    background-color: tint($color-black, 80%);
 }
 
 .tablepress .even td {
@@ -134,25 +134,25 @@
 
 .Grey .tablepress tbody td,
 .Grey .tablepress tfoot th {
-    border-top: 1px solid shade($color-grey, 10%);
+    border-top: 1px solid $color-black;
 }
 .Grey .tablepress thead th {
-    border-bottom: 1px solid shade($color-grey, 10%);
+    border-bottom: 1px solid $color-black;
 }
 
 .Grey .tablepress .row-hover tr:hover td {
-    background-color: shade($color-grey, 10%);
+    background-color: tint($color-black, 80%);
 }
 
 .Black .tablepress .odd td,
 .Red .tablepress .odd td {
-    color: shade($color-grey, 60%);
+    color: $color-black;
 }
 
 .Black .tablepress .row-hover tr:hover td,
 .Red .tablepress .row-hover tr:hover td {
-    color: shade($color-grey, 60%);
-	background-color: shade($color-grey, 10%);
+    color: $color-black;
+	background-color: tint($color-black, 80%);
 }
 
 

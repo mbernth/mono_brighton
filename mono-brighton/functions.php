@@ -23,7 +23,7 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
 function genesis_sample_google_fonts() {
 	// Google fonts
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Titillium+Web:600|Ubuntu:400,400i,700,700i&subset=latin-ext', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:400,400i,600,900&subset=latin-ext', array(), CHILD_THEME_VERSION );
 	// Responsive menu
 	wp_enqueue_script( 'monobrighton-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	// Dashicons

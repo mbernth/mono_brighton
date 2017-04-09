@@ -3,9 +3,9 @@
 
 .footer-widgets {
 	position:relative;
-	background-color: $color-grey;
+	background-color: tint($color-black, 80%);
 	clear: both;
-	padding: 100px 0;
+	padding: 40px 0;
 }
 
 .footer-widgets .wrap {
@@ -14,10 +14,9 @@
 
 .footer-widgets,
 .footer-widgets a {
-	color: shade($color-grey, 80%);
+	color: $color-black;
 	@include font(1.4, 2);
 	font-weight:600;
-	text-transform:uppercase;
 }
 
 .footer-widgets input {
@@ -25,12 +24,12 @@
 }
 
 .footer-widgets a.button {
-	color: shade($color-grey, 80%);
+	color: $color-black;
 	text-decoration:none;
 }
 .footer-widgets a:hover,
 .footer-widgets a:focus {
-	color: shade($color-grey, 60%);
+	color: $color-black;
 	text-decoration:none;
 }
 
@@ -67,29 +66,25 @@
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
-
 .footer-widgets .widget {
 	margin-bottom: 30px;
+}
+.footer-widgets .widget:last-child {
+	margin-bottom: 0px;
 }
 
 .footer-widgets p:last-child {
 	margin-bottom: 0;
 }
-
+.footer-widgets .wrap{
+	display: grid;
+	grid-template-columns:repeat(4, 1fr);
+	grid-template-rows:auto;
+	grid-column-gap:40px;
+}
 .footer-widgets .widget-area {
-	display:block;
-	float:left;
-	@include grid(4, 40, 1328);
 }
 
-.footer-widgets .footer-widgets-1 .textwidget h4 {
-    display: block;
-    background: url(images/nextstep_logo_200.svg) no-repeat left top;
-    width: 188px;
-    height: 38px;
-    margin-bottom: 0px;
-	text-indent: -9999px;
-}
 
 /* ## Social Icons
 --------------------------------------------- */
@@ -105,48 +100,4 @@
 .simple-social-icons a:focus {
     border-bottom: none;
     box-shadow: none;
-}
-
-/* ## Search Area
---------------------------------------------- */
-
-.footer_search {
-	position:relative;
-	background-color:$color-grey;
-	padding:30px 0 100px 0;
-}
-
-.footer_search .wrap{
-	margin:0 auto;
-	width:90%;
-	max-width:1328px;
-}
-
-.footer_search .wrap .widget_search{
-	position:relative;
-	border-top:1px solid $color-black;
-	margin:0 auto;
-	@include structure(640, 1328);
-}
-
-.footer_search  .widget_search .widget-wrap {
-	position: relative;
-	margin:0 auto;
-	width:100%;
-	max-width:420px;
-    margin-top: 60px;
-}
-
-.footer_search .input__field--yoko {
-	color:$color-grey;
-}
-
-.footer_search .c-button_icon .icon-search,
-.footer_search .c-menu label, .input__label--yoko {
-	color:$color-black;
-	
-}
-.input__label--yoko::before,
-.input__label--yoko::after {
-	background:$color-black;
 }

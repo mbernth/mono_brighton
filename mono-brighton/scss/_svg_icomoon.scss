@@ -2,10 +2,12 @@
 ---------------------------------------------------------------------------------------------------- */
 .svgwrap{
 	display: grid;
-	grid-template-columns:repeat(auto-fill, minmax(250px, auto) );
+	grid-template-columns:repeat(auto-fit, minmax(250px, 1fr) );
 	grid-gap: 30px;
 	.svgbox{
 		display: flex;
+		padding: 15px;
+		background-color: tint($color-black, 80%);
 		svg{
 			margin-right: 10px;
 		}
