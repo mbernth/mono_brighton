@@ -52,12 +52,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Column Classes
 	- Site Grid
 */
-/*
+
 	@import "structure_layout";
-*/
-	@import "structure_grid_layout";
 /*
+	@import "structure_grid_layout";
+
 	@import "site_grid";
+*/
 /*
 - Common Classes
 	- Avatar
@@ -110,7 +111,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Secondary Navigation
 	- Skip Links
 */
-	@import "site_navigation";
+	@import "site_navigation_hamburger";
 /*
 - Content Area
 	- Entries
@@ -155,6 +156,18 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*
 - Media Queries
+	- Small
+*/
+	@import "small";
+/*
+	- Medium
+*/
+	@import "medium";
+/*
+	- Large
+*/
+	@import "large";
+/*
 	- Retina Display
 	- Max-width: 1500px
 

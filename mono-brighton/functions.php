@@ -109,6 +109,33 @@ add_theme_support( 'genesis-accessibility', array( 'headings', 'drop-down-menu',
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
+// Move breadcrumbs
+remove_action('genesis_before_loop', 'genesis_do_breadcrumbs');
+add_action('genesis_after_header', 'genesis_do_breadcrumbs', 20);
+
+add_filter( 'genesis_breadcrumb_args', 'crunchify_custom_breadcrumb_args' );
+function crunchify_custom_breadcrumb_args( $args ) {
+	$args['home'] = 'Home';   // Home Page
+	$args['sep'] = ' <svg class="icon-arrow-right6"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right6"></use></svg> ';  // My favorite arrow
+	$args['list_sep'] = ', '; 
+	$args['prefix'] = '<div class="breadcrumb"><div class="wrap">';
+	$args['suffix'] = '</div></div>';
+	$args['heirarchial_attachments'] = true; 
+	$args['heirarchial_categories'] = true; 
+	$args['display'] = true;
+	$args['labels']['prefix'] = '';
+	$args['labels']['author'] = 'Archives for ';
+	$args['labels']['category'] = 'Archives for '; 
+	$args['labels']['tag'] = 'Archives for ';
+	$args['labels']['date'] = 'Archives for ';
+	$args['labels']['search'] = 'Search for ';
+	$args['labels']['tax'] = 'Archives for ';
+	$args['labels']['post_type'] = 'Archives for ';
+	$args['labels']['404'] = 'Not found: '; 
+return $args;
+}
+
+
 //* Widgets
 // =====================================================================================================================
 

@@ -31,6 +31,13 @@
 .breadcrumb {
 	margin-bottom: 20px;
 	@include font(1.4, 2.2);
+	[class^="icon-"]{
+		position: relative;
+		top: 5px;
+	}
+}
+.breadcrumb .wrap{
+	width: 90%;
 }
 
 .archive-description,
@@ -84,12 +91,12 @@
 
 .archive-title {
 	@include font(3.2, 3.2);
-	margin-bottom:60px;
+	margin-bottom:40px;
 }
 
 .entry-title {
 	@include font(3.2, 3.2);
-	margin-bottom:60px;
+	margin-bottom:40px;
 }
 
 .entry-title a,
@@ -105,7 +112,8 @@
 
 .widget-title {
 	@include font(2.6, 2.6);
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+    margin-top: 6px;
 }
 
 .footer-widgets .widget-title {

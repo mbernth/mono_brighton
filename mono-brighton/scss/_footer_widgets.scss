@@ -16,7 +16,7 @@
 .footer-widgets a {
 	color: $color-black;
 	@include font(1.4, 2);
-	font-weight:600;
+	font-weight:400;
 }
 
 .footer-widgets input {
@@ -76,13 +76,13 @@
 .footer-widgets p:last-child {
 	margin-bottom: 0;
 }
-.footer-widgets .wrap{
-	display: grid;
-	grid-template-columns:repeat(4, 1fr);
-	grid-template-rows:auto;
-	grid-column-gap:40px;
-}
+
 .footer-widgets .widget-area {
+	margin-bottom: 40px;
+}
+
+.footer-widgets .widget-area:last-child {
+	margin-bottom: 0px;
 }
 
 
