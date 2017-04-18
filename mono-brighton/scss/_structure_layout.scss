@@ -10,5 +10,35 @@
 }
 
 .site-inner{
+	margin: 0 auto;
+	width:100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.content-sidebar .site-inner{
+	width:90%;
+}
+.sidebar-content .site-inner{
+	width:90%;
+}
+.content-sidebar-sidebar .site-inner{
+	width:90%;
+}
+.sidebar-sidebar-content .site-inner{
+	width:90%;
+}
+.sidebar-content-sidebar .site-inner{
+	width:90%;
+}
+
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
+	width:90%;
+	margin: 0 auto;
 	width:90%;
 }

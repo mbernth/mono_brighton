@@ -17,7 +17,7 @@ body {
 	background-color: $color-white;
 	color: $color-black;
 	font-family: $font-bread;
-	@include font(1.6, 2.4);
+	@include font(1.6, 2.6);
 	font-weight: 400;
 	margin: 0;
 }
@@ -56,7 +56,7 @@ a:focus {
 }
 
 p {
-	margin: 0 0 24px 0;
+	margin: 0 0 26px 0;
 	padding: 0;
 }
 
@@ -81,7 +81,7 @@ hr {
 	border-collapse: collapse;
 	border-top: 1px solid $color-black;
 	clear: both;
-	margin: 1em 0;
+	margin: 20px 0;
 }
 
 b,
@@ -124,7 +124,7 @@ h6 {
 	color: $color-black;
 	font-family: $font-headlines;
 	font-weight: 600;
-	margin: 0 0 30px 0;
+	margin: 0 0 20px 0;
 }
 
 h1 {

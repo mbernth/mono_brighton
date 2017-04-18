@@ -6,4 +6,43 @@
 
 @media only screen and (min-width: 30em) {
 	
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+--------------------------------------------- */
+
+.wrap {
+	max-width: 800px;
+}
+.site-inner{
+	width: 100%;
+}
+.content-sidebar .site-inner{
+	max-width: 800px;
+}
+.sidebar-content .site-inner{
+	max-width: 800px;
+}
+.content-sidebar-sidebar .site-inner{
+	max-width: 800px;
+}
+.sidebar-sidebar-content .site-inner{
+	max-width: 800px;
+}
+.sidebar-content-sidebar .site-inner{
+	max-width: 800px;
+}
+	
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+.full-width-content .site-inner .content .breadcrumb{
+	max-width: 800px;
+}
+.full-width-content .site-inner .content .entry{
+	max-width: 800px;
+}
+	
 }

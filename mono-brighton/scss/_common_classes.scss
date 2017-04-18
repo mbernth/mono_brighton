@@ -14,11 +14,11 @@
 
 .alignleft .avatar,
 .author-box .avatar {
-	margin-right: 24px;
+	margin-right: 20px;
 }
 
 .alignright .avatar {
-	margin-left: 24px;
+	margin-left: 20px;
 }
 
 .comment .avatar {
@@ -30,7 +30,7 @@
 
 .breadcrumb {
 	margin-bottom: 20px;
-	@include font(1.4, 2.2);
+	@include font(1.4, 2.4);
 	[class^="icon-"]{
 		position: relative;
 		top: 5px;
@@ -43,14 +43,14 @@
 .archive-description,
 .author-box {
 	background-color: $color-white;
-	@include font(1.6, 2.4);
-	margin-bottom: 40px;
-	padding: 40px;
+	@include font(1.6, 2.6);
+	margin-bottom: 20px;
+	padding: 20px;
 }
 
 .author-box-title {
-	@include font(1.6, 2.4);
-	margin-bottom: 4px;
+	@include font(1.6, 2.6);
+	margin-bottom: 5px;
 }
 
 .archive-description p:last-child,
@@ -58,45 +58,18 @@
 	margin-bottom: 0;
 }
 
-/* ## Search Form
---------------------------------------------- */
-
-.search-form {
-	overflow: hidden;
-}
-
-.site-header .search-form {
-	float: right;
-	margin-top: 12px;
-}
-
-.entry-content .search-form,
-.site-header .search-form {
-	width: 50%;
-}
-
-.genesis-nav-menu .search input[type="submit"],
-.widget_search input[type="submit"] {
-	border: 0;
-	clip: rect(0, 0, 0, 0);
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
 
 /* ## Titles
 --------------------------------------------- */
 
 .archive-title {
 	@include font(3.2, 3.2);
-	margin-bottom:40px;
+	margin-bottom:20px;
 }
 
 .entry-title {
 	@include font(3.2, 3.2);
-	margin-bottom:40px;
+	margin-bottom:20px;
 }
 
 .entry-title a,
@@ -112,7 +85,7 @@
 
 .widget-title {
 	@include font(2.6, 2.6);
-	margin-bottom: 40px;
+	margin-bottom: 20px;
     margin-top: 6px;
 }
 

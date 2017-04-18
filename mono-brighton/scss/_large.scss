@@ -6,4 +6,68 @@
 
 @media only screen and (min-width: 80em) {
 	
+/* # Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+--------------------------------------------- */
+
+.wrap {
+	max-width: 1080px;
+}
+	
+.content-sidebar .site-inner{
+	max-width: 1080px;
+}
+.sidebar-content .site-inner{
+	max-width: 1080px;
+}
+.content-sidebar-sidebar .site-inner{
+	max-width: 1080px;
+	grid-column-gap:30px;
+}
+
+.sidebar-sidebar-content .site-inner{
+	max-width: 1080px;
+	grid-column-gap:30px;
+}
+
+.sidebar-content-sidebar .site-inner{
+	max-width: 1080px;
+	grid-column-gap:30px;
+}
+	
+/* ## Column Widths and Positions
+--------------------------------------------- */
+
+/* ### Wrapping div for .content and .sidebar-primary */
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
+	max-width: 1080px;
+}
+.full-width-content .site-inner .content .entry{
+	max-width: 680px;	
+}
+.content-sidebar .content-sidebar-wrap{
+	grid-column-gap:30px;
+}
+.sidebar-content .content-sidebar-wrap{
+	grid-column-gap:30px;
+}
+.content-sidebar-sidebar .content-sidebar-wrap{
+	grid-column-gap:30px;
+}
+.sidebar-sidebar-content .content-sidebar-wrap{
+	grid-column-gap:30px;
+}
+.sidebar-content-sidebar .content-sidebar-wrap{
+	grid-column-gap:30px;
+}
+	
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+.footer-widgets .wrap{
+	grid-column-gap:30px;
+}
+	
 }
