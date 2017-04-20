@@ -67,15 +67,10 @@
 --------------------------------------------- */
 
 /* ### Wrapping div for .content and .sidebar-primary */
-.full-width-content .site-inner .content .breadcrumb{
-	margin: 0 auto;
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
 	width:90%;
 	max-width: 960px;
-}
-.full-width-content .site-inner .content .entry{
-	margin: 0 auto;
-	width:90%;
-	max-width: 560px;
 }
 .content-sidebar .content-sidebar-wrap{
 	display: grid;

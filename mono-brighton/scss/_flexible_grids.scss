@@ -1,0 +1,102 @@
+/* # Flexible Grids
+------------------------------------------------------------------------------------------ */
+
+/* ## Grid Containers
+--------------------------------------------- */
+.gridcontainer{
+	padding: 40px 0;
+	.row_headline{
+		max-width: 1080px;
+		margin: 0 auto 30px;
+	}
+	.wrap{
+		display: grid;
+		grid-column-gap:30px;
+		grid-row-gap:30px;
+		max-width: 1080px;
+		}
+}
+.gridcontainer.non{
+	padding: 0;
+	.row_headline{
+		display: none;
+	}
+	.wrap{
+		display: grid;
+		grid-column-gap:0px;
+		grid-row-gap:0px;
+		max-width: 100%;
+		.wysiwyg{
+			padding: 30px;
+		}
+	}
+}
+
+.gridcontainer.black{
+	background-color: $color-black;
+	color: $color-white;
+	.row_headline{
+		color: $color-white;
+	}
+}
+.gridcontainer.grey{
+	background-color: tint($color-black, 60%);
+}
+.gridcontainer.coll1{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll2{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll3{
+	.wrap{
+		grid-template-columns:repeat(3, 1fr);
+	}
+}
+.gridcontainer.coll4{
+	.wrap{
+		grid-template-columns:repeat(4, 1fr);
+	}
+}
+.gridcontainer.coll5{
+	.wrap{
+		grid-template-columns:repeat(5, 1fr);
+	}
+}
+.gridcontainer.coll6{
+	.wrap{
+		grid-template-columns:repeat(6, 1fr);
+	}
+}
+
+/* ## Grid Containers Images
+--------------------------------------------- */
+
+.gridcontainer{
+	.backimage{
+		min-height: 450px;
+		background-size: cover;
+    	background-position: 50% 50%;
+	}
+}
+
+.gridcontainer{
+	.gridimage{
+		min-height: 100%;
+		object-fit: cover;
+	}
+}
+
+/* ## Genesis Layout Containers
+--------------------------------------------- */
+.content-sidebar .site-inner .gridcontainer.black,
+.sidebar-content .site-inner .gridcontainer.black,
+.content-sidebar-sidebar .site-inner .gridcontainer.black,
+.sidebar-sidebar-content .site-inner .gridcontainer.black,
+.sidebar-content-sidebar .site-inner .gridcontainer.black{
+	padding: 30px;
+}
