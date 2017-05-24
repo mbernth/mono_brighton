@@ -1,19 +1,79 @@
+@supports (display: grid) {
+
+/* Flexible Grids fallback reset */
+.full-width-content .content .gridcontainer.coll1 section,
+.gridcontainer.coll1 section,
+.full-width-content .content .gridcontainer.coll2 section,
+.gridcontainer.coll2 section,
+.full-width-content .content .gridcontainer.coll3 section,
+.gridcontainer.coll3 section,
+.full-width-content .content .gridcontainer.coll4 section,
+.gridcontainer.coll4 section,
+.full-width-content .content .gridcontainer.coll5 section,
+.gridcontainer.coll5 section,
+.full-width-content .content .gridcontainer.coll6 section,
+.gridcontainer.coll6 section{
+	float:none;
+	margin-right: auto;
+	width: auto;
+	margin-bottom:auto;
+}
+.content .gridcontainer.coll2 section,
+.content .gridcontainer.coll3 section,
+.content .gridcontainer.coll4 section,
+.content .gridcontainer.coll5 section,
+.content .gridcontainer.coll6 section {
+	margin-right: auto;
+	width: auto;
+}
+.content-sidebar-sidebar .content .gridcontainer.coll2, 
+.sidebar-content-sidebar .content .gridcontainer.coll2, 
+.sidebar-sidebar-content .content .gridcontainer.coll2,
+.content-sidebar-sidebar .content .gridcontainer.coll3, 
+.sidebar-content-sidebar .content .gridcontainer.coll3, 
+.sidebar-sidebar-content .content .gridcontainer.coll3,
+.content-sidebar-sidebar .content .gridcontainer.coll4, 
+.sidebar-content-sidebar .content .gridcontainer.coll4, 
+.sidebar-sidebar-content .content .gridcontainer.coll4,
+.content-sidebar-sidebar .content .gridcontainer.coll5, 
+.sidebar-content-sidebar .content .gridcontainer.coll5, 
+.sidebar-sidebar-content .content .gridcontainer.coll5,
+.content-sidebar-sidebar .content .gridcontainer.coll6, 
+.sidebar-content-sidebar .content .gridcontainer.coll6, 
+.sidebar-sidebar-content .content .gridcontainer.coll6 {
+	margin-right: auto;
+	width: auto;
+}
+.content .gridcontainer.non.coll2 section,
+.content .gridcontainer.non.coll3 section,
+.content .gridcontainer.non.coll4 section,
+.content .gridcontainer.non.coll5 section,
+.content .gridcontainer.non.coll6 section {
+	margin-right: auto;
+	width: auto;
+}
+/* Flexible Grids fallback end */
+	
 /* # Flexible Grids
 ------------------------------------------------------------------------------------------ */
 
 /* ## Grid Containers
 --------------------------------------------- */
 .gridcontainer{
-	padding: 40px 0;
+	padding: 30px 0;
 	.row_headline{
-		max-width: 1080px;
-		margin: 0 auto 30px;
+		width: 90%;
+    	margin: 0 auto;
+		max-width: 800px;
+		margin: 0 auto 20px;
 	}
 	.wrap{
 		display: grid;
-		grid-column-gap:30px;
-		grid-row-gap:30px;
-		max-width: 1080px;
+		grid-column-gap:20px;
+		grid-row-gap:20px;
+		width: 90%;
+    	margin: 0 auto;
+		max-width: 800px;
 		}
 }
 .gridcontainer.non{
@@ -25,6 +85,7 @@
 		display: grid;
 		grid-column-gap:0px;
 		grid-row-gap:0px;
+		width: 100%;
 		max-width: 100%;
 		.wysiwyg{
 			padding: 30px;
@@ -49,27 +110,27 @@
 }
 .gridcontainer.coll2{
 	.wrap{
-		grid-template-columns:repeat(2, 1fr);
+		grid-template-columns:1fr;
 	}
 }
 .gridcontainer.coll3{
 	.wrap{
-		grid-template-columns:repeat(3, 1fr);
+		grid-template-columns:1fr;
 	}
 }
 .gridcontainer.coll4{
 	.wrap{
-		grid-template-columns:repeat(4, 1fr);
+		grid-template-columns:1fr;
 	}
 }
 .gridcontainer.coll5{
 	.wrap{
-		grid-template-columns:repeat(5, 1fr);
+		grid-template-columns:1fr;
 	}
 }
 .gridcontainer.coll6{
 	.wrap{
-		grid-template-columns:repeat(6, 1fr);
+		grid-template-columns:1fr;
 	}
 }
 
@@ -104,4 +165,6 @@
 .sidebar-sidebar-content .site-inner .gridcontainer.grey,
 .sidebar-content-sidebar .site-inner .gridcontainer.grey{
 	padding: 30px;
+}
+	
 }
