@@ -26,9 +26,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "mixins";
 	@import "tint_shade";
 /*
-	@import "swatches";
-*/
-/*
 
 - Defaults
 	- Typographical Elements
@@ -52,15 +49,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Column Classes
 	- Site Grid
 */
-
 	@import "structure_layout";
+	/* Temperary hidden structure
 	@import "flexible_grids_fallback";
-	/* @import "flexible_grids"; */
-/*
-	@import "structure_grid_layout";
-
-	@import "site_grid";
-*/
+	@import "flexible_grids";
+	*/
 /*
 - Common Classes
 	- Avatar
@@ -161,55 +154,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /*
 - Media Queries
-	- Small
-*/
+	- Small, medium and large
+
 	@import "small";
-/*
-	- Medium
-*/
 	@import "medium";
-/*
-	- Large
-*/
 	@import "large";
+*/
 /*
-	- Retina Display
-	- Max-width: 1500px
-
-	@import "1500";
-
-	- Max-width: 1280px
-
-	@import "1280";
-
-	- Max-width: 1200px
-
-	@import "1200";
-
-	- Max-width: 1024px
-
-	@import "1024";
-
-	- Max-width: 960px
-
-	@import "960";
-
-	- Max-width: 800px
-
-	@import "800";
-
-	- Max-width: 767px
-
-	@import "767";
-
-	- Max-width: 600px
-
-	@import "600";
-
-	- Max-width: 480px
-
-	@import "480";
-
 - Print Styles
 */
 	@import "print_styles";

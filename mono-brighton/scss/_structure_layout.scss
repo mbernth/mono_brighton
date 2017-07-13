@@ -44,3 +44,42 @@
 .full-width-content .site-inner .content .entry{
 	margin-bottom: 30px;
 }
+
+/* ## Grid Containers
+--------------------------------------------- */
+.gridcontainer{
+	padding: 30px 0;
+	.row_headline{
+		width: 90%;
+    	margin: 0 auto;
+		margin: 0 auto 20px;
+	}
+	.wrap{
+		width: 90%;
+    	margin: 0 auto;
+		}
+}
+.gridcontainer.non{
+	padding: 0;
+	.row_headline{
+		display: none;
+	}
+	.wrap{
+		width: 90%;
+		.wysiwyg{
+			padding: 30px 0;
+		}
+	}
+}
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+.gridcontainer.black{
+	background-color: $color-black;
+	color: $color-white;
+	.row_headline{
+		color: $color-white;
+	}
+}
+.gridcontainer.grey{
+	background-color: tint($color-black, 60%);
+}

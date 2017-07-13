@@ -64,7 +64,7 @@
 	.row_headline{
 		width: 90%;
     	margin: 0 auto;
-		max-width: 800px;
+		/* max-width: 800px; */
 		margin: 0 auto 20px;
 	}
 	.wrap{
@@ -73,7 +73,7 @@
 		grid-row-gap:20px;
 		width: 90%;
     	margin: 0 auto;
-		max-width: 800px;
+		/* max-width: 800px; */
 		}
 }
 .gridcontainer.non{
@@ -93,16 +93,6 @@
 	}
 }
 
-.gridcontainer.black{
-	background-color: $color-black;
-	color: $color-white;
-	.row_headline{
-		color: $color-white;
-	}
-}
-.gridcontainer.grey{
-	background-color: tint($color-black, 60%);
-}
 .gridcontainer.coll1{
 	.wrap{
 		grid-template-columns:1fr;
