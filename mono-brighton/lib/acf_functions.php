@@ -163,7 +163,7 @@ function mono_flexible_grids() {
 							// Image fields 
 							if (get_sub_field('image_link')){
 								
-								if( get_sub_field('content') && $selected == 'Non'  || $selected == 'Non Black'  || $selected == 'Non Red'  || $selected == 'Non Grey') {
+								if( get_sub_field('content') && $selected == 'non'  || $selected == 'non black'  || $selected == 'non grey') {
 									
 									echo '<section class="coll' . $coll. ' backimage" style="background-image: url(';
 										the_sub_field('image_link');

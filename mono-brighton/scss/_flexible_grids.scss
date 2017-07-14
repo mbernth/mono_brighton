@@ -1,6 +1,107 @@
+/* ## Flexible Grid - CSS Grid
+---------------------------------------------------------------------------------------------------- */
+
 @supports (display: grid) {
 
 /* Flexible Grids fallback reset */
+.gridcontainer .wrap section {
+	padding: 0;
+}
+/* Columns */
+.gridcontainer.coll4 section,
+.gridcontainer.coll5 section,
+.gridcontainer.coll6 section{
+	float:none;
+	@include grid(1, 0, 320);
+	margin-bottom:inherit;
+}
+/* Columns full-width */
+.gridcontainer.non.coll4 section.wysiwyg,
+.gridcontainer.non.coll5 section.wysiwyg,
+.gridcontainer.non.coll6 section.wysiwyg{
+	float:none;
+	@include grid(1, 0, 320);
+	margin-bottom:inherit;
+}
+/* Columns full-width Back image */
+.gridcontainer.non.coll4 section.backimage,
+.gridcontainer.non.coll5 section.backimage,
+.gridcontainer.non.coll6 section.backimage{
+	float:none;
+	@include grid(1, 0, 320);
+}
+/* Flexible Grids fallback reset end */
+
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ### Site Containers Full-width
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.gridcontainer{
+	.wrap{
+		display: -ms-grid;
+		display: grid;
+		grid-column-gap:30px;
+		grid-row-gap:30px;
+	}
+}
+.gridcontainer.non{
+	padding: 0;
+	.row_headline{
+		display: none;
+	}
+	.wrap{
+		display: -ms-grid;
+		display: grid;
+		grid-column-gap:0px;
+		grid-row-gap:0px;
+	}
+}
+.gridcontainer.coll1{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll2{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll3{
+	.wrap{
+		grid-template-columns:1fr;
+	}
+}
+.gridcontainer.coll4{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll5{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll6{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+.gridcontainer.non.coll4 section.wysiwyg,
+.gridcontainer.non.coll5 section.wysiwyg,
+.gridcontainer.non.coll6 section.wysiwyg{
+	padding: 30px;
+}
+	
+	
+	
+	
+/* Flexible Grids fallback reset 
 .full-width-content .content .gridcontainer.coll1 section,
 .gridcontainer.coll1 section,
 .full-width-content .content .gridcontainer.coll2 section,
@@ -52,19 +153,19 @@
 	margin-right: auto;
 	width: auto;
 }
-/* Flexible Grids fallback end */
+*/
+/* Flexible Grids fallback reset end */
 	
 /* # Flexible Grids
 ------------------------------------------------------------------------------------------ */
 
 /* ## Grid Containers
---------------------------------------------- */
+---------------------------------------------
 .gridcontainer{
 	padding: 30px 0;
 	.row_headline{
 		width: 90%;
     	margin: 0 auto;
-		/* max-width: 800px; */
 		margin: 0 auto 20px;
 	}
 	.wrap{
@@ -73,7 +174,6 @@
 		grid-row-gap:20px;
 		width: 90%;
     	margin: 0 auto;
-		/* max-width: 800px; */
 		}
 }
 .gridcontainer.non{
@@ -110,40 +210,23 @@
 }
 .gridcontainer.coll4{
 	.wrap{
-		grid-template-columns:1fr;
+		grid-template-columns:1fr 1fr;
 	}
 }
 .gridcontainer.coll5{
 	.wrap{
-		grid-template-columns:1fr;
+		grid-template-columns:1fr 1fr;
 	}
 }
 .gridcontainer.coll6{
 	.wrap{
-		grid-template-columns:1fr;
+		grid-template-columns:1fr 1fr;
 	}
 }
-
-/* ## Grid Containers Images
---------------------------------------------- */
-
-.gridcontainer{
-	.backimage{
-		min-height: 450px;
-		background-size: cover;
-    	background-position: 50% 50%;
-	}
-}
-
-.gridcontainer{
-	.gridimage{
-		min-height: 100%;
-		object-fit: cover;
-	}
-}
+*/
 
 /* ## Genesis Layout Containers
---------------------------------------------- */
+---------------------------------------------
 .content-sidebar .site-inner .gridcontainer.black,
 .sidebar-content .site-inner .gridcontainer.black,
 .content-sidebar-sidebar .site-inner .gridcontainer.black,
@@ -156,5 +239,6 @@
 .sidebar-content-sidebar .site-inner .gridcontainer.grey{
 	padding: 30px;
 }
+ */
 	
 }

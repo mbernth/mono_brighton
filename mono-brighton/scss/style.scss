@@ -11,49 +11,57 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
-/* # Table of Contents
-- HTML5 Reset
-	- Baseline Normalize
-	- Box Sizing
-	- Float Clearing
+/* Table of Contents
+===================================================================================
+
+# HTML5 Reset
+	## Baseline Normalize
+	## Box Sizing
 */
 	@import "reset";
 /*
-- Mixins
-- Tint and Shade
-- Swatches
+# Mixins
+	## Colours
+	## Typography
+	## Border Radius
+	## Gradients
+	## Grid
+# Tint and Shade
 */
 	@import "mixins";
 	@import "tint_shade";
 /*
 
-- Defaults
-	- Typographical Elements
-	- Headings
-	- Objects
-	- Gallery
-	- Forms
-	- Tables
-	- Screen Reader Text
-	- SVG Icons
-	- Gravity Forms
+# Defaults
+	## Typographical Elements
+	## Headings
+	## Objects
+	## Forms
+	## Tables
+	## Screen Reader Text
+# SVG Icons
 */
 	@import "defaults";
 	@import "svg_icomoon";
+
 /*
-	@import "gravity_forms";
-/*
-- Structure and Layout
-	- Site Containers
-	- Column Widths and Positions
-	- Column Classes
-	- Site Grid
+ # Structure, Layout and Grid
+	## Site Containers
+	### Site Containers Full-width
+	## Grid Containers
+	### Grid Containers coloured backgrounds
+	### Grid Containers - Site Containers
+# Flexible Grid
+	## Flexible Grid - Fallback
+	## Flexible Grid - CSS Grid
 */
 	@import "structure_layout";
+	@import "flexible_grids";
 	/* Temperary hidden structure
 	@import "flexible_grids_fallback";
 	@import "flexible_grids";
 	*/
+	
 /*
 - Common Classes
 	- Avatar
@@ -73,6 +81,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	- Genesis eNews Extended
 	- Jetpack
 	- Owl Slider
+	- Gravity Forms
 */
 	@import "plugins";
 /*
@@ -86,6 +95,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "slider_custom";
 	@import "preview";
 	@import "flickity";
+	@import "gravity_forms";
 */
 /*
 - Site Header

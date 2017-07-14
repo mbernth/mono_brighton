@@ -1,8 +1,8 @@
-/* # Structure and Layout
+/* # Structure, Layout and Grid
 ---------------------------------------------------------------------------------------------------- */
 
 /* ## Site Containers
---------------------------------------------- */
+---------------------------------------------------------------------- */
 
 .site-inner,
 .wrap {
@@ -15,38 +15,35 @@
 	margin-top: 30px;
 }
 
-.content-sidebar .site-inner{
-	width:90%;
-}
-.sidebar-content .site-inner{
-	width:90%;
-}
-.content-sidebar-sidebar .site-inner{
-	width:90%;
-}
-.sidebar-sidebar-content .site-inner{
-	width:90%;
-}
+.content-sidebar .site-inner,
+.sidebar-content .site-inner,
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
 .sidebar-content-sidebar .site-inner{
-	width:90%;
+	width:100%;
+	.entry,
+	.sidebar-primary,
+	.sidebar-secondary{
+		margin: 0 auto;
+		max-width: 90%;
+		margin-bottom: 30px;
+	}
 }
 
-/* ## Column Widths and Positions
+/* ### Site Containers Full-width
 --------------------------------------------- */
 
-/* ### Wrapping div for .content and .sidebar-primary */
 .full-width-content .site-inner .content .breadcrumb,
 .full-width-content .site-inner .content .entry{
 	width:90%;
 	margin: 0 auto;
-	width:90%;
 }
 .full-width-content .site-inner .content .entry{
 	margin-bottom: 30px;
 }
 
 /* ## Grid Containers
---------------------------------------------- */
+---------------------------------------------------------------------- */
 .gridcontainer{
 	padding: 30px 0;
 	.row_headline{
@@ -57,7 +54,10 @@
 	.wrap{
 		width: 90%;
     	margin: 0 auto;
+		section{
+			padding: 30px 0 0;
 		}
+	}
 }
 .gridcontainer.non{
 	padding: 0;
@@ -65,12 +65,28 @@
 		display: none;
 	}
 	.wrap{
-		width: 90%;
+		width: 100%;
 		.wysiwyg{
+			margin: 0 auto;
 			padding: 30px 0;
+			width: 90%;
 		}
 	}
 }
+.gridcontainer{
+	.backimage{
+		min-height: 250px;
+		background-size: cover;
+    	background-position: 50% 50%;
+	}
+}
+.gridcontainer{
+	.gridimage{
+		min-height: 100%;
+		object-fit: cover;
+	}
+}
+
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
 .gridcontainer.black{
@@ -83,3 +99,19 @@
 .gridcontainer.grey{
 	background-color: tint($color-black, 60%);
 }
+
+/* ### Grid Containers - Site Containers
+--------------------------------------------- 
+.content-sidebar .site-inner .gridcontainer.black,
+.sidebar-content .site-inner .gridcontainer.black,
+.content-sidebar-sidebar .site-inner .gridcontainer.black,
+.sidebar-sidebar-content .site-inner .gridcontainer.black,
+.sidebar-content-sidebar .site-inner .gridcontainer.black,
+.content-sidebar .site-inner .gridcontainer.grey,
+.sidebar-content .site-inner .gridcontainer.grey,
+.content-sidebar-sidebar .site-inner .gridcontainer.grey,
+.sidebar-sidebar-content .site-inner .gridcontainer.grey,
+.sidebar-content-sidebar .site-inner .gridcontainer.grey{
+	padding: 30px 0;
+}
+*/
