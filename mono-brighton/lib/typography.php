@@ -9,7 +9,7 @@ function mono_typography() {
 	if ( $show_typography_array ){
 		
 		echo '
-		
+			
 		';
 	
 	}else{
