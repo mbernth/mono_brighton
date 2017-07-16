@@ -211,9 +211,6 @@ function featured_body_class( $classes ) {
 //* Setup Theme
 include_once( get_stylesheet_directory() . '/lib/flexible_grids_content.php' );
 
-//* Setup Swatches
-include_once( get_stylesheet_directory() . '/lib/swatches.php' );
-
 // =====================================================================================================================
 
 //* Gravity forms
