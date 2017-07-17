@@ -37,5 +37,8 @@ remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 // Setup Swatches
 include_once( get_stylesheet_directory() . '/lib/swatches.php' );
 
+// Setup Swatches
+include_once( get_stylesheet_directory() . '/lib/typography.php' );
+
 //* Run the Genesis loop
 genesis();

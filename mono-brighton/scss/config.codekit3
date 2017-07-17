@@ -2432,6 +2432,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_style_guide.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_style_guide.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_svg_icomoon.scss": {
 		"aP": 0,
 		"bl": 0,
