@@ -19,6 +19,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Box Sizing
 */
 	@import "reset";
+
 /*
 # Mixins
 	## Colours
@@ -26,14 +27,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Border Radius
 	## Gradients
 	## Grid
-# Tint and Shade
 */
 	@import "mixins";
+
+/*
+# Tint and Shade
+*/
 	@import "tint_shade";
+
+/*
+# Swatches
+# Style Guide
+*/
 	@import "swatches";
 	@import "style_guide";
-/*
 
+/*
+# SVG Icons
+*/
+	@import "svg_icomoon";
+
+/*
 # Defaults
 	## Typographical Elements
 	## Headings
@@ -41,10 +55,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Forms
 	## Tables
 	## Screen Reader Text
-# SVG Icons
 */
 	@import "defaults";
-	@import "svg_icomoon";
 
 /*
  # Structure, Layout and Grid
@@ -53,11 +65,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Grid Containers
 	### Grid Containers coloured backgrounds
 	### Grid Containers - Site Containers
+*/
+	@import "structure_layout";
+
+/*
 # Flexible Grid
 	## Flexible Grid - Fallback
 	## Flexible Grid - CSS Grid
 */
-	@import "structure_layout";
 	@import "flexible_grids";
 	/* Temperary hidden structure
 	@import "flexible_grids_fallback";
@@ -65,27 +80,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	*/
 	
 /*
-- Common Classes
-	- Avatar
-	- Genesis
-	- Search Form
-	- Titles
-	- WordPress
+# Common Classes
+	## Avatar
+	## Genesis
+	## Titles
+	## WordPress
 */
 	@import "common_classes";
+
 /*
-- Widgets
-	- Featured Content
+# Widgets
+	## Featured Content
 */
 	@import "widgets";
+
 /*
-- Plugins
-	- Genesis eNews Extended
-	- Jetpack
-	- Owl Slider
-	- Gravity Forms
+# Plugins
+	## Genesis eNews Extended
+	## Skip Links
 */
 	@import "plugins";
+
 /*
 	@import "owl_carousel";
 	@import "owl_theme";
@@ -100,34 +115,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "gravity_forms";
 */
 /*
-- Site Header
-	- Title Area
-	- Widget Area
-	- Before header
-	- Search Menu
+# Site Header
+	## Title Area
+	## Widget Area
+	## Before header
 */
 	@import "site_header";
+
 /*
-	@import "search_menu";
+# Site Navigation
+	## Accessible Menu
+	## Site Header Navigation
+	## Primary Navigation
+	## Secondary Navigation
+	## Responsive Menu
+	## Language Menu
 */
-/*
-- Site Navigation
-	- Accessible Menu
-	- Site Header Navigation
-	- Primary Navigation
-	- Secondary Navigation
-	- Skip Links
-*/
-	@import "site_navigation";
+	@import "site_navigation_hamburger";
+
 /*
 	@import "site_navigation_hamburger";
+	@import "site_navigation";
 */
+
 /*
-- Content Area
-	- Entries
-	- Entry Meta
-	- Pagination
-	- Comments
+# Content Area
+	## Entries
+	## Buttons
+	## Entry Meta
+	## Pagination
+	## Comments
+	## Featured image
+	## Case grid
 */
 	@import "content_area";
 /*
@@ -135,42 +154,51 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "site_team_slide";
 	@import "pin";
 */
+
 /*
-- Sidebars
+# Sidebars
 */
 	@import "sidebars";
+
 /*
-- Footer Widgets
+# Footer Widgets
+	## Social Icons
 */
 	@import "footer_widgets";
+
 /*
-- Site Footer
+# Site Footer
 */
 	@import "site_footer";
+
 /*
-- Pages
-	- Frontpage
+# Pages
+	## Frontpage
 
 	@import "page_frontpage";
 */
 /*
-- Post Types
-	- Cases
+# Post Types
+	## Cases
 
 	@import "posttype_cases";
 */
 /*
-- Animations
-
-	@import "animation_keyframes";
+# Animations
 */
-/*
-- Media Queries
-	- Small, medium and large
+	@import "animation_keyframes";
 
-	@import "small";
-	@import "medium";
-	@import "large";
+/*
+# Media Queries
+	# Small
+	# Medium
+	# Large
+*/
+	@import "media_queries_medium";
+/*
+	@import "media_queries_small";
+	@import "media_queries_medium";
+	@import "media_queries_large";
 */
 /*
 - Print Styles

@@ -1899,6 +1899,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_countdown.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_countdown.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_defaults.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2029,7 +2042,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_large.scss": {
+	"\/_media_queries_large.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2037,12 +2050,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_large.css",
+		"oAP": "\/css\/_media_queries_large.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/_medium.scss": {
+	"\/_media_queries_medium.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2050,7 +2063,33 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/_medium.css",
+		"oAP": "\/css\/_media_queries_medium.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_media_queries_medium_tobedeleted.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_media_queries_medium_tobedeleted.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_media_queries_small.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_media_queries_small.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2328,6 +2367,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_site_navigation_old.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_site_navigation_old.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_site_team.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2376,19 +2428,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_slider_custom.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/_small.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/_small.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2480,6 +2519,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/_swatches.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_tablepress.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_tablepress.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

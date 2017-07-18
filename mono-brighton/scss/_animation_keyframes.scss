@@ -58,11 +58,10 @@
 	animation: scaleUp 1s ease-in-out both;
 }
 
-/* # Keyframes
----------------------------------------------------------------------------------------------------- */
+/* ## Keyframes
+---------------------------------------------------------------------- */
 
-
-/* ## Move X and Roll 360 degrees
+/* ### Move X and Roll 360 degrees
 --------------------------------------------- */
 
 @-webkit-keyframes roll{
@@ -86,7 +85,7 @@
 	100% {transform: translateX(0px) rotate(0deg); opacity: 1;}
 }
 
-/* ## Move up
+/* ### Move up
 --------------------------------------------- */
 @-webkit-keyframes moveUp{
 	0% {-webkit-transform: translateY(40px);}
@@ -109,7 +108,7 @@
 	100% {transform: translateY(0px);}
 }
 
-/* ## Move down
+/* ### Move down
 --------------------------------------------- */
 @-webkit-keyframes moveDown{
 	0% {-webkit-transform: translateY(-80px);}
@@ -132,7 +131,7 @@
 	100% {transform: translateY(0px);}
 }
 
-/* ## Fade in
+/* ### Fade in
 --------------------------------------------- */
 @-webkit-keyframes fadeIn{
 	0% {opacity: 0;}
@@ -155,7 +154,7 @@
 	100% {opacity: 1;}
 }
 
-/* ## Scale down
+/* ### Scale down
 --------------------------------------------- */
 @-webkit-keyframes scaleDown{
 	0% {-webkit-transform: scale(1);}
@@ -178,7 +177,7 @@
 	100% {transform: scale(0.5);}
 }
 
-/* ## Fade out
+/* ### Fade out
 --------------------------------------------- */
 @-webkit-keyframes fadeOut{
 	0% {opacity: 1;}
@@ -201,7 +200,7 @@
 	100% {opacity: 0;}
 }
 
-/* ## Slide with opacity
+/* ### Slide with opacity
 --------------------------------------------- */
 @-webkit-keyframes slide{
 	0% {-webkit-transform: translateX(100%); opacity: 0;}
@@ -224,7 +223,7 @@
 	100% {transform: translateX(0px); opacity: 1;}
 }
 
-/* ## Scale up
+/* ### Scale up
 --------------------------------------------- */
 @-webkit-keyframes scaleUp{
 	0% {-webkit-transform: scale(0);}

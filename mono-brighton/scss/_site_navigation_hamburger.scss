@@ -1,42 +1,36 @@
 /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
-
 .genesis-nav-menu {
-	@include font(1.4, 1.4);
+	@include font(1.2, 1.2);
+	text-transform:uppercase;
+	clear: both;
+	width: 100%;
 }
-
-.responsive-menu-icon {
-	float: right;
-    margin-right: 5%;
-    margin-top: 20px;
-    padding: 5px;
-    background: tint($color-black, 20%);
-	color:$color-grey;
+.genesis-nav-menu .menu-item {
+	text-align: left;
 }
-.responsive-menu-icon.icon-open {
-	background: tint($color-black, 60%);
-	color:$color-grey;
+.genesis-nav-menu a {
+	color: $color-white;
+	text-decoration: none;
+	display: block;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:25px;
+	padding-bottom:35px;
+	font-weight:600;
+	letter-spacing:1px;
+	border-top:5px solid transparent;
 }
-.responsive-menu-icon.icon-open .icon-list2 {
-	transform: rotate(90deg);
-}
-.responsive-menu-icon .icon-list2 {
-    width: 20px;
-    height: 20px;
-	-moz-transition:    all .4s ease-in-out;
-	-ms-transition:     all .4s ease-in-out;
-	-o-transition:      all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	transition:         all .4s ease-in-out;
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus{
+	color: $color-black;
+	text-decoration: none;
+	border-color:$color-black;
 }
 
 .site-header ul.genesis-nav-menu {
 	margin:0 auto;
 	width:100%;
-}
-
-.nav-primary {
-	float:none;
 }
 
 .genesis-nav-menu .current-menu-parent > a {
@@ -53,12 +47,50 @@
 }
 
 ul.genesis-nav-menu li{
-	background:rgba(29, 32, 41, 0.95);
+	
 }
 ul.genesis-nav-menu li li{
-	background:$color-grey;
+	background-color: tint($color-black, 40%);
 }
 
+/* ## Accessible Menu
+---------------------------------------------------------------------- */
+/* ## Site Header Navigation
+---------------------------------------------------------------------- */
+/* ## Primary Navigation
+---------------------------------------------------------------------- */
+.nav-primary {
+	float:none;
+}
+
+/* ## Secondary Navigation
+---------------------------------------------------------------------- */
+/* ## Responsive Menu
+---------------------------------------------------------------------- */
+.responsive-menu-icon {
+	float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+    padding: 5px;
+    background: tint($color-black, 20%);
+	color:$color-grey;
+}
+.responsive-menu-icon.icon-open {
+	background: tint($color-black, 80%);
+	color:$color-grey;
+}
+.responsive-menu-icon.icon-open .icon-list2 {
+	transform: rotate(90deg);
+}
+.responsive-menu-icon .icon-list2 {
+    width: 20px;
+    height: 20px;
+	-moz-transition:    all .4s ease-in-out;
+	-ms-transition:     all .4s ease-in-out;
+	-o-transition:      all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition:         all .4s ease-in-out;
+}
 .genesis-nav-menu.responsive-menu > .menu-item > .sub-menu,
 .genesis-nav-menu.responsive-menu {
 	display: none;
@@ -69,10 +101,10 @@ ul.genesis-nav-menu li li{
 	display: block;
 }
 .genesis-nav-menu.responsive-menu .menu-item {
-	border-top:1px solid rgba(223, 225, 223, 0.45);
+	border-top:1px solid tint($color-black, 80%);
 }
 .genesis-nav-menu.responsive-menu .menu-item:last-child {
-	border-bottom:1px solid rgba(223, 225, 223, 0.45);
+	border-bottom:1px solid tint($color-black, 80%);
 }
 
 .genesis-nav-menu.responsive-menu .menu-item {
@@ -104,6 +136,7 @@ ul.genesis-nav-menu li li{
 	content: "\f347";
 	float: right;
 	font: normal 16px/1 'dashicons';
+	color: $color-white;
 	height: 16px;
 	padding: 16px 20px;
 	right: 0;
@@ -138,7 +171,10 @@ ul.genesis-nav-menu li li{
 .genesis-nav-menu.responsive-menu .sub-menu li a,
 .genesis-nav-menu.responsive-menu .sub-menu li a:hover {
 	border: none;
-	padding: 12px 20px;
+	padding: 12px 5%;
 	position: relative;
 	width: 100%;
 }
+
+/* ## Language Menu
+---------------------------------------------------------------------- */
