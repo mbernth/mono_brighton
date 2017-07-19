@@ -3,12 +3,16 @@
 
 .footer-widgets {
 	position:relative;
+	display: block;
+	float: left;
+	width: 100%;
 	background-color: tint($color-black, 80%);
 	clear: both;
 	padding: 40px 0;
 }
 
 .footer-widgets .wrap {
+	margin: 0 auto;
 	width:90%;
 }
 

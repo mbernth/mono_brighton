@@ -2558,8 +2558,130 @@ th {
 	## Flexible Grid - Fallback
 	## Flexible Grid - CSS Grid
 */
+/* ## Flexible Grid - Fallback
+---------------------------------------------------------------------------------------------------- */
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ### Site Containers Full-width
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.gridcontainer {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%; }
+
+/* Columns */
+.gridcontainer.coll4 section,
+.gridcontainer.coll5 section,
+.gridcontainer.coll6 section {
+  float: left;
+  width: 45.3125%; }
+  .gridcontainer.coll4 section:nth-child(n),
+  .gridcontainer.coll5 section:nth-child(n),
+  .gridcontainer.coll6 section:nth-child(n) {
+    margin-right: 9.375%; }
+  .gridcontainer.coll4 section:nth-child(2n),
+  .gridcontainer.coll5 section:nth-child(2n),
+  .gridcontainer.coll6 section:nth-child(2n) {
+    margin-right: 0; }
+
+/* Columns full-width */
+.gridcontainer.non.coll4 section.wysiwyg,
+.gridcontainer.non.coll5 section.wysiwyg,
+.gridcontainer.non.coll6 section.wysiwyg {
+  float: left;
+  width: 50%;
+  padding: 30px; }
+  .gridcontainer.non.coll4 section.wysiwyg:nth-child(n),
+  .gridcontainer.non.coll5 section.wysiwyg:nth-child(n),
+  .gridcontainer.non.coll6 section.wysiwyg:nth-child(n) {
+    margin-right: 0%; }
+  .gridcontainer.non.coll4 section.wysiwyg:nth-child(2n),
+  .gridcontainer.non.coll5 section.wysiwyg:nth-child(2n),
+  .gridcontainer.non.coll6 section.wysiwyg:nth-child(2n) {
+    margin-right: 0; }
+
+/* Columns full-width Back image */
+.gridcontainer.non.coll4 section.backimage,
+.gridcontainer.non.coll5 section.backimage,
+.gridcontainer.non.coll6 section.backimage {
+  float: left;
+  width: 50%; }
+  .gridcontainer.non.coll4 section.backimage:nth-child(n),
+  .gridcontainer.non.coll5 section.backimage:nth-child(n),
+  .gridcontainer.non.coll6 section.backimage:nth-child(n) {
+    margin-right: 0%; }
+  .gridcontainer.non.coll4 section.backimage:nth-child(2n),
+  .gridcontainer.non.coll5 section.backimage:nth-child(2n),
+  .gridcontainer.non.coll6 section.backimage:nth-child(2n) {
+    margin-right: 0; }
+
+@supports (display: grid) {
+  /* Flexible Grids fallback reset */
+  .gridcontainer .wrap section {
+    padding: 0; }
+  /* Columns */
+  .gridcontainer.coll4 section,
+  .gridcontainer.coll5 section,
+  .gridcontainer.coll6 section {
+    float: none;
+    width: 100%;
+    margin-bottom: inherit; }
+    .gridcontainer.coll4 section:nth-child(n),
+    .gridcontainer.coll5 section:nth-child(n),
+    .gridcontainer.coll6 section:nth-child(n) {
+      margin-right: 0%; }
+    .gridcontainer.coll4 section:nth-child(1n),
+    .gridcontainer.coll5 section:nth-child(1n),
+    .gridcontainer.coll6 section:nth-child(1n) {
+      margin-right: 0; }
+  /* Columns full-width */
+  .gridcontainer.non.coll4 section.wysiwyg,
+  .gridcontainer.non.coll5 section.wysiwyg,
+  .gridcontainer.non.coll6 section.wysiwyg {
+    float: none;
+    width: 100%;
+    margin-bottom: inherit; }
+    .gridcontainer.non.coll4 section.wysiwyg:nth-child(n),
+    .gridcontainer.non.coll5 section.wysiwyg:nth-child(n),
+    .gridcontainer.non.coll6 section.wysiwyg:nth-child(n) {
+      margin-right: 0%; }
+    .gridcontainer.non.coll4 section.wysiwyg:nth-child(1n),
+    .gridcontainer.non.coll5 section.wysiwyg:nth-child(1n),
+    .gridcontainer.non.coll6 section.wysiwyg:nth-child(1n) {
+      margin-right: 0; }
+  /* Columns full-width Back image */
+  .gridcontainer.non.coll4 section.backimage,
+  .gridcontainer.non.coll5 section.backimage,
+  .gridcontainer.non.coll6 section.backimage {
+    float: none;
+    width: 100%; }
+    .gridcontainer.non.coll4 section.backimage:nth-child(n),
+    .gridcontainer.non.coll5 section.backimage:nth-child(n),
+    .gridcontainer.non.coll6 section.backimage:nth-child(n) {
+      margin-right: 0%; }
+    .gridcontainer.non.coll4 section.backimage:nth-child(1n),
+    .gridcontainer.non.coll5 section.backimage:nth-child(1n),
+    .gridcontainer.non.coll6 section.backimage:nth-child(1n) {
+      margin-right: 0; } }
+
+/* Flexible Grids fallback reset end */
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
 /* ## Flexible Grid - CSS Grid
 ---------------------------------------------------------------------------------------------------- */
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ### Site Containers Full-width
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
 @supports (display: grid) {
   /* Flexible Grids fallback reset */
   .gridcontainer .wrap section {
@@ -2609,14 +2731,6 @@ th {
     .gridcontainer.non.coll6 section.backimage:nth-child(1n) {
       margin-right: 0; }
   /* Flexible Grids fallback reset end */
-  /* # Structure, Layout and Grid
----------------------------------------------------------------------------------------------------- */
-  /* ## Site Containers
----------------------------------------------------------------------- */
-  /* ### Site Containers Full-width
---------------------------------------------- */
-  /* ## Grid Containers
----------------------------------------------------------------------- */
   .gridcontainer .wrap {
     display: -ms-grid;
     display: grid;
@@ -2648,143 +2762,7 @@ th {
   .gridcontainer.non.coll4 section.wysiwyg,
   .gridcontainer.non.coll5 section.wysiwyg,
   .gridcontainer.non.coll6 section.wysiwyg {
-    padding: 30px; }
-  /* Flexible Grids fallback reset 
-.full-width-content .content .gridcontainer.coll1 section,
-.gridcontainer.coll1 section,
-.full-width-content .content .gridcontainer.coll2 section,
-.gridcontainer.coll2 section,
-.full-width-content .content .gridcontainer.coll3 section,
-.gridcontainer.coll3 section,
-.full-width-content .content .gridcontainer.coll4 section,
-.gridcontainer.coll4 section,
-.full-width-content .content .gridcontainer.coll5 section,
-.gridcontainer.coll5 section,
-.full-width-content .content .gridcontainer.coll6 section,
-.gridcontainer.coll6 section{
-	float:none;
-	margin-right: auto;
-	width: auto;
-	margin-bottom:auto;
-}
-.content .gridcontainer.coll2 section,
-.content .gridcontainer.coll3 section,
-.content .gridcontainer.coll4 section,
-.content .gridcontainer.coll5 section,
-.content .gridcontainer.coll6 section {
-	margin-right: auto;
-	width: auto;
-}
-.content-sidebar-sidebar .content .gridcontainer.coll2, 
-.sidebar-content-sidebar .content .gridcontainer.coll2, 
-.sidebar-sidebar-content .content .gridcontainer.coll2,
-.content-sidebar-sidebar .content .gridcontainer.coll3, 
-.sidebar-content-sidebar .content .gridcontainer.coll3, 
-.sidebar-sidebar-content .content .gridcontainer.coll3,
-.content-sidebar-sidebar .content .gridcontainer.coll4, 
-.sidebar-content-sidebar .content .gridcontainer.coll4, 
-.sidebar-sidebar-content .content .gridcontainer.coll4,
-.content-sidebar-sidebar .content .gridcontainer.coll5, 
-.sidebar-content-sidebar .content .gridcontainer.coll5, 
-.sidebar-sidebar-content .content .gridcontainer.coll5,
-.content-sidebar-sidebar .content .gridcontainer.coll6, 
-.sidebar-content-sidebar .content .gridcontainer.coll6, 
-.sidebar-sidebar-content .content .gridcontainer.coll6 {
-	margin-right: auto;
-	width: auto;
-}
-.content .gridcontainer.non.coll2 section,
-.content .gridcontainer.non.coll3 section,
-.content .gridcontainer.non.coll4 section,
-.content .gridcontainer.non.coll5 section,
-.content .gridcontainer.non.coll6 section {
-	margin-right: auto;
-	width: auto;
-}
-*/
-  /* Flexible Grids fallback reset end */
-  /* # Flexible Grids
------------------------------------------------------------------------------------------- */
-  /* ## Grid Containers
----------------------------------------------
-.gridcontainer{
-	padding: 30px 0;
-	.row_headline{
-		width: 90%;
-    	margin: 0 auto;
-		margin: 0 auto 20px;
-	}
-	.wrap{
-		display: grid;
-		grid-column-gap:20px;
-		grid-row-gap:20px;
-		width: 90%;
-    	margin: 0 auto;
-		}
-}
-.gridcontainer.non{
-	padding: 0;
-	.row_headline{
-		display: none;
-	}
-	.wrap{
-		display: grid;
-		grid-column-gap:0px;
-		grid-row-gap:0px;
-		width: 100%;
-		max-width: 100%;
-		.wysiwyg{
-			padding: 30px;
-		}
-	}
-}
-
-.gridcontainer.coll1{
-	.wrap{
-		grid-template-columns:1fr;
-	}
-}
-.gridcontainer.coll2{
-	.wrap{
-		grid-template-columns:1fr;
-	}
-}
-.gridcontainer.coll3{
-	.wrap{
-		grid-template-columns:1fr;
-	}
-}
-.gridcontainer.coll4{
-	.wrap{
-		grid-template-columns:1fr 1fr;
-	}
-}
-.gridcontainer.coll5{
-	.wrap{
-		grid-template-columns:1fr 1fr;
-	}
-}
-.gridcontainer.coll6{
-	.wrap{
-		grid-template-columns:1fr 1fr;
-	}
-}
-*/
-  /* ## Genesis Layout Containers
----------------------------------------------
-.content-sidebar .site-inner .gridcontainer.black,
-.sidebar-content .site-inner .gridcontainer.black,
-.content-sidebar-sidebar .site-inner .gridcontainer.black,
-.sidebar-sidebar-content .site-inner .gridcontainer.black,
-.sidebar-content-sidebar .site-inner .gridcontainer.black,
-.content-sidebar .site-inner .gridcontainer.grey,
-.sidebar-content .site-inner .gridcontainer.grey,
-.content-sidebar-sidebar .site-inner .gridcontainer.grey,
-.sidebar-sidebar-content .site-inner .gridcontainer.grey,
-.sidebar-content-sidebar .site-inner .gridcontainer.grey{
-	padding: 30px;
-}
- */ }
+    padding: 30px; } }
 
 /* Temperary hidden structure
 	@import "flexible_grids_fallback";
@@ -3242,6 +3220,44 @@ ul.genesis-nav-menu li li {
 
 /* ## Secondary Navigation
 ---------------------------------------------------------------------- */
+.nav-secondary .responsive-menu-icon {
+  display: none; }
+
+.nav-secondary .genesis-nav-menu.responsive-menu {
+  display: block; }
+
+.nav-secondary {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #d6d6d5;
+  z-index: 10; }
+  .nav-secondary .wrap {
+    margin: 0 auto;
+    width: 90%; }
+    .nav-secondary .wrap .genesis-nav-menu.responsive-menu .menu-item-has-children > a,
+    .nav-secondary .wrap .genesis-nav-menu a {
+      padding: 10px 20px 10px 0; }
+    .nav-secondary .wrap .genesis-nav-menu a:hover {
+      color: #34312C;
+      padding: 10px 20px 10px 0; }
+
+.nav-secondary .genesis-nav-menu.responsive-menu .sub-menu li a {
+  border: none;
+  padding: 12px 0;
+  position: relative;
+  width: 100%; }
+
+.nav-secondary .genesis-nav-menu.responsive-menu .menu-item .sub-menu {
+  border-top: 1px solid #aeadab;
+  border-bottom: none; }
+
+.nav-secondary ul.genesis-nav-menu li li {
+  background-color: transparent; }
+
+.nav-secondary .genesis-nav-menu.responsive-menu > .menu-item-has-children:before {
+  padding: 9px 7px; }
+
 /* ## Responsive Menu
 ---------------------------------------------------------------------- */
 .responsive-menu-icon {
@@ -3941,11 +3957,15 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
   position: relative;
+  display: block;
+  float: left;
+  width: 100%;
   background-color: #d6d6d5;
   clear: both;
   padding: 40px 0; }
 
 .footer-widgets .wrap {
+  margin: 0 auto;
   width: 90%; }
 
 .footer-widgets,
@@ -4032,6 +4052,9 @@ li.comment {
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
+  display: block;
+  float: left;
+  width: 100%;
   position: relative;
   background-color: #5d5a56;
   font-size: 10px;
@@ -4404,6 +4427,296 @@ li.comment {
 	# Medium
 	# Large
 */
+/* # Small screens
+---------------------------------------------------------------------------------------------------- */
+/* ## 55.625emem / 890 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+/* ## Typographical Elements
+---------------------------------------------------------------------- */
+/* ## Headings
+---------------------------------------------------------------------- */
+/* ## Objects
+---------------------------------------------------------------------- */
+/* ## Forms
+---------------------------------------------------------------------- */
+/* ## Tables
+---------------------------------------------------------------------- */
+/* ## Screen Reader Text
+---------------------------------------------------------------------- */
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ### Site Containers Full-width
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* ## Avatar
+---------------------------------------------------------------------- */
+/* ## Genesis
+---------------------------------------------------------------------- */
+/* ## Titles
+---------------------------------------------------------------------- */
+/* ## WordPress
+---------------------------------------------------------------------- */
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Featured Content
+---------------------------------------------------------------------- */
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+/* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+/* ## Skip Links
+---------------------------------------------------------------------- */
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+/* ## Title Area
+---------------------------------------------------------------------- */
+/* ## Widget Area
+---------------------------------------------------------------------- */
+/* ## Before header
+---------------------------------------------------------------------- */
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* ## Accessible Menu
+---------------------------------------------------------------------- */
+/* ## Site Header Navigation
+---------------------------------------------------------------------- */
+/* ## Primary Navigation
+---------------------------------------------------------------------- */
+/* ## Secondary Navigation
+---------------------------------------------------------------------- */
+/* ## Responsive Menu
+---------------------------------------------------------------------- */
+/* ## Language Menu
+---------------------------------------------------------------------- */
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+/* ## Entries
+---------------------------------------------------------------------- */
+/* ## Buttons
+---------------------------------------------------------------------- */
+/* ## Entry Meta
+---------------------------------------------------------------------- */
+/* ## Pagination
+---------------------------------------------------------------------- */
+/* ## Comments
+---------------------------------------------------------------------- */
+/* ## Featured image
+---------------------------------------------------------------------- */
+/* ## Case grid
+---------------------------------------------------------------------- */
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Social Icons
+---------------------------------------------------------------------- */
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+/* # Animations
+---------------------------------------------------------------------------------------------------- */
+/* ## Keyframes
+---------------------------------------------------------------------- */
+/* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+/* ### Move up
+--------------------------------------------- */
+/* ### Move down
+--------------------------------------------- */
+/* ### Fade in
+--------------------------------------------- */
+/* ### Scale down
+--------------------------------------------- */
+/* ### Fade out
+--------------------------------------------- */
+/* ### Slide with opacity
+--------------------------------------------- */
+/* ### Scale up
+--------------------------------------------- */
+@media only screen and (min-width: 55.625em) {
+  /* # Defaults
+---------------------------------------------------------------------------------------------------- */
+  /* ## Typographical Elements
+---------------------------------------------------------------------- */
+  /* ## Headings
+---------------------------------------------------------------------- */
+  /* ## Objects
+---------------------------------------------------------------------- */
+  /* ## Forms
+---------------------------------------------------------------------- */
+  /* ## Tables
+---------------------------------------------------------------------- */
+  /* ## Screen Reader Text
+---------------------------------------------------------------------- */
+  /* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+  /* ## Site Containers
+---------------------------------------------------------------------- */
+  .site-inner {
+    width: 100%; }
+  .content-sidebar .site-inner {
+    max-width: 800px; }
+  .sidebar-content .site-inner {
+    max-width: 800px; }
+  .content-sidebar-sidebar .site-inner {
+    max-width: 800px; }
+  .sidebar-sidebar-content .site-inner {
+    max-width: 800px; }
+  .sidebar-content-sidebar .site-inner {
+    max-width: 800px; }
+  /* ### Site Containers Full-width
+---------------------------------------------------------------------- */
+  .full-width-content .site-inner .content .entry {
+    max-width: 800px; }
+  /* ## Grid Containers
+---------------------------------------------------------------------- */
+  .gridcontainer .row_headline {
+    max-width: 800px; }
+  .gridcontainer .wrap {
+    max-width: 800px; }
+  .gridcontainer.non .wrap {
+    max-width: 100%; }
+  /* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+  /* @import "flexible_grids_small"; */
+  /* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+  /* ## Avatar
+---------------------------------------------------------------------- */
+  /* ## Genesis
+---------------------------------------------------------------------- */
+  /* ## Titles
+---------------------------------------------------------------------- */
+  /* ## WordPress
+---------------------------------------------------------------------- */
+  /* # Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* ## Featured Content
+---------------------------------------------------------------------- */
+  /* # Plugins
+---------------------------------------------------------------------------------------------------- */
+  /* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+  /* ## Skip Links
+---------------------------------------------------------------------- */
+  /* # Site Header
+---------------------------------------------------------------------------------------------------- */
+  /* ## Title Area
+---------------------------------------------------------------------- */
+  /* ## Widget Area
+---------------------------------------------------------------------- */
+  /* ## Before header
+---------------------------------------------------------------------- */
+  /* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+  /* ## Accessible Menu
+---------------------------------------------------------------------- */
+  /* ## Site Header Navigation
+---------------------------------------------------------------------- */
+  /* ## Primary Navigation
+---------------------------------------------------------------------- */
+  /* ## Secondary Navigation
+---------------------------------------------------------------------- */
+  /* ## Responsive Menu
+---------------------------------------------------------------------- */
+  /* ## Language Menu
+---------------------------------------------------------------------- */
+  /* # Content Area
+---------------------------------------------------------------------------------------------------- */
+  /* ## Entries
+---------------------------------------------------------------------- */
+  /* ## Buttons
+---------------------------------------------------------------------- */
+  /* ## Entry Meta
+---------------------------------------------------------------------- */
+  /* ## Pagination
+---------------------------------------------------------------------- */
+  /* ## Comments
+---------------------------------------------------------------------- */
+  /* ## Featured image
+---------------------------------------------------------------------- */
+  /* ## Case grid
+---------------------------------------------------------------------- */
+  /* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+  /* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+  .footer-widgets .wrap {
+    max-width: 800px; }
+  /* # Small screens
+---------------------------------------------------------------------------------------------------- */
+  /* ## 55.625emem / 890 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+  /* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* Grid fallback */
+  .footer-widgets .wrap .widget-area {
+    float: left;
+    width: 48.125%;
+    margin-bottom: 30px; }
+    .footer-widgets .wrap .widget-area:nth-child(n) {
+      margin-right: 3.75%; }
+    .footer-widgets .wrap .widget-area:nth-child(2n) {
+      margin-right: 0; }
+  /* Grid fallback end */
+  @supports (display: grid) {
+    /* Grid fallback reset */
+    .footer-widgets .wrap .widget-area {
+      float: none;
+      width: 100%;
+      margin-bottom: inherit; }
+      .footer-widgets .wrap .widget-area:nth-child(n) {
+        margin-right: 0%; }
+      .footer-widgets .wrap .widget-area:nth-child(1n) {
+        margin-right: 0; }
+    /* Grid fallback reset end */ }
+  /* ## Social Icons
+---------------------------------------------------------------------- */
+  @supports (display: grid) {
+    .footer-widgets .wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px; } }
+  /* ## Social Icons
+---------------------------------------------------------------------- */
+  /* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+  /* # Animations
+---------------------------------------------------------------------------------------------------- */
+  /* ## Keyframes
+---------------------------------------------------------------------- */
+  /* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+  /* ### Move up
+--------------------------------------------- */
+  /* ### Move down
+--------------------------------------------- */
+  /* ### Fade in
+--------------------------------------------- */
+  /* ### Scale down
+--------------------------------------------- */
+  /* ### Fade out
+--------------------------------------------- */
+  /* ### Slide with opacity
+--------------------------------------------- */
+  /* ### Scale up
+--------------------------------------------- */ }
+
+/* # Small screens end
+---------------------------------------------------------------------------------------------------- */
 /* # Medium screens
 ---------------------------------------------------------------------------------------------------- */
 /* ## 64em / 1024 pixel
@@ -4428,8 +4741,8 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
 /* ## Site Containers
 ---------------------------------------------------------------------- */
-/* ## Layout Containers 
----------------------------------------------------------------------- */
+/* ### Site Containers Full-width
+--------------------------------------------- */
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 /* ### Grid Containers coloured backgrounds
@@ -4539,10 +4852,524 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
   /* ## Site Containers
 ---------------------------------------------------------------------- */
-  /* ## Layout Containers 
----------------------------------------------------------------------- */
+  .content-sidebar .site-inner,
+  .sidebar-content .site-inner,
+  .content-sidebar-sidebar .site-inner,
+  .sidebar-sidebar-content .site-inner,
+  .sidebar-content-sidebar .site-inner {
+    width: 100%; }
+    .content-sidebar .site-inner .entry,
+    .content-sidebar .site-inner .sidebar-primary,
+    .content-sidebar .site-inner .sidebar-secondary,
+    .sidebar-content .site-inner .entry,
+    .sidebar-content .site-inner .sidebar-primary,
+    .sidebar-content .site-inner .sidebar-secondary,
+    .content-sidebar-sidebar .site-inner .entry,
+    .content-sidebar-sidebar .site-inner .sidebar-primary,
+    .content-sidebar-sidebar .site-inner .sidebar-secondary,
+    .sidebar-sidebar-content .site-inner .entry,
+    .sidebar-sidebar-content .site-inner .sidebar-primary,
+    .sidebar-sidebar-content .site-inner .sidebar-secondary,
+    .sidebar-content-sidebar .site-inner .entry,
+    .sidebar-content-sidebar .site-inner .sidebar-primary,
+    .sidebar-content-sidebar .site-inner .sidebar-secondary {
+      margin: inherit;
+      max-width: inherit;
+      margin-bottom: 0; }
+  .content-sidebar .site-inner,
+  .sidebar-content .site-inner,
+  .content-sidebar-sidebar .site-inner,
+  .sidebar-sidebar-content .site-inner,
+  .sidebar-content-sidebar .site-inner {
+    max-width: 920px; }
+  @supports (display: grid) {
+    .content-sidebar .site-inner .content-sidebar-wrap,
+    .sidebar-content .site-inner .content-sidebar-wrap {
+      display: grid;
+      grid-template-columns: 4fr 2fr;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      margin-bottom: 30px; }
+    .sidebar-content .site-inner .content-sidebar-wrap {
+      grid-template-columns: 2fr 4fr; }
+      .sidebar-content .site-inner .content-sidebar-wrap .content {
+        order: 2; }
+      .sidebar-content .site-inner .content-sidebar-wrap .sidebar {
+        order: 1; }
+    .content-sidebar-sidebar .site-inner,
+    .sidebar-sidebar-content .site-inner,
+    .sidebar-content-sidebar .site-inner {
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      margin-bottom: 30px; }
+      .content-sidebar-sidebar .site-inner .content-sidebar-wrap,
+      .sidebar-sidebar-content .site-inner .content-sidebar-wrap,
+      .sidebar-content-sidebar .site-inner .content-sidebar-wrap {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px; }
+      .content-sidebar-sidebar .site-inner .sidebar-secondary,
+      .sidebar-sidebar-content .site-inner .sidebar-secondary,
+      .sidebar-content-sidebar .site-inner .sidebar-secondary {
+        margin-top: 0; }
+    .sidebar-sidebar-content .site-inner {
+      grid-template-columns: 1fr 5fr; }
+      .sidebar-sidebar-content .site-inner .content-sidebar-wrap {
+        grid-template-columns: 1fr 3fr;
+        order: 2; }
+        .sidebar-sidebar-content .site-inner .content-sidebar-wrap .content {
+          order: 2; }
+        .sidebar-sidebar-content .site-inner .content-sidebar-wrap .sidebar {
+          order: 1; }
+      .sidebar-sidebar-content .site-inner .sidebar-secondary {
+        order: 1; }
+    .sidebar-content-sidebar .site-inner {
+      grid-template-columns: 1fr 5fr; }
+      .sidebar-content-sidebar .site-inner .content-sidebar-wrap {
+        order: 2; }
+      .sidebar-content-sidebar .site-inner .sidebar-secondary {
+        order: 1; } }
+  /* ### Site Containers Full-width 
+--------------------------------------------- */
+  .full-width-content .site-inner .content .entry {
+    max-width: 920px; }
   /* ## Grid Containers
 ---------------------------------------------------------------------- */
+  .gridcontainer .row_headline {
+    max-width: 920px; }
+  .gridcontainer .wrap {
+    max-width: 920px; }
+  .gridcontainer .backimage {
+    min-height: 400px; }
+  @supports (display: grid) {
+    .gridcontainer.coll2 .wrap {
+      grid-template-columns: repeat(2, 1fr); }
+    .gridcontainer.coll3 .wrap {
+      grid-template-columns: repeat(3, 1fr); }
+    .gridcontainer.coll4 .wrap {
+      grid-template-columns: repeat(4, 1fr); }
+    .gridcontainer.coll5 .wrap {
+      grid-template-columns: repeat(5, 1fr); }
+    .gridcontainer.coll6 .wrap {
+      grid-template-columns: repeat(6, 1fr); } }
+  /* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+  /* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+  /* ## Avatar
+---------------------------------------------------------------------- */
+  /* ## Genesis
+---------------------------------------------------------------------- */
+  /* ## Titles
+---------------------------------------------------------------------- */
+  /* ## WordPress
+---------------------------------------------------------------------- */
+  /* # Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* ## Featured Content
+---------------------------------------------------------------------- */
+  /* # Plugins
+---------------------------------------------------------------------------------------------------- */
+  /* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+  /* ## Skip Links
+---------------------------------------------------------------------- */
+  /* # Site Header
+---------------------------------------------------------------------------------------------------- */
+  .site-header .wrap {
+    max-width: 90%; }
+  /* ## Title Area
+---------------------------------------------------------------------- */
+  .title-area {
+    margin-left: 0; }
+  /* ## Widget Area
+---------------------------------------------------------------------- */
+  /* ## Before header
+---------------------------------------------------------------------- */
+  /* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+  /* ## Accessible Menu
+---------------------------------------------------------------------- */
+  /* ## Site Header Navigation
+---------------------------------------------------------------------- */
+  /* ## Primary Navigation
+---------------------------------------------------------------------- */
+  /* ## Secondary Navigation
+---------------------------------------------------------------------- */
+  /* ## Responsive Menu
+---------------------------------------------------------------------- */
+  /* ## Language Menu
+---------------------------------------------------------------------- */
+  /* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+  .genesis-nav-menu.responsive-menu {
+    display: flex; }
+  .genesis-nav-menu .menu-item:hover {
+    position: static; }
+  .genesis-nav-menu .menu-item:hover > .sub-menu {
+    left: auto;
+    margin-left: 10px;
+    opacity: 1; }
+  .genesis-nav-menu.responsive-menu .sub-menu {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    width: 300px;
+    top: 59px;
+    z-index: 99; }
+  .genesis-nav-menu .sub-menu a {
+    background-color: #dfe1df;
+    padding: 20px 30px;
+    position: relative;
+    width: 350px;
+    word-wrap: break-word; }
+  .genesis-nav-menu .sub-menu li {
+    border-bottom: 1px solid #b2b4b2; }
+  .genesis-nav-menu .sub-menu li:last-child {
+    border-bottom: none; }
+  .genesis-nav-menu .sub-menu a:hover {
+    border-color: transparent;
+    background-color: #b2b4b2; }
+  .nav-primary .genesis-nav-menu .sub-menu .current-menu-item a {
+    background-color: #868786;
+    color: #d6d6d5; }
+  .genesis-nav-menu .sub-menu .sub-menu {
+    margin: -55px 0 0 199px; }
+  /* ## Accessible Menu
+---------------------------------------------------------------------- */
+  /* ## Site Header Navigation
+---------------------------------------------------------------------- */
+  .site-header .sub-menu .sub-menu {
+    margin-top: -56px; }
+  .site-header .genesis-nav-menu li li {
+    margin-left: 0; }
+  /* ## Primary Navigation
+---------------------------------------------------------------------- */
+  .nav-primary {
+    background-color: transparent;
+    float: right;
+    margin-top: 15px; }
+  .nav-primary .wrap {
+    width: 100%;
+    max-width: 100%; }
+  /* ## Secondary Navigation
+---------------------------------------------------------------------- */
+  .nav-secondary {
+    position: relative;
+    width: 100%;
+    float: left;
+    background-color: #d6d6d5;
+    z-index: 10; }
+    .nav-secondary .wrap {
+      margin: 0 auto;
+      width: 90%; }
+      .nav-secondary .wrap .genesis-nav-menu.responsive-menu .current-menu-item > a,
+      .nav-secondary .wrap .genesis-nav-menu.responsive-menu a,
+      .nav-secondary .wrap .genesis-nav-menu a {
+        padding: 10px 20px 10px 0; }
+      .nav-secondary .wrap .genesis-nav-menu.responsive-menu .menu-item-has-children a {
+        padding: 10px 10px 10px 0; }
+      .nav-secondary .wrap .genesis-nav-menu a:hover {
+        color: #34312C;
+        padding: 10px 20px 10px 0; }
+      .nav-secondary .wrap .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+      .nav-secondary .wrap .genesis-nav-menu.responsive-menu .sub-menu li a:hover,
+      .nav-secondary .wrap .genesis-nav-menu.responsive-menu .sub-menu a {
+        padding: 15px; }
+  .nav-secondary .genesis-nav-menu.responsive-menu > .menu-item-has-children:after {
+    padding: 8px 10px 0px 0px; }
+  .nav-secondary .genesis-nav-menu.responsive-menu .sub-menu {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    width: 300px;
+    top: 32px;
+    z-index: 99; }
+  .nav-secondary .genesis-nav-menu .menu-item:hover > .sub-menu {
+    left: auto;
+    margin-left: 0px;
+    opacity: 1; }
+  /* ## Responsive Menu
+---------------------------------------------------------------------- */
+  .responsive-menu-icon {
+    display: none; }
+  .genesis-nav-menu.responsive-menu .menu-item {
+    border-top: 0px solid #d6d6d5; }
+  .genesis-nav-menu.responsive-menu .menu-item:last-child {
+    border-bottom: 0px solid #d6d6d5; }
+  .genesis-nav-menu.responsive-menu .current-menu-item > a,
+  .genesis-nav-menu.responsive-menu a,
+  .genesis-nav-menu.responsive-menu a:hover {
+    background: none;
+    line-height: 1;
+    padding: 16px 0px 16px 30px;
+    transition: none; }
+  .genesis-nav-menu.responsive-menu .menu-item-has-children {
+    display: flex;
+    cursor: pointer; }
+  .genesis-nav-menu.responsive-menu .menu-item-has-children > a {
+    margin-right: 0px; }
+  .genesis-nav-menu.responsive-menu > .menu-item-has-children:before,
+  .genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before {
+    display: none; }
+  .genesis-nav-menu.responsive-menu > .menu-item-has-children:after {
+    content: "\f347";
+    float: right;
+    font: normal 16px/1 'dashicons';
+    color: #ffffff;
+    height: 16px;
+    padding: 14px 0px 14px 10px;
+    right: 0;
+    text-align: right;
+    z-index: 9999; }
+  .genesis-nav-menu.responsive-menu > .menu-item-has-children:hover {
+    color: #34312C; }
+  .genesis-nav-menu.responsive-menu .sub-menu {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 12px;
+    line-height: 1.2rem; }
+  .genesis-nav-menu.responsive-menu .sub-menu li a {
+    background-color: #d6d6d5;
+    padding: 20px 20px;
+    position: relative;
+    width: 300px;
+    word-wrap: break-word; }
+  .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+  .genesis-nav-menu.responsive-menu .sub-menu li a:hover {
+    background-color: #858380;
+    padding: 20px 20px;
+    color: #34312C; }
+  /* ## Language Menu
+---------------------------------------------------------------------- */
+  /* # Content Area
+---------------------------------------------------------------------------------------------------- */
+  /* ## Entries
+---------------------------------------------------------------------- */
+  /* ## Buttons
+---------------------------------------------------------------------- */
+  /* ## Entry Meta
+---------------------------------------------------------------------- */
+  /* ## Pagination
+---------------------------------------------------------------------- */
+  /* ## Comments
+---------------------------------------------------------------------- */
+  /* ## Featured image
+---------------------------------------------------------------------- */
+  /* ## Case grid
+---------------------------------------------------------------------- */
+  /* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+  /* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+  .footer-widgets .wrap {
+    max-width: 920px; }
+  @supports (display: grid) {
+    .footer-widgets .wrap {
+      grid-template-columns: repeat(4, 1fr); } }
+  /* ## Social Icons
+---------------------------------------------------------------------- */
+  /* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+  /* # Animations
+---------------------------------------------------------------------------------------------------- */
+  /* ## Keyframes
+---------------------------------------------------------------------- */
+  /* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+  /* ### Move up
+--------------------------------------------- */
+  /* ### Move down
+--------------------------------------------- */
+  /* ### Fade in
+--------------------------------------------- */
+  /* ### Scale down
+--------------------------------------------- */
+  /* ### Fade out
+--------------------------------------------- */
+  /* ### Slide with opacity
+--------------------------------------------- */
+  /* ### Scale up
+--------------------------------------------- */ }
+
+/* # Medium screens end
+---------------------------------------------------------------------------------------------------- */
+/* # Large screens
+---------------------------------------------------------------------------------------------------- */
+/* ## 80em / 1280 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+/* ## Typographical Elements
+---------------------------------------------------------------------- */
+/* ## Headings
+---------------------------------------------------------------------- */
+/* ## Objects
+---------------------------------------------------------------------- */
+/* ## Forms
+---------------------------------------------------------------------- */
+/* ## Tables
+---------------------------------------------------------------------- */
+/* ## Screen Reader Text
+---------------------------------------------------------------------- */
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+/* ### Site Containers Full-width 
+--------------------------------------------- */
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* ## Avatar
+---------------------------------------------------------------------- */
+/* ## Genesis
+---------------------------------------------------------------------- */
+/* ## Titles
+---------------------------------------------------------------------- */
+/* ## WordPress
+---------------------------------------------------------------------- */
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Featured Content
+---------------------------------------------------------------------- */
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+/* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+/* ## Skip Links
+---------------------------------------------------------------------- */
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+/* ## Title Area
+---------------------------------------------------------------------- */
+/* ## Widget Area
+---------------------------------------------------------------------- */
+/* ## Before header
+---------------------------------------------------------------------- */
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+/* ## Accessible Menu
+---------------------------------------------------------------------- */
+/* ## Site Header Navigation
+---------------------------------------------------------------------- */
+/* ## Primary Navigation
+---------------------------------------------------------------------- */
+/* ## Secondary Navigation
+---------------------------------------------------------------------- */
+/* ## Responsive Menu
+---------------------------------------------------------------------- */
+/* ## Language Menu
+---------------------------------------------------------------------- */
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+/* ## Entries
+---------------------------------------------------------------------- */
+/* ## Buttons
+---------------------------------------------------------------------- */
+/* ## Entry Meta
+---------------------------------------------------------------------- */
+/* ## Pagination
+---------------------------------------------------------------------- */
+/* ## Comments
+---------------------------------------------------------------------- */
+/* ## Featured image
+---------------------------------------------------------------------- */
+/* ## Case grid
+---------------------------------------------------------------------- */
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Social Icons
+---------------------------------------------------------------------- */
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+/* # Animations
+---------------------------------------------------------------------------------------------------- */
+/* ## Keyframes
+---------------------------------------------------------------------- */
+/* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+/* ### Move up
+--------------------------------------------- */
+/* ### Move down
+--------------------------------------------- */
+/* ### Fade in
+--------------------------------------------- */
+/* ### Scale down
+--------------------------------------------- */
+/* ### Fade out
+--------------------------------------------- */
+/* ### Slide with opacity
+--------------------------------------------- */
+/* ### Scale up
+--------------------------------------------- */
+@media only screen and (min-width: 80em) {
+  /* # Defaults
+---------------------------------------------------------------------------------------------------- */
+  /* ## Typographical Elements
+---------------------------------------------------------------------- */
+  /* ## Headings
+---------------------------------------------------------------------- */
+  /* ## Objects
+---------------------------------------------------------------------- */
+  /* ## Forms
+---------------------------------------------------------------------- */
+  /* ## Tables
+---------------------------------------------------------------------- */
+  /* ## Screen Reader Text
+---------------------------------------------------------------------- */
+  /* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+  .content-sidebar .site-inner,
+  .sidebar-content .site-inner,
+  .content-sidebar-sidebar .site-inner,
+  .sidebar-sidebar-content .site-inner,
+  .sidebar-content-sidebar .site-inner {
+    max-width: 1200px; }
+  /* ## Site Containers
+---------------------------------------------------------------------- */
+  .content-sidebar .site-inner {
+    max-width: 1200px; }
+  .sidebar-content .site-inner {
+    max-width: 1200px; }
+  .content-sidebar-sidebar .site-inner {
+    max-width: 1200px; }
+  .sidebar-sidebar-content .site-inner {
+    max-width: 1200px; }
+  .sidebar-content-sidebar .site-inner {
+    max-width: 1200px; }
+  /* ### Site Containers Full-width 
+--------------------------------------------- */
+  .full-width-content .site-inner .content .entry {
+    max-width: 1200px; }
+  /* ## Grid Containers
+---------------------------------------------------------------------- */
+  .gridcontainer .row_headline {
+    max-width: 1200px; }
+  .gridcontainer .wrap {
+    max-width: 1200px; }
+  .gridcontainer .backimage {
+    min-height: 550px; }
   /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
   /* # Common Classes
@@ -4587,27 +5414,6 @@ li.comment {
 ---------------------------------------------------------------------- */
   /* ## Language Menu
 ---------------------------------------------------------------------- */
-  /* # Site Navigation
----------------------------------------------------------------------------------------------------- */
-  .genesis-nav-menu.responsive-menu {
-    display: flex; }
-  /* ## Accessible Menu
----------------------------------------------------------------------- */
-  /* ## Site Header Navigation
----------------------------------------------------------------------- */
-  /* ## Primary Navigation
----------------------------------------------------------------------- */
-  .nav-primary {
-    background-color: transparent;
-    float: right; }
-  /* ## Secondary Navigation
----------------------------------------------------------------------- */
-  /* ## Responsive Menu
----------------------------------------------------------------------- */
-  .responsive-menu-icon {
-    display: none; }
-  /* ## Language Menu
----------------------------------------------------------------------- */
   /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
   /* ## Entries
@@ -4628,6 +5434,8 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
   /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
+  .footer-widgets .wrap {
+    max-width: 1200px; }
   /* ## Social Icons
 ---------------------------------------------------------------------- */
   /* # Site Footer
@@ -4653,13 +5461,8 @@ li.comment {
   /* ### Scale up
 --------------------------------------------- */ }
 
-/* # Medium screens end
+/* # Large screens end
 ---------------------------------------------------------------------------------------------------- */
-/*
-	@import "media_queries_small";
-	@import "media_queries_medium";
-	@import "media_queries_large";
-*/
 /*
 - Print Styles
 */

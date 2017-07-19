@@ -2,6 +2,9 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
+	display: block;
+	float: left;
+	width: 100%;
 	position:relative;
 	background-color: tint($color-black, 20%);
 	@include font(1.0, 1.2);
