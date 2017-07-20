@@ -1,5 +1,6 @@
 /* ## Flexible Grid - CSS Grid
 ---------------------------------------------------------------------------------------------------- */
+
 /* # Structure, Layout and Grid
 ---------------------------------------------------------------------------------------------------- */
 /* ## Site Containers
@@ -11,36 +12,6 @@
 
 @supports (display: grid) {
 
-/* Flexible Grids fallback reset */
-.gridcontainer .wrap section {
-	padding: 0;
-}
-/* Columns */
-.gridcontainer.coll4 section,
-.gridcontainer.coll5 section,
-.gridcontainer.coll6 section{
-	float:none;
-	@include grid(1, 0, 320);
-	margin-bottom:inherit;
-}
-/* Columns full-width */
-.gridcontainer.non.coll4 section.wysiwyg,
-.gridcontainer.non.coll5 section.wysiwyg,
-.gridcontainer.non.coll6 section.wysiwyg{
-	float:none;
-	@include grid(1, 0, 320);
-	margin-bottom:inherit;
-}
-/* Columns full-width Back image */
-.gridcontainer.non.coll4 section.backimage,
-.gridcontainer.non.coll5 section.backimage,
-.gridcontainer.non.coll6 section.backimage{
-	float:none;
-	@include grid(1, 0, 320);
-}
-/* Flexible Grids fallback reset end */
-	
-	
 .gridcontainer{
 	.wrap{
 		display: -ms-grid;

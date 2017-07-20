@@ -1,6 +1,6 @@
-/* # Large screens
+/* # Medium screens
 ---------------------------------------------------------------------------------------------------- */
-/* ## 80em / 1280 pixel
+/* ## 64em / 1024 pixel
 ---------------------------------------------
 ---------------------------------------------
 --------------------------------------------- */
@@ -17,11 +17,11 @@
 		margin-bottom: 30px;
 		.content{
 			float: left;
-			@include structure(780, 1200);
+			@include structure(593, 920);
 		}
 		.sidebar-primary{
 			float: right;
-			@include structure(390, 1200);
+			@include structure(297, 920);
 		}
 	}
 }
@@ -31,11 +31,11 @@
 		margin-bottom: 30px;
 		.content{
 			float: right;
-			@include structure(780, 1200);
+			@include structure(593, 920);
 		}
 		.sidebar-primary{
 			float: left;
-			@include structure(390, 1200);
+			@include structure(297, 920);
 		}
 	}
 }
@@ -44,20 +44,20 @@
 	.content-sidebar-wrap{
 		float: left;
 		margin-bottom: 30px;
-		@include structure(975, 1200);
+		@include structure(742, 920);
 		.content{
 			float: left;
-			@include structure(709, 975);
+			@include structure(534, 742);
 		}
 		.sidebar-primary{
 			float: right;
-			@include structure(236, 975);
+			@include structure(178, 742);
 		}
 	}
 	.sidebar-secondary{
 		float: right;
 		margin-top: 0px;
-		@include structure(195, 1200);
+		@include structure(148, 920);
 		margin-bottom: 30px;
 	}
 }
@@ -65,20 +65,20 @@
 	.content-sidebar-wrap{
 		float: right;
 		margin-bottom: 30px;
-		@include structure(975, 1200);
+		@include structure(742, 920);
 		.content{
 			float: right;
-			@include structure(709, 975);
+			@include structure(534, 742);
 		}
 		.sidebar-primary{
 			float: left;
-			@include structure(236, 975);
+			@include structure(178, 742);
 		}
 	}
 	.sidebar-secondary{
 		float: left;
 		margin-top: 0px;
-		@include structure(195, 1200);
+		@include structure(148, 920);
 		margin-bottom: 30px;
 	}
 }
@@ -87,20 +87,20 @@
 	.content-sidebar-wrap{
 		float: right;
 		margin-bottom: 30px;
-		@include structure(975, 1200);
+		@include structure(742, 920);
 		.content{
 			float: left;
-			@include structure(709, 975);
+			@include structure(534, 742);
 		}
 		.sidebar-primary{
 			float: right;
-			@include structure(236, 975);
+			@include structure(178, 742);
 		}
 	}
 	.sidebar-secondary{
 		float: left;
 		margin-top: 0px;
-		@include structure(195, 1200);
+		@include structure(148, 920);
 		margin-bottom: 30px;
 	}
 }
@@ -168,27 +168,27 @@
 .full-width-content .content .gridcontainer.coll2 section{
 	float:left;
 	margin-bottom:30px;
-	@include grid(2, 30, 1200);
+	@include grid(2, 30, 920);
 }
 .full-width-content .content .gridcontainer.coll3 section{
 	float:left;
 	margin-bottom:30px;
-	@include grid(3, 30, 1200);
+	@include grid(3, 30, 920);
 }
 .full-width-content .content .gridcontainer.coll4 section{
 	float:left;
 	margin-bottom:30px;
-	@include grid(4, 30, 1200);
+	@include grid(4, 30, 920);
 }
 .full-width-content .content .gridcontainer.coll5 section{
 	float:left;
 	margin-bottom:30px;
-	@include grid(5, 30, 1200);
+	@include grid(5, 30, 920);
 }
 .full-width-content .content .gridcontainer.coll6 section{
 	float:left;
 	margin-bottom:30px;
-	@include grid(6, 30, 1200);
+	@include grid(6, 30, 920);
 }
 .full-width-content .content .gridcontainer.non.coll1 section,
 .full-width-content .content .gridcontainer.non.coll2 section,
@@ -201,20 +201,20 @@
 }
 
 .content .gridcontainer.non.coll2 section{
-	@include grid(2, 0, 1200);
+	@include grid(2, 0, 920);
 }
 .content .gridcontainer.non.coll3 section {
-	@include grid(3, 0, 1200);
+	@include grid(3, 0, 920);
 }
 
 .content .gridcontainer.non.coll4 section {
-	@include grid(4, 0, 1200);
+	@include grid(4, 0, 920);
 }
 .content .gridcontainer.non.coll5 section {
-	@include grid(5, 0, 1200);
+	@include grid(5, 0, 920);
 }
 .content .gridcontainer.non.coll6 section {
-	@include grid(6, 0, 1200);
+	@include grid(6, 0, 920);
 }
 
 .content .gridcontainer.non .wrap section.wysiwyg,
@@ -244,7 +244,7 @@
 .content .gridcontainer.non.coll6 section{
 	float:inherit;
 	margin-bottom:inherit;
-	@include grid(1, 0, 1200);
+	@include grid(1, 0, 920);
 }
 .content .gridcontainer.non .wrap section.wysiwyg,
 .full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
@@ -261,7 +261,7 @@
 /* Grid fallback */
 .footer-widgets .wrap .widget-area{
 	float: left;
-	@include grid(2, 30, 1200);
+	@include grid(2, 30, 920);
 	margin-bottom: 30px;
 }
 /* Grid fallback end */
@@ -271,7 +271,7 @@
 /* Grid fallback reset */
 .footer-widgets .wrap .widget-area{
 	float: none;
-	@include grid(1, 0, 1200);
+	@include grid(1, 0, 920);
 	margin-bottom: inherit;
 }
 /* Grid fallback reset end */	

@@ -2463,25 +2463,18 @@ th {
 .content-sidebar-sidebar .site-inner,
 .sidebar-sidebar-content .site-inner,
 .sidebar-content-sidebar .site-inner {
-  width: 100%; }
-  .content-sidebar .site-inner .entry,
-  .content-sidebar .site-inner .sidebar-primary,
-  .content-sidebar .site-inner .sidebar-secondary,
-  .sidebar-content .site-inner .entry,
-  .sidebar-content .site-inner .sidebar-primary,
-  .sidebar-content .site-inner .sidebar-secondary,
-  .content-sidebar-sidebar .site-inner .entry,
-  .content-sidebar-sidebar .site-inner .sidebar-primary,
-  .content-sidebar-sidebar .site-inner .sidebar-secondary,
-  .sidebar-sidebar-content .site-inner .entry,
-  .sidebar-sidebar-content .site-inner .sidebar-primary,
-  .sidebar-sidebar-content .site-inner .sidebar-secondary,
-  .sidebar-content-sidebar .site-inner .entry,
-  .sidebar-content-sidebar .site-inner .sidebar-primary,
-  .sidebar-content-sidebar .site-inner .sidebar-secondary {
-    margin: 0 auto;
-    max-width: 90%;
-    margin-bottom: 30px; }
+  width: 90%; }
+  .content-sidebar .site-inner .gridcontainer.white .wrap,
+  .content-sidebar .site-inner .gridcontainer.white .row_headline,
+  .sidebar-content .site-inner .gridcontainer.white .wrap,
+  .sidebar-content .site-inner .gridcontainer.white .row_headline,
+  .content-sidebar-sidebar .site-inner .gridcontainer.white .wrap,
+  .content-sidebar-sidebar .site-inner .gridcontainer.white .row_headline,
+  .sidebar-sidebar-content .site-inner .gridcontainer.white .wrap,
+  .sidebar-sidebar-content .site-inner .gridcontainer.white .row_headline,
+  .sidebar-content-sidebar .site-inner .gridcontainer.white .wrap,
+  .sidebar-content-sidebar .site-inner .gridcontainer.white .row_headline {
+    width: 100%; }
 
 /* ### Site Containers Full-width
 --------------------------------------------- */
@@ -2538,21 +2531,6 @@ th {
 .gridcontainer.grey {
   background-color: #aeadab; }
 
-/* ### Grid Containers - Site Containers
---------------------------------------------- 
-.content-sidebar .site-inner .gridcontainer.black,
-.sidebar-content .site-inner .gridcontainer.black,
-.content-sidebar-sidebar .site-inner .gridcontainer.black,
-.sidebar-sidebar-content .site-inner .gridcontainer.black,
-.sidebar-content-sidebar .site-inner .gridcontainer.black,
-.content-sidebar .site-inner .gridcontainer.grey,
-.sidebar-content .site-inner .gridcontainer.grey,
-.content-sidebar-sidebar .site-inner .gridcontainer.grey,
-.sidebar-sidebar-content .site-inner .gridcontainer.grey,
-.sidebar-content-sidebar .site-inner .gridcontainer.grey{
-	padding: 30px 0;
-}
-*/
 /*
 # Flexible Grid
 	## Flexible Grid - Fallback
@@ -2683,54 +2661,6 @@ th {
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 @supports (display: grid) {
-  /* Flexible Grids fallback reset */
-  .gridcontainer .wrap section {
-    padding: 0; }
-  /* Columns */
-  .gridcontainer.coll4 section,
-  .gridcontainer.coll5 section,
-  .gridcontainer.coll6 section {
-    float: none;
-    width: 100%;
-    margin-bottom: inherit; }
-    .gridcontainer.coll4 section:nth-child(n),
-    .gridcontainer.coll5 section:nth-child(n),
-    .gridcontainer.coll6 section:nth-child(n) {
-      margin-right: 0%; }
-    .gridcontainer.coll4 section:nth-child(1n),
-    .gridcontainer.coll5 section:nth-child(1n),
-    .gridcontainer.coll6 section:nth-child(1n) {
-      margin-right: 0; }
-  /* Columns full-width */
-  .gridcontainer.non.coll4 section.wysiwyg,
-  .gridcontainer.non.coll5 section.wysiwyg,
-  .gridcontainer.non.coll6 section.wysiwyg {
-    float: none;
-    width: 100%;
-    margin-bottom: inherit; }
-    .gridcontainer.non.coll4 section.wysiwyg:nth-child(n),
-    .gridcontainer.non.coll5 section.wysiwyg:nth-child(n),
-    .gridcontainer.non.coll6 section.wysiwyg:nth-child(n) {
-      margin-right: 0%; }
-    .gridcontainer.non.coll4 section.wysiwyg:nth-child(1n),
-    .gridcontainer.non.coll5 section.wysiwyg:nth-child(1n),
-    .gridcontainer.non.coll6 section.wysiwyg:nth-child(1n) {
-      margin-right: 0; }
-  /* Columns full-width Back image */
-  .gridcontainer.non.coll4 section.backimage,
-  .gridcontainer.non.coll5 section.backimage,
-  .gridcontainer.non.coll6 section.backimage {
-    float: none;
-    width: 100%; }
-    .gridcontainer.non.coll4 section.backimage:nth-child(n),
-    .gridcontainer.non.coll5 section.backimage:nth-child(n),
-    .gridcontainer.non.coll6 section.backimage:nth-child(n) {
-      margin-right: 0%; }
-    .gridcontainer.non.coll4 section.backimage:nth-child(1n),
-    .gridcontainer.non.coll5 section.backimage:nth-child(1n),
-    .gridcontainer.non.coll6 section.backimage:nth-child(1n) {
-      margin-right: 0; }
-  /* Flexible Grids fallback reset end */
   .gridcontainer .wrap {
     display: -ms-grid;
     display: grid;
@@ -4433,117 +4363,38 @@ li.comment {
 ---------------------------------------------
 ---------------------------------------------
 --------------------------------------------- */
-/* # Defaults
----------------------------------------------------------------------------------------------------- */
-/* ## Typographical Elements
----------------------------------------------------------------------- */
-/* ## Headings
----------------------------------------------------------------------- */
-/* ## Objects
----------------------------------------------------------------------- */
-/* ## Forms
----------------------------------------------------------------------- */
-/* ## Tables
----------------------------------------------------------------------- */
-/* ## Screen Reader Text
----------------------------------------------------------------------- */
-/* # Structure, Layout and Grid
----------------------------------------------------------------------------------------------------- */
-/* ## Site Containers
----------------------------------------------------------------------- */
-/* ### Site Containers Full-width
---------------------------------------------- */
-/* ## Grid Containers
----------------------------------------------------------------------- */
-/* ### Grid Containers coloured backgrounds
---------------------------------------------- */
-/* # Common Classes
----------------------------------------------------------------------------------------------------- */
-/* ## Avatar
----------------------------------------------------------------------- */
-/* ## Genesis
----------------------------------------------------------------------- */
-/* ## Titles
----------------------------------------------------------------------- */
-/* ## WordPress
----------------------------------------------------------------------- */
-/* # Widgets
----------------------------------------------------------------------------------------------------- */
-/* ## Featured Content
----------------------------------------------------------------------- */
-/* # Plugins
----------------------------------------------------------------------------------------------------- */
-/* ## Genesis eNews Extended
----------------------------------------------------------------------- */
-/* ## Skip Links
----------------------------------------------------------------------- */
-/* # Site Header
----------------------------------------------------------------------------------------------------- */
-/* ## Title Area
----------------------------------------------------------------------- */
-/* ## Widget Area
----------------------------------------------------------------------- */
-/* ## Before header
----------------------------------------------------------------------- */
-/* # Site Navigation
----------------------------------------------------------------------------------------------------- */
-/* ## Accessible Menu
----------------------------------------------------------------------- */
-/* ## Site Header Navigation
----------------------------------------------------------------------- */
-/* ## Primary Navigation
----------------------------------------------------------------------- */
-/* ## Secondary Navigation
----------------------------------------------------------------------- */
-/* ## Responsive Menu
----------------------------------------------------------------------- */
-/* ## Language Menu
----------------------------------------------------------------------- */
-/* # Content Area
----------------------------------------------------------------------------------------------------- */
-/* ## Entries
----------------------------------------------------------------------- */
-/* ## Buttons
----------------------------------------------------------------------- */
-/* ## Entry Meta
----------------------------------------------------------------------- */
-/* ## Pagination
----------------------------------------------------------------------- */
-/* ## Comments
----------------------------------------------------------------------- */
-/* ## Featured image
----------------------------------------------------------------------- */
-/* ## Case grid
----------------------------------------------------------------------- */
-/* # Sidebars
----------------------------------------------------------------------------------------------------- */
-/* # Footer Widgets
----------------------------------------------------------------------------------------------------- */
-/* ## Social Icons
----------------------------------------------------------------------- */
-/* # Site Footer
----------------------------------------------------------------------------------------------------- */
-/* # Animations
----------------------------------------------------------------------------------------------------- */
-/* ## Keyframes
----------------------------------------------------------------------- */
-/* ### Move X and Roll 360 degrees
---------------------------------------------- */
-/* ### Move up
---------------------------------------------- */
-/* ### Move down
---------------------------------------------- */
-/* ### Fade in
---------------------------------------------- */
-/* ### Scale down
---------------------------------------------- */
-/* ### Fade out
---------------------------------------------- */
-/* ### Slide with opacity
---------------------------------------------- */
-/* ### Scale up
---------------------------------------------- */
 @media only screen and (min-width: 55.625em) {
+  /* # Small screens
+---------------------------------------------------------------------------------------------------- */
+  /* ## 55.625emem / 890 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+  /* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* Grid fallback */
+  .footer-widgets .wrap .widget-area {
+    float: left;
+    width: 48.125%;
+    margin-bottom: 30px; }
+    .footer-widgets .wrap .widget-area:nth-child(n) {
+      margin-right: 3.75%; }
+    .footer-widgets .wrap .widget-area:nth-child(2n) {
+      margin-right: 0; }
+  /* Grid fallback end */
+  @supports (display: grid) {
+    /* Grid fallback reset */
+    .footer-widgets .wrap .widget-area {
+      float: none;
+      width: 100%;
+      margin-bottom: inherit; }
+      .footer-widgets .wrap .widget-area:nth-child(n) {
+        margin-right: 0%; }
+      .footer-widgets .wrap .widget-area:nth-child(1n) {
+        margin-right: 0; }
+    /* Grid fallback reset end */ }
+  /* ## Social Icons
+---------------------------------------------------------------------- */
   /* # Defaults
 ---------------------------------------------------------------------------------------------------- */
   /* ## Typographical Elements
@@ -4564,15 +4415,12 @@ li.comment {
 ---------------------------------------------------------------------- */
   .site-inner {
     width: 100%; }
-  .content-sidebar .site-inner {
-    max-width: 800px; }
-  .sidebar-content .site-inner {
-    max-width: 800px; }
-  .content-sidebar-sidebar .site-inner {
-    max-width: 800px; }
-  .sidebar-sidebar-content .site-inner {
-    max-width: 800px; }
+  .content-sidebar .site-inner,
+  .sidebar-content .site-inner,
+  .content-sidebar-sidebar .site-inner,
+  .sidebar-sidebar-content .site-inner,
   .sidebar-content-sidebar .site-inner {
+    width: 90%;
     max-width: 800px; }
   /* ### Site Containers Full-width
 ---------------------------------------------------------------------- */
@@ -4653,37 +4501,6 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
   .footer-widgets .wrap {
     max-width: 800px; }
-  /* # Small screens
----------------------------------------------------------------------------------------------------- */
-  /* ## 55.625emem / 890 pixel
----------------------------------------------
----------------------------------------------
---------------------------------------------- */
-  /* # Footer Widgets
----------------------------------------------------------------------------------------------------- */
-  /* Grid fallback */
-  .footer-widgets .wrap .widget-area {
-    float: left;
-    width: 48.125%;
-    margin-bottom: 30px; }
-    .footer-widgets .wrap .widget-area:nth-child(n) {
-      margin-right: 3.75%; }
-    .footer-widgets .wrap .widget-area:nth-child(2n) {
-      margin-right: 0; }
-  /* Grid fallback end */
-  @supports (display: grid) {
-    /* Grid fallback reset */
-    .footer-widgets .wrap .widget-area {
-      float: none;
-      width: 100%;
-      margin-bottom: inherit; }
-      .footer-widgets .wrap .widget-area:nth-child(n) {
-        margin-right: 0%; }
-      .footer-widgets .wrap .widget-area:nth-child(1n) {
-        margin-right: 0; }
-    /* Grid fallback reset end */ }
-  /* ## Social Icons
----------------------------------------------------------------------- */
   @supports (display: grid) {
     .footer-widgets .wrap {
       display: grid;
@@ -4723,117 +4540,313 @@ li.comment {
 ---------------------------------------------
 ---------------------------------------------
 --------------------------------------------- */
-/* # Defaults
----------------------------------------------------------------------------------------------------- */
-/* ## Typographical Elements
----------------------------------------------------------------------- */
-/* ## Headings
----------------------------------------------------------------------- */
-/* ## Objects
----------------------------------------------------------------------- */
-/* ## Forms
----------------------------------------------------------------------- */
-/* ## Tables
----------------------------------------------------------------------- */
-/* ## Screen Reader Text
----------------------------------------------------------------------- */
-/* # Structure, Layout and Grid
----------------------------------------------------------------------------------------------------- */
-/* ## Site Containers
----------------------------------------------------------------------- */
-/* ### Site Containers Full-width
---------------------------------------------- */
-/* ## Grid Containers
----------------------------------------------------------------------- */
-/* ### Grid Containers coloured backgrounds
---------------------------------------------- */
-/* # Common Classes
----------------------------------------------------------------------------------------------------- */
-/* ## Avatar
----------------------------------------------------------------------- */
-/* ## Genesis
----------------------------------------------------------------------- */
-/* ## Titles
----------------------------------------------------------------------- */
-/* ## WordPress
----------------------------------------------------------------------- */
-/* # Widgets
----------------------------------------------------------------------------------------------------- */
-/* ## Featured Content
----------------------------------------------------------------------- */
-/* # Plugins
----------------------------------------------------------------------------------------------------- */
-/* ## Genesis eNews Extended
----------------------------------------------------------------------- */
-/* ## Skip Links
----------------------------------------------------------------------- */
-/* # Site Header
----------------------------------------------------------------------------------------------------- */
-/* ## Title Area
----------------------------------------------------------------------- */
-/* ## Widget Area
----------------------------------------------------------------------- */
-/* ## Before header
----------------------------------------------------------------------- */
-/* # Site Navigation
----------------------------------------------------------------------------------------------------- */
-/* ## Accessible Menu
----------------------------------------------------------------------- */
-/* ## Site Header Navigation
----------------------------------------------------------------------- */
-/* ## Primary Navigation
----------------------------------------------------------------------- */
-/* ## Secondary Navigation
----------------------------------------------------------------------- */
-/* ## Responsive Menu
----------------------------------------------------------------------- */
-/* ## Language Menu
----------------------------------------------------------------------- */
-/* # Content Area
----------------------------------------------------------------------------------------------------- */
-/* ## Entries
----------------------------------------------------------------------- */
-/* ## Buttons
----------------------------------------------------------------------- */
-/* ## Entry Meta
----------------------------------------------------------------------- */
-/* ## Pagination
----------------------------------------------------------------------- */
-/* ## Comments
----------------------------------------------------------------------- */
-/* ## Featured image
----------------------------------------------------------------------- */
-/* ## Case grid
----------------------------------------------------------------------- */
-/* # Sidebars
----------------------------------------------------------------------------------------------------- */
-/* # Footer Widgets
----------------------------------------------------------------------------------------------------- */
-/* ## Social Icons
----------------------------------------------------------------------- */
-/* # Site Footer
----------------------------------------------------------------------------------------------------- */
-/* # Animations
----------------------------------------------------------------------------------------------------- */
-/* ## Keyframes
----------------------------------------------------------------------- */
-/* ### Move X and Roll 360 degrees
---------------------------------------------- */
-/* ### Move up
---------------------------------------------- */
-/* ### Move down
---------------------------------------------- */
-/* ### Fade in
---------------------------------------------- */
-/* ### Scale down
---------------------------------------------- */
-/* ### Fade out
---------------------------------------------- */
-/* ### Slide with opacity
---------------------------------------------- */
-/* ### Scale up
---------------------------------------------- */
 @media only screen and (min-width: 64em) {
+  /* # Medium screens
+---------------------------------------------------------------------------------------------------- */
+  /* ## 64em / 1024 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+  /* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+  /* ## Site Containers
+---------------------------------------------------------------------- */
+  .content-sidebar .site-inner .content-sidebar-wrap {
+    float: left;
+    margin-bottom: 30px; }
+    .content-sidebar .site-inner .content-sidebar-wrap .content {
+      float: left;
+      width: 64.4565217391%; }
+    .content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: right;
+      width: 32.2826086957%; }
+  .sidebar-content .site-inner .content-sidebar-wrap {
+    float: left;
+    margin-bottom: 30px; }
+    .sidebar-content .site-inner .content-sidebar-wrap .content {
+      float: right;
+      width: 64.4565217391%; }
+    .sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: left;
+      width: 32.2826086957%; }
+  .content-sidebar-sidebar .site-inner .content-sidebar-wrap {
+    float: left;
+    margin-bottom: 30px;
+    width: 80.652173913%; }
+    .content-sidebar-sidebar .site-inner .content-sidebar-wrap .content {
+      float: left;
+      width: 71.9676549865%; }
+    .content-sidebar-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: right;
+      width: 23.9892183288%; }
+  .content-sidebar-sidebar .site-inner .sidebar-secondary {
+    float: right;
+    margin-top: 0px;
+    width: 16.0869565217%;
+    margin-bottom: 30px; }
+  .sidebar-sidebar-content .site-inner .content-sidebar-wrap {
+    float: right;
+    margin-bottom: 30px;
+    width: 80.652173913%; }
+    .sidebar-sidebar-content .site-inner .content-sidebar-wrap .content {
+      float: right;
+      width: 71.9676549865%; }
+    .sidebar-sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: left;
+      width: 23.9892183288%; }
+  .sidebar-sidebar-content .site-inner .sidebar-secondary {
+    float: left;
+    margin-top: 0px;
+    width: 16.0869565217%;
+    margin-bottom: 30px; }
+  .sidebar-content-sidebar .site-inner .content-sidebar-wrap {
+    float: right;
+    margin-bottom: 30px;
+    width: 80.652173913%; }
+    .sidebar-content-sidebar .site-inner .content-sidebar-wrap .content {
+      float: left;
+      width: 71.9676549865%; }
+    .sidebar-content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: right;
+      width: 23.9892183288%; }
+  .sidebar-content-sidebar .site-inner .sidebar-secondary {
+    float: left;
+    margin-top: 0px;
+    width: 16.0869565217%;
+    margin-bottom: 30px; }
+  /* Fallback reset */
+  @supports (display: grid) {
+    .content-sidebar .site-inner,
+    .sidebar-content .site-inner,
+    .content-sidebar-sidebar .site-inner,
+    .sidebar-sidebar-content .site-inner,
+    .sidebar-content-sidebar .site-inner {
+      width: 100%; }
+      .content-sidebar .site-inner .entry,
+      .content-sidebar .site-inner .sidebar-primary,
+      .content-sidebar .site-inner .sidebar-secondary,
+      .sidebar-content .site-inner .entry,
+      .sidebar-content .site-inner .sidebar-primary,
+      .sidebar-content .site-inner .sidebar-secondary,
+      .content-sidebar-sidebar .site-inner .entry,
+      .content-sidebar-sidebar .site-inner .sidebar-primary,
+      .content-sidebar-sidebar .site-inner .sidebar-secondary,
+      .sidebar-sidebar-content .site-inner .entry,
+      .sidebar-sidebar-content .site-inner .sidebar-primary,
+      .sidebar-sidebar-content .site-inner .sidebar-secondary,
+      .sidebar-content-sidebar .site-inner .entry,
+      .sidebar-content-sidebar .site-inner .sidebar-primary,
+      .sidebar-content-sidebar .site-inner .sidebar-secondary {
+        margin: inherit;
+        max-width: inherit;
+        margin-bottom: 0; }
+    .content-sidebar .site-inner .content-sidebar-wrap,
+    .sidebar-content .site-inner .content-sidebar-wrap {
+      float: inherit; }
+      .content-sidebar .site-inner .content-sidebar-wrap .content,
+      .sidebar-content .site-inner .content-sidebar-wrap .content {
+        float: inherit;
+        width: auto; }
+      .content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary,
+      .sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary {
+        float: inherit;
+        width: auto; }
+    .content-sidebar-sidebar .site-inner .content-sidebar-wrap,
+    .sidebar-sidebar-content .site-inner .content-sidebar-wrap,
+    .sidebar-content-sidebar .site-inner .content-sidebar-wrap {
+      float: inherit;
+      width: auto; }
+      .content-sidebar-sidebar .site-inner .content-sidebar-wrap .content,
+      .sidebar-sidebar-content .site-inner .content-sidebar-wrap .content,
+      .sidebar-content-sidebar .site-inner .content-sidebar-wrap .content {
+        float: inherit;
+        width: auto; }
+      .content-sidebar-sidebar .site-inner .content-sidebar-wrap .sidebar-primary,
+      .sidebar-sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary,
+      .sidebar-content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+        float: inherit;
+        width: auto; }
+    .content-sidebar-sidebar .site-inner .sidebar-secondary,
+    .sidebar-sidebar-content .site-inner .sidebar-secondary,
+    .sidebar-content-sidebar .site-inner .sidebar-secondary {
+      float: inherit;
+      margin-top: 0;
+      width: auto; } }
+  /* Fallback reset end */
+  /* ### Site Containers Full-width 
+--------------------------------------------- */
+  /* ## Grid Containers
+---------------------------------------------------------------------- */
+  .full-width-content .content .gridcontainer.coll2 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 48.3695652174%; }
+    .full-width-content .content .gridcontainer.coll2 section:nth-child(n) {
+      margin-right: 3.2608695652%; }
+    .full-width-content .content .gridcontainer.coll2 section:nth-child(2n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll3 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 31.1594202899%; }
+    .full-width-content .content .gridcontainer.coll3 section:nth-child(n) {
+      margin-right: 3.2608695652%; }
+    .full-width-content .content .gridcontainer.coll3 section:nth-child(3n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll4 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 22.5543478261%; }
+    .full-width-content .content .gridcontainer.coll4 section:nth-child(n) {
+      margin-right: 3.2608695652%; }
+    .full-width-content .content .gridcontainer.coll4 section:nth-child(4n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll5 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 17.3913043478%; }
+    .full-width-content .content .gridcontainer.coll5 section:nth-child(n) {
+      margin-right: 3.2608695652%; }
+    .full-width-content .content .gridcontainer.coll5 section:nth-child(5n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll6 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 13.9492753623%; }
+    .full-width-content .content .gridcontainer.coll6 section:nth-child(n) {
+      margin-right: 3.2608695652%; }
+    .full-width-content .content .gridcontainer.coll6 section:nth-child(6n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.non.coll1 section,
+  .full-width-content .content .gridcontainer.non.coll2 section,
+  .full-width-content .content .gridcontainer.non.coll3 section,
+  .full-width-content .content .gridcontainer.non.coll4 section,
+  .full-width-content .content .gridcontainer.non.coll5 section,
+  .full-width-content .content .gridcontainer.non.coll6 section {
+    float: left;
+    margin-bottom: 0px; }
+  .content .gridcontainer.non.coll2 section {
+    width: 50%; }
+    .content .gridcontainer.non.coll2 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll2 section:nth-child(2n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll3 section {
+    width: 33.3333333333%; }
+    .content .gridcontainer.non.coll3 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll3 section:nth-child(3n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll4 section {
+    width: 25%; }
+    .content .gridcontainer.non.coll4 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll4 section:nth-child(4n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll5 section {
+    width: 20%; }
+    .content .gridcontainer.non.coll5 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll5 section:nth-child(5n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll6 section {
+    width: 16.6666666667%; }
+    .content .gridcontainer.non.coll6 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll6 section:nth-child(6n) {
+      margin-right: 0; }
+  .content .gridcontainer.non .wrap section.wysiwyg,
+  .full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+    padding: 30px; }
+  /* Fallback reset */
+  @supports (display: grid) {
+    .full-width-content .content .gridcontainer.coll2 section,
+    .full-width-content .content .gridcontainer.coll3 section,
+    .full-width-content .content .gridcontainer.coll4 section,
+    .full-width-content .content .gridcontainer.coll5 section,
+    .full-width-content .content .gridcontainer.coll6 section,
+    .full-width-content .content .gridcontainer.non.coll1 section,
+    .full-width-content .content .gridcontainer.non.coll2 section,
+    .full-width-content .content .gridcontainer.non.coll3 section,
+    .full-width-content .content .gridcontainer.non.coll4 section,
+    .full-width-content .content .gridcontainer.non.coll5 section,
+    .full-width-content .content .gridcontainer.non.coll6 section,
+    .content .gridcontainer.non.coll1 section,
+    .content .gridcontainer.non.coll2 section,
+    .content .gridcontainer.non.coll3 section,
+    .content .gridcontainer.non.coll4 section,
+    .content .gridcontainer.non.coll5 section,
+    .content .gridcontainer.non.coll6 section {
+      float: inherit;
+      margin-bottom: inherit;
+      width: 100%; }
+      .full-width-content .content .gridcontainer.coll2 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll3 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll4 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll5 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll6 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll1 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll2 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll3 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll4 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll5 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll6 section:nth-child(n),
+      .content .gridcontainer.non.coll1 section:nth-child(n),
+      .content .gridcontainer.non.coll2 section:nth-child(n),
+      .content .gridcontainer.non.coll3 section:nth-child(n),
+      .content .gridcontainer.non.coll4 section:nth-child(n),
+      .content .gridcontainer.non.coll5 section:nth-child(n),
+      .content .gridcontainer.non.coll6 section:nth-child(n) {
+        margin-right: 0%; }
+      .full-width-content .content .gridcontainer.coll2 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll3 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll4 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll5 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll6 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll1 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll2 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll3 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll4 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll5 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll6 section:nth-child(1n),
+      .content .gridcontainer.non.coll1 section:nth-child(1n),
+      .content .gridcontainer.non.coll2 section:nth-child(1n),
+      .content .gridcontainer.non.coll3 section:nth-child(1n),
+      .content .gridcontainer.non.coll4 section:nth-child(1n),
+      .content .gridcontainer.non.coll5 section:nth-child(1n),
+      .content .gridcontainer.non.coll6 section:nth-child(1n) {
+        margin-right: 0; }
+    .content .gridcontainer.non .wrap section.wysiwyg,
+    .full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+      margin: 0 auto;
+      padding: 30px 0;
+      width: 90%; } }
+  /* Fallback reset end */
+  /* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* Grid fallback */
+  .footer-widgets .wrap .widget-area {
+    float: left;
+    width: 48.3695652174%;
+    margin-bottom: 30px; }
+    .footer-widgets .wrap .widget-area:nth-child(n) {
+      margin-right: 3.2608695652%; }
+    .footer-widgets .wrap .widget-area:nth-child(2n) {
+      margin-right: 0; }
+  /* Grid fallback end */
+  @supports (display: grid) {
+    /* Grid fallback reset */
+    .footer-widgets .wrap .widget-area {
+      float: none;
+      width: 100%;
+      margin-bottom: inherit; }
+      .footer-widgets .wrap .widget-area:nth-child(n) {
+        margin-right: 0%; }
+      .footer-widgets .wrap .widget-area:nth-child(1n) {
+        margin-right: 0; }
+    /* Grid fallback reset end */ }
+  /* ## Social Icons
+---------------------------------------------------------------------- */
   /* # Defaults
 ---------------------------------------------------------------------------------------------------- */
   /* ## Typographical Elements
@@ -4852,30 +4865,6 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
   /* ## Site Containers
 ---------------------------------------------------------------------- */
-  .content-sidebar .site-inner,
-  .sidebar-content .site-inner,
-  .content-sidebar-sidebar .site-inner,
-  .sidebar-sidebar-content .site-inner,
-  .sidebar-content-sidebar .site-inner {
-    width: 100%; }
-    .content-sidebar .site-inner .entry,
-    .content-sidebar .site-inner .sidebar-primary,
-    .content-sidebar .site-inner .sidebar-secondary,
-    .sidebar-content .site-inner .entry,
-    .sidebar-content .site-inner .sidebar-primary,
-    .sidebar-content .site-inner .sidebar-secondary,
-    .content-sidebar-sidebar .site-inner .entry,
-    .content-sidebar-sidebar .site-inner .sidebar-primary,
-    .content-sidebar-sidebar .site-inner .sidebar-secondary,
-    .sidebar-sidebar-content .site-inner .entry,
-    .sidebar-sidebar-content .site-inner .sidebar-primary,
-    .sidebar-sidebar-content .site-inner .sidebar-secondary,
-    .sidebar-content-sidebar .site-inner .entry,
-    .sidebar-content-sidebar .site-inner .sidebar-primary,
-    .sidebar-content-sidebar .site-inner .sidebar-secondary {
-      margin: inherit;
-      max-width: inherit;
-      margin-bottom: 0; }
   .content-sidebar .site-inner,
   .sidebar-content .site-inner,
   .content-sidebar-sidebar .site-inner,
@@ -4954,7 +4943,35 @@ li.comment {
     .gridcontainer.coll5 .wrap {
       grid-template-columns: repeat(5, 1fr); }
     .gridcontainer.coll6 .wrap {
-      grid-template-columns: repeat(6, 1fr); } }
+      grid-template-columns: repeat(6, 1fr); }
+    .content-sidebar .site-inner .gridcontainer.coll3 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll3 .wrap {
+      grid-template-columns: repeat(1, 1fr); }
+    .content-sidebar .site-inner .gridcontainer.coll4 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll4 .wrap {
+      grid-template-columns: repeat(2, 1fr); }
+    .content-sidebar .site-inner .gridcontainer.coll5 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll5 .wrap {
+      grid-template-columns: repeat(2, 1fr); }
+    .content-sidebar .site-inner .gridcontainer.coll6 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll6 .wrap {
+      grid-template-columns: repeat(2, 1fr); }
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll3 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll3 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll3 .wrap {
+      grid-template-columns: repeat(1, 1fr); }
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll4 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll4 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll4 .wrap {
+      grid-template-columns: repeat(1, 1fr); }
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll5 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll5 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll5 .wrap {
+      grid-template-columns: repeat(1, 1fr); }
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll6 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll6 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll6 .wrap {
+      grid-template-columns: repeat(1, 1fr); } }
   /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
   /* # Common Classes
@@ -5213,117 +5230,313 @@ li.comment {
 ---------------------------------------------
 ---------------------------------------------
 --------------------------------------------- */
-/* # Defaults
----------------------------------------------------------------------------------------------------- */
-/* ## Typographical Elements
----------------------------------------------------------------------- */
-/* ## Headings
----------------------------------------------------------------------- */
-/* ## Objects
----------------------------------------------------------------------- */
-/* ## Forms
----------------------------------------------------------------------- */
-/* ## Tables
----------------------------------------------------------------------- */
-/* ## Screen Reader Text
----------------------------------------------------------------------- */
-/* # Structure, Layout and Grid
----------------------------------------------------------------------------------------------------- */
-/* ## Site Containers
----------------------------------------------------------------------- */
-/* ### Site Containers Full-width 
---------------------------------------------- */
-/* ## Grid Containers
----------------------------------------------------------------------- */
-/* ### Grid Containers coloured backgrounds
---------------------------------------------- */
-/* # Common Classes
----------------------------------------------------------------------------------------------------- */
-/* ## Avatar
----------------------------------------------------------------------- */
-/* ## Genesis
----------------------------------------------------------------------- */
-/* ## Titles
----------------------------------------------------------------------- */
-/* ## WordPress
----------------------------------------------------------------------- */
-/* # Widgets
----------------------------------------------------------------------------------------------------- */
-/* ## Featured Content
----------------------------------------------------------------------- */
-/* # Plugins
----------------------------------------------------------------------------------------------------- */
-/* ## Genesis eNews Extended
----------------------------------------------------------------------- */
-/* ## Skip Links
----------------------------------------------------------------------- */
-/* # Site Header
----------------------------------------------------------------------------------------------------- */
-/* ## Title Area
----------------------------------------------------------------------- */
-/* ## Widget Area
----------------------------------------------------------------------- */
-/* ## Before header
----------------------------------------------------------------------- */
-/* # Site Navigation
----------------------------------------------------------------------------------------------------- */
-/* ## Accessible Menu
----------------------------------------------------------------------- */
-/* ## Site Header Navigation
----------------------------------------------------------------------- */
-/* ## Primary Navigation
----------------------------------------------------------------------- */
-/* ## Secondary Navigation
----------------------------------------------------------------------- */
-/* ## Responsive Menu
----------------------------------------------------------------------- */
-/* ## Language Menu
----------------------------------------------------------------------- */
-/* # Content Area
----------------------------------------------------------------------------------------------------- */
-/* ## Entries
----------------------------------------------------------------------- */
-/* ## Buttons
----------------------------------------------------------------------- */
-/* ## Entry Meta
----------------------------------------------------------------------- */
-/* ## Pagination
----------------------------------------------------------------------- */
-/* ## Comments
----------------------------------------------------------------------- */
-/* ## Featured image
----------------------------------------------------------------------- */
-/* ## Case grid
----------------------------------------------------------------------- */
-/* # Sidebars
----------------------------------------------------------------------------------------------------- */
-/* # Footer Widgets
----------------------------------------------------------------------------------------------------- */
-/* ## Social Icons
----------------------------------------------------------------------- */
-/* # Site Footer
----------------------------------------------------------------------------------------------------- */
-/* # Animations
----------------------------------------------------------------------------------------------------- */
-/* ## Keyframes
----------------------------------------------------------------------- */
-/* ### Move X and Roll 360 degrees
---------------------------------------------- */
-/* ### Move up
---------------------------------------------- */
-/* ### Move down
---------------------------------------------- */
-/* ### Fade in
---------------------------------------------- */
-/* ### Scale down
---------------------------------------------- */
-/* ### Fade out
---------------------------------------------- */
-/* ### Slide with opacity
---------------------------------------------- */
-/* ### Scale up
---------------------------------------------- */
 @media only screen and (min-width: 80em) {
+  /* # Large screens
+---------------------------------------------------------------------------------------------------- */
+  /* ## 80em / 1280 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+  /* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+  /* ## Site Containers
+---------------------------------------------------------------------- */
+  .content-sidebar .site-inner .content-sidebar-wrap {
+    float: left;
+    margin-bottom: 30px; }
+    .content-sidebar .site-inner .content-sidebar-wrap .content {
+      float: left;
+      width: 65%; }
+    .content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: right;
+      width: 32.5%; }
+  .sidebar-content .site-inner .content-sidebar-wrap {
+    float: left;
+    margin-bottom: 30px; }
+    .sidebar-content .site-inner .content-sidebar-wrap .content {
+      float: right;
+      width: 65%; }
+    .sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: left;
+      width: 32.5%; }
+  .content-sidebar-sidebar .site-inner .content-sidebar-wrap {
+    float: left;
+    margin-bottom: 30px;
+    width: 81.25%; }
+    .content-sidebar-sidebar .site-inner .content-sidebar-wrap .content {
+      float: left;
+      width: 72.7179487179%; }
+    .content-sidebar-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: right;
+      width: 24.2051282051%; }
+  .content-sidebar-sidebar .site-inner .sidebar-secondary {
+    float: right;
+    margin-top: 0px;
+    width: 16.25%;
+    margin-bottom: 30px; }
+  .sidebar-sidebar-content .site-inner .content-sidebar-wrap {
+    float: right;
+    margin-bottom: 30px;
+    width: 81.25%; }
+    .sidebar-sidebar-content .site-inner .content-sidebar-wrap .content {
+      float: right;
+      width: 72.7179487179%; }
+    .sidebar-sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: left;
+      width: 24.2051282051%; }
+  .sidebar-sidebar-content .site-inner .sidebar-secondary {
+    float: left;
+    margin-top: 0px;
+    width: 16.25%;
+    margin-bottom: 30px; }
+  .sidebar-content-sidebar .site-inner .content-sidebar-wrap {
+    float: right;
+    margin-bottom: 30px;
+    width: 81.25%; }
+    .sidebar-content-sidebar .site-inner .content-sidebar-wrap .content {
+      float: left;
+      width: 72.7179487179%; }
+    .sidebar-content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+      float: right;
+      width: 24.2051282051%; }
+  .sidebar-content-sidebar .site-inner .sidebar-secondary {
+    float: left;
+    margin-top: 0px;
+    width: 16.25%;
+    margin-bottom: 30px; }
+  /* Fallback reset */
+  @supports (display: grid) {
+    .content-sidebar .site-inner,
+    .sidebar-content .site-inner,
+    .content-sidebar-sidebar .site-inner,
+    .sidebar-sidebar-content .site-inner,
+    .sidebar-content-sidebar .site-inner {
+      width: 100%; }
+      .content-sidebar .site-inner .entry,
+      .content-sidebar .site-inner .sidebar-primary,
+      .content-sidebar .site-inner .sidebar-secondary,
+      .sidebar-content .site-inner .entry,
+      .sidebar-content .site-inner .sidebar-primary,
+      .sidebar-content .site-inner .sidebar-secondary,
+      .content-sidebar-sidebar .site-inner .entry,
+      .content-sidebar-sidebar .site-inner .sidebar-primary,
+      .content-sidebar-sidebar .site-inner .sidebar-secondary,
+      .sidebar-sidebar-content .site-inner .entry,
+      .sidebar-sidebar-content .site-inner .sidebar-primary,
+      .sidebar-sidebar-content .site-inner .sidebar-secondary,
+      .sidebar-content-sidebar .site-inner .entry,
+      .sidebar-content-sidebar .site-inner .sidebar-primary,
+      .sidebar-content-sidebar .site-inner .sidebar-secondary {
+        margin: inherit;
+        max-width: inherit;
+        margin-bottom: 0; }
+    .content-sidebar .site-inner .content-sidebar-wrap,
+    .sidebar-content .site-inner .content-sidebar-wrap {
+      float: inherit; }
+      .content-sidebar .site-inner .content-sidebar-wrap .content,
+      .sidebar-content .site-inner .content-sidebar-wrap .content {
+        float: inherit;
+        width: auto; }
+      .content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary,
+      .sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary {
+        float: inherit;
+        width: auto; }
+    .content-sidebar-sidebar .site-inner .content-sidebar-wrap,
+    .sidebar-sidebar-content .site-inner .content-sidebar-wrap,
+    .sidebar-content-sidebar .site-inner .content-sidebar-wrap {
+      float: inherit;
+      width: auto; }
+      .content-sidebar-sidebar .site-inner .content-sidebar-wrap .content,
+      .sidebar-sidebar-content .site-inner .content-sidebar-wrap .content,
+      .sidebar-content-sidebar .site-inner .content-sidebar-wrap .content {
+        float: inherit;
+        width: auto; }
+      .content-sidebar-sidebar .site-inner .content-sidebar-wrap .sidebar-primary,
+      .sidebar-sidebar-content .site-inner .content-sidebar-wrap .sidebar-primary,
+      .sidebar-content-sidebar .site-inner .content-sidebar-wrap .sidebar-primary {
+        float: inherit;
+        width: auto; }
+    .content-sidebar-sidebar .site-inner .sidebar-secondary,
+    .sidebar-sidebar-content .site-inner .sidebar-secondary,
+    .sidebar-content-sidebar .site-inner .sidebar-secondary {
+      float: inherit;
+      margin-top: 0;
+      width: auto; } }
+  /* Fallback reset end */
+  /* ### Site Containers Full-width 
+--------------------------------------------- */
+  /* ## Grid Containers
+---------------------------------------------------------------------- */
+  .full-width-content .content .gridcontainer.coll2 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 48.75%; }
+    .full-width-content .content .gridcontainer.coll2 section:nth-child(n) {
+      margin-right: 2.5%; }
+    .full-width-content .content .gridcontainer.coll2 section:nth-child(2n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll3 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 31.6666666667%; }
+    .full-width-content .content .gridcontainer.coll3 section:nth-child(n) {
+      margin-right: 2.5%; }
+    .full-width-content .content .gridcontainer.coll3 section:nth-child(3n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll4 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 23.125%; }
+    .full-width-content .content .gridcontainer.coll4 section:nth-child(n) {
+      margin-right: 2.5%; }
+    .full-width-content .content .gridcontainer.coll4 section:nth-child(4n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll5 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 18%; }
+    .full-width-content .content .gridcontainer.coll5 section:nth-child(n) {
+      margin-right: 2.5%; }
+    .full-width-content .content .gridcontainer.coll5 section:nth-child(5n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.coll6 section {
+    float: left;
+    margin-bottom: 30px;
+    width: 14.5833333333%; }
+    .full-width-content .content .gridcontainer.coll6 section:nth-child(n) {
+      margin-right: 2.5%; }
+    .full-width-content .content .gridcontainer.coll6 section:nth-child(6n) {
+      margin-right: 0; }
+  .full-width-content .content .gridcontainer.non.coll1 section,
+  .full-width-content .content .gridcontainer.non.coll2 section,
+  .full-width-content .content .gridcontainer.non.coll3 section,
+  .full-width-content .content .gridcontainer.non.coll4 section,
+  .full-width-content .content .gridcontainer.non.coll5 section,
+  .full-width-content .content .gridcontainer.non.coll6 section {
+    float: left;
+    margin-bottom: 0px; }
+  .content .gridcontainer.non.coll2 section {
+    width: 50%; }
+    .content .gridcontainer.non.coll2 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll2 section:nth-child(2n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll3 section {
+    width: 33.3333333333%; }
+    .content .gridcontainer.non.coll3 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll3 section:nth-child(3n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll4 section {
+    width: 25%; }
+    .content .gridcontainer.non.coll4 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll4 section:nth-child(4n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll5 section {
+    width: 20%; }
+    .content .gridcontainer.non.coll5 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll5 section:nth-child(5n) {
+      margin-right: 0; }
+  .content .gridcontainer.non.coll6 section {
+    width: 16.6666666667%; }
+    .content .gridcontainer.non.coll6 section:nth-child(n) {
+      margin-right: 0%; }
+    .content .gridcontainer.non.coll6 section:nth-child(6n) {
+      margin-right: 0; }
+  .content .gridcontainer.non .wrap section.wysiwyg,
+  .full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+    padding: 30px; }
+  /* Fallback reset */
+  @supports (display: grid) {
+    .full-width-content .content .gridcontainer.coll2 section,
+    .full-width-content .content .gridcontainer.coll3 section,
+    .full-width-content .content .gridcontainer.coll4 section,
+    .full-width-content .content .gridcontainer.coll5 section,
+    .full-width-content .content .gridcontainer.coll6 section,
+    .full-width-content .content .gridcontainer.non.coll1 section,
+    .full-width-content .content .gridcontainer.non.coll2 section,
+    .full-width-content .content .gridcontainer.non.coll3 section,
+    .full-width-content .content .gridcontainer.non.coll4 section,
+    .full-width-content .content .gridcontainer.non.coll5 section,
+    .full-width-content .content .gridcontainer.non.coll6 section,
+    .content .gridcontainer.non.coll1 section,
+    .content .gridcontainer.non.coll2 section,
+    .content .gridcontainer.non.coll3 section,
+    .content .gridcontainer.non.coll4 section,
+    .content .gridcontainer.non.coll5 section,
+    .content .gridcontainer.non.coll6 section {
+      float: inherit;
+      margin-bottom: inherit;
+      width: 100%; }
+      .full-width-content .content .gridcontainer.coll2 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll3 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll4 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll5 section:nth-child(n),
+      .full-width-content .content .gridcontainer.coll6 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll1 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll2 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll3 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll4 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll5 section:nth-child(n),
+      .full-width-content .content .gridcontainer.non.coll6 section:nth-child(n),
+      .content .gridcontainer.non.coll1 section:nth-child(n),
+      .content .gridcontainer.non.coll2 section:nth-child(n),
+      .content .gridcontainer.non.coll3 section:nth-child(n),
+      .content .gridcontainer.non.coll4 section:nth-child(n),
+      .content .gridcontainer.non.coll5 section:nth-child(n),
+      .content .gridcontainer.non.coll6 section:nth-child(n) {
+        margin-right: 0%; }
+      .full-width-content .content .gridcontainer.coll2 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll3 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll4 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll5 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.coll6 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll1 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll2 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll3 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll4 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll5 section:nth-child(1n),
+      .full-width-content .content .gridcontainer.non.coll6 section:nth-child(1n),
+      .content .gridcontainer.non.coll1 section:nth-child(1n),
+      .content .gridcontainer.non.coll2 section:nth-child(1n),
+      .content .gridcontainer.non.coll3 section:nth-child(1n),
+      .content .gridcontainer.non.coll4 section:nth-child(1n),
+      .content .gridcontainer.non.coll5 section:nth-child(1n),
+      .content .gridcontainer.non.coll6 section:nth-child(1n) {
+        margin-right: 0; }
+    .content .gridcontainer.non .wrap section.wysiwyg,
+    .full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
+      margin: 0 auto;
+      padding: 30px 0;
+      width: 90%; } }
+  /* Fallback reset end */
+  /* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+  /* Grid fallback */
+  .footer-widgets .wrap .widget-area {
+    float: left;
+    width: 48.75%;
+    margin-bottom: 30px; }
+    .footer-widgets .wrap .widget-area:nth-child(n) {
+      margin-right: 2.5%; }
+    .footer-widgets .wrap .widget-area:nth-child(2n) {
+      margin-right: 0; }
+  /* Grid fallback end */
+  @supports (display: grid) {
+    /* Grid fallback reset */
+    .footer-widgets .wrap .widget-area {
+      float: none;
+      width: 100%;
+      margin-bottom: inherit; }
+      .footer-widgets .wrap .widget-area:nth-child(n) {
+        margin-right: 0%; }
+      .footer-widgets .wrap .widget-area:nth-child(1n) {
+        margin-right: 0; }
+    /* Grid fallback reset end */ }
+  /* ## Social Icons
+---------------------------------------------------------------------- */
   /* # Defaults
 ---------------------------------------------------------------------------------------------------- */
   /* ## Typographical Elements
@@ -5348,16 +5561,6 @@ li.comment {
     max-width: 1200px; }
   /* ## Site Containers
 ---------------------------------------------------------------------- */
-  .content-sidebar .site-inner {
-    max-width: 1200px; }
-  .sidebar-content .site-inner {
-    max-width: 1200px; }
-  .content-sidebar-sidebar .site-inner {
-    max-width: 1200px; }
-  .sidebar-sidebar-content .site-inner {
-    max-width: 1200px; }
-  .sidebar-content-sidebar .site-inner {
-    max-width: 1200px; }
   /* ### Site Containers Full-width 
 --------------------------------------------- */
   .full-width-content .site-inner .content .entry {
@@ -5370,6 +5573,31 @@ li.comment {
     max-width: 1200px; }
   .gridcontainer .backimage {
     min-height: 550px; }
+  @supports (display: grid) {
+    .content-sidebar .site-inner .gridcontainer.coll3 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll3 .wrap,
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll3 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll3 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll3 .wrap {
+      grid-template-columns: repeat(3, 1fr); }
+    .content-sidebar .site-inner .gridcontainer.coll4 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll4 .wrap,
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll4 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll4 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll4 .wrap {
+      grid-template-columns: repeat(2, 1fr); }
+    .content-sidebar .site-inner .gridcontainer.coll5 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll5 .wrap,
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll5 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll5 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll5 .wrap {
+      grid-template-columns: repeat(2, 1fr); }
+    .content-sidebar .site-inner .gridcontainer.coll6 .wrap,
+    .sidebar-content .site-inner .gridcontainer.coll6 .wrap,
+    .content-sidebar-sidebar .site-inner .gridcontainer.coll6 .wrap,
+    .sidebar-sidebar-content .site-inner .gridcontainer.coll6 .wrap,
+    .sidebar-content-sidebar .site-inner .gridcontainer.coll6 .wrap {
+      grid-template-columns: repeat(4, 1fr); } }
   /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
   /* # Common Classes
