@@ -195,7 +195,13 @@
 .full-width-content .content .gridcontainer.non.coll3 section,
 .full-width-content .content .gridcontainer.non.coll4 section,
 .full-width-content .content .gridcontainer.non.coll5 section,
-.full-width-content .content .gridcontainer.non.coll6 section{
+.full-width-content .content .gridcontainer.non.coll6 section,
+.content .gridcontainer.non.coll1 section,
+.content .gridcontainer.non.coll2 section,
+.content .gridcontainer.non.coll3 section,
+.content .gridcontainer.non.coll4 section,
+.content .gridcontainer.non.coll5 section,
+.content .gridcontainer.non.coll6 section{
 	float:left;
 	margin-bottom:0px;
 }
@@ -261,7 +267,7 @@
 /* Grid fallback */
 .footer-widgets .wrap .widget-area{
 	float: left;
-	@include grid(2, 30, 1200);
+	@include grid(4, 30, 1200);
 	margin-bottom: 30px;
 }
 /* Grid fallback end */
