@@ -18,26 +18,6 @@
 		.content{
 			float: left;
 			@include structure(780, 1200);
-			.gridcontainer.coll2 section{
-				float: left;
-				@include grid(2, 30, 780);
-			}
-			.gridcontainer.coll3 section{
-				float: left;
-				@include grid(3, 30, 780);
-			}
-			.gridcontainer.coll4 section{
-				float: left;
-				@include grid(2, 30, 780);
-			}
-			.gridcontainer.coll5 section{
-				float: left;
-				@include grid(2, 30, 780);
-			}
-			.gridcontainer.coll6 section{
-				float: left;
-				@include grid(4, 30, 780);
-			}
 		}
 		.sidebar-primary{
 			float: right;
@@ -52,26 +32,6 @@
 		.content{
 			float: right;
 			@include structure(780, 1200);
-			.gridcontainer.coll2 section{
-				float: left;
-				@include grid(2, 30, 780);
-			}
-			.gridcontainer.coll3 section{
-				float: left;
-				@include grid(3, 30, 780);
-			}
-			.gridcontainer.coll4 section{
-				float: left;
-				@include grid(2, 30, 780);
-			}
-			.gridcontainer.coll5 section{
-				float: left;
-				@include grid(2, 30, 780);
-			}
-			.gridcontainer.coll6 section{
-				float: left;
-				@include grid(4, 30, 780);
-			}
 		}
 		.sidebar-primary{
 			float: left;
@@ -88,26 +48,6 @@
 		.content{
 			float: left;
 			@include structure(709, 975);
-			.gridcontainer.coll2 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll3 section{
-				float: left;
-				@include grid(3, 30, 709);
-			}
-			.gridcontainer.coll4 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll5 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll6 section{
-				float: left;
-				@include grid(4, 30, 709);
-			}
 		}
 		.sidebar-primary{
 			float: right;
@@ -129,30 +69,10 @@
 		.content{
 			float: right;
 			@include structure(709, 975);
-			.gridcontainer.coll2 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll3 section{
-				float: left;
-				@include grid(3, 30, 709);
-			}
-			.gridcontainer.coll4 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll5 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll6 section{
-				float: left;
-				@include grid(4, 30, 709);
-			}
 		}
 		.sidebar-primary{
 			float: left;
-			@include structure(178, 975);
+			@include structure(236, 975);
 		}
 	}
 	.sidebar-secondary{
@@ -171,30 +91,10 @@
 		.content{
 			float: left;
 			@include structure(709, 975);
-			.gridcontainer.coll2 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll3 section{
-				float: left;
-				@include grid(3, 30, 709);
-			}
-			.gridcontainer.coll4 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll5 section{
-				float: left;
-				@include grid(2, 30, 709);
-			}
-			.gridcontainer.coll6 section{
-				float: left;
-				@include grid(4, 30, 709);
-			}
 		}
 		.sidebar-primary{
 			float: right;
-			@include structure(178, 975);
+			@include structure(236, 975);
 		}
 	}
 	.sidebar-secondary{
@@ -230,14 +130,6 @@
 		.content{
 			float: inherit;
 			width: auto;
-			.gridcontainer.coll2 section,
-			.gridcontainer.coll3 section,
-			.gridcontainer.coll4 section,
-			.gridcontainer.coll5 section,
-			.gridcontainer.coll6 section{
-				float: inherit;
-				@include grid(1, 0, 593);
-			}
 		}
 		.sidebar-primary{
 			float: inherit;
@@ -254,14 +146,6 @@
 		.content{
 			float: inherit;
 			width: auto;
-			.gridcontainer.coll2 section,
-			.gridcontainer.coll3 section,
-			.gridcontainer.coll4 section,
-			.gridcontainer.coll5 section,
-			.gridcontainer.coll6 section{
-				float: inherit;
-				@include grid(1, 0, 709);
-			}
 		}
 		.sidebar-primary{
 			float: inherit;
@@ -346,11 +230,7 @@
 
 /* Fallback reset */
 @supports (display: grid) {
-.gridcontainer.coll2 section,
-.gridcontainer.coll3 section,
-.gridcontainer.coll4 section,
-.gridcontainer.coll5 section,
-.gridcontainer.coll6 section,
+
 .full-width-content .content .gridcontainer.coll2 section,
 .full-width-content .content .gridcontainer.coll3 section,
 .full-width-content .content .gridcontainer.coll4 section,
@@ -378,40 +258,6 @@
     padding: 30px 0;
     width: 90%;
 }
-.gridcontainer.non .wrap .wysiwyg {
-    margin: 0 auto;
-    padding: 30px 0;
-    width: 90%;
-}
-.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
-.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
-.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
-.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
-.content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
-.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
-.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
-.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
-.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
-.sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
-.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
-.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
-.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
-.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
-.content-sidebar-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
-.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
-.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
-.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
-.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
-.sidebar-sidebar-content .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg,
-.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll2 section.wysiwyg,
-.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll3 section.wysiwyg,
-.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll4 section.wysiwyg,
-.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll5 section.wysiwyg,
-.sidebar-content-sidebar .site-inner .content-sidebar-wrap .content .gridcontainer.non.coll6 section.wysiwyg{
-    margin: 0 auto;
-    padding: 30px 0;
-    width: 90%;
-}
 
 }
 /* Fallback reset end */
@@ -434,7 +280,7 @@
 	@include grid(1, 0, 1200);
 	margin-bottom: inherit;
 }
-/* Grid fallback reset end */
+/* Grid fallback reset end */	
 
 }
 /* ## Social Icons
