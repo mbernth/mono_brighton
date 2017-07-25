@@ -2063,8 +2063,8 @@ textarea:focus,
   transition: all 0.2s ease-in-out; }
 
 a {
-  color: #1d2029;
-  text-decoration: none;
+  color: #003087;
+  text-decoration: underline;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -2073,7 +2073,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #34312C;
+  color: #6683b7;
   text-decoration: none; }
 
 p {
@@ -2174,6 +2174,14 @@ h6 {
   font-size: 1.8rem;
   line-height: 26px;
   line-height: 2.6rem; }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none; }
 
 /* ## Objects
 ---------------------------------------------------------------------- */
@@ -2739,13 +2747,13 @@ th {
 
 .archive-description,
 .author-box {
+  margin: 0 auto 30px auto;
+  width: 90%;
   background-color: #ffffff;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 26px;
-  line-height: 2.6rem;
-  margin-bottom: 20px;
-  padding: 20px; }
+  line-height: 2.6rem; }
 
 .author-box-title {
   font-size: 16px;
@@ -3313,6 +3321,20 @@ ul.genesis-nav-menu li li {
 .entry {
   margin-bottom: 40px; }
 
+.content .post {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #34312C; }
+  .content .post img {
+    margin-bottom: 20px; }
+
+.content .post:last-child {
+  border-bottom: none;
+  padding-bottom: 0; }
+
+.content .post .entry-footer {
+  clear: both; }
+
 .gridcontainer p:last-child,
 .entry-content p:last-child {
   margin-bottom: 0; }
@@ -3342,24 +3364,6 @@ ul.genesis-nav-menu li li {
 .entry-content code {
   background-color: #34312C;
   color: #ffffff; }
-
-.gridcontainer a,
-.entry-content a {
-  border-bottom: 4px solid #dfe1df;
-  box-shadow: inset 0 0px 0 #dfe1df;
-  text-decoration: none;
-  padding: 1px 2px;
-  -webkit-transition: box-shadow .5s ease-in-out;
-  -moz-transition: box-shadow .5s ease-in-out;
-  -ms-transition: box-shadow .5s ease-in-out;
-  -o-transition: box-shadow .5s ease-in-out;
-  transition: box-shadow .5s ease-in-out; }
-
-.gridcontainer a:hover,
-.entry-content a:hover {
-  color: #868786;
-  border-bottom: 4px solid #dfe1df;
-  box-shadow: inset 0 -30px 0 #dfe1df; }
 
 .gridcontainer.Black a,
 .gridcontainer.Red a {
@@ -3568,11 +3572,14 @@ ul.genesis-nav-menu li li {
 /* ## Entry Meta
 ---------------------------------------------------------------------- */
 p.entry-meta {
-  font-size: 16px;
-  font-size: 1.6rem;
-  line-height: 24px;
-  line-height: 2.4rem;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 22px;
+  line-height: 2.2rem;
   margin-bottom: 0; }
+  p.entry-meta a {
+    text-decoration: none;
+    font-weight: 600; }
 
 .entry-header .entry-meta {
   margin-bottom: 24px; }
@@ -3657,15 +3664,15 @@ p.entry-meta {
 .comment-respond,
 .entry-comments,
 .entry-pings {
-  background-color: #ffffff;
+  margin: 0 auto;
+  width: 90%;
   margin-bottom: 40px; }
 
-.comment-respond,
-.entry-pings {
-  padding: 40px 40px 16px; }
-
-.entry-comments {
-  padding: 40px; }
+.logged-in-as {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 22px;
+  line-height: 2.2rem; }
 
 .comment-header {
   font-size: 16px;
@@ -3673,18 +3680,23 @@ p.entry-meta {
   line-height: 24px;
   line-height: 2.4rem; }
 
-li.comment {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
-  border-right: 0; }
+.comment-form {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px; }
+
+.comment-form-comment textarea {
+  width: 100%; }
+
+.logged-in-as a:last-child {
+  float: right; }
 
 .comment-content {
   clear: both;
   word-wrap: break-word; }
 
 .comment-list li {
-  margin-top: 24px;
-  padding: 32px; }
+  margin-top: 24px; }
 
 .comment-list li li {
   margin-right: -32px; }
@@ -4443,6 +4455,9 @@ li.comment {
 ---------------------------------------------------------------------- */
   /* ## Genesis
 ---------------------------------------------------------------------- */
+  .archive-description,
+  .author-box {
+    max-width: 800px; }
   /* ## Titles
 ---------------------------------------------------------------------- */
   /* ## WordPress
@@ -4483,6 +4498,14 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
   /* ## Entries
 ---------------------------------------------------------------------- */
+  .archive .site-inner {
+    float: left;
+    margin-bottom: 40px; }
+  .content .post img {
+    float: left;
+    margin-right: 30px;
+    width: 48.125%;
+    margin-bottom: inherit; }
   /* ## Buttons
 ---------------------------------------------------------------------- */
   /* ## Entry Meta
@@ -4491,6 +4514,10 @@ li.comment {
 ---------------------------------------------------------------------- */
   /* ## Comments
 ---------------------------------------------------------------------- */
+  .comment-respond,
+  .entry-comments,
+  .entry-pings {
+    max-width: 800px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
   /* ## Case grid
@@ -5291,6 +5318,9 @@ li.comment {
 ---------------------------------------------------------------------- */
   /* ## Genesis
 ---------------------------------------------------------------------- */
+  .archive-description,
+  .author-box {
+    max-width: 920px; }
   /* ## Titles
 ---------------------------------------------------------------------- */
   /* ## WordPress
@@ -5337,11 +5367,8 @@ li.comment {
     display: flex; }
   .genesis-nav-menu .menu-item:hover {
     position: static; }
-  .genesis-nav-menu .menu-item:hover > .sub-menu {
-    left: auto;
-    margin-left: 10px;
-    opacity: 1; }
   .genesis-nav-menu.responsive-menu .sub-menu {
+    display: none;
     left: -9999px;
     opacity: 0;
     position: absolute;
@@ -5353,6 +5380,10 @@ li.comment {
     width: 300px;
     top: 59px;
     z-index: 99; }
+  .genesis-nav-menu .menu-item:hover > .sub-menu {
+    left: auto;
+    margin-left: 10px;
+    opacity: 1; }
   .genesis-nav-menu .sub-menu a {
     background-color: #dfe1df;
     padding: 20px 30px;
@@ -5402,18 +5433,20 @@ li.comment {
       .nav-secondary .wrap .genesis-nav-menu.responsive-menu .current-menu-item > a,
       .nav-secondary .wrap .genesis-nav-menu.responsive-menu a,
       .nav-secondary .wrap .genesis-nav-menu a {
-        padding: 10px 20px 10px 0; }
+        padding: 10px 25px 10px 0; }
       .nav-secondary .wrap .genesis-nav-menu.responsive-menu .menu-item-has-children a {
         padding: 10px 10px 10px 0; }
       .nav-secondary .wrap .genesis-nav-menu a:hover {
         color: #34312C;
-        padding: 10px 20px 10px 0; }
+        padding: 10px 25px 10px 0; }
       .nav-secondary .wrap .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
       .nav-secondary .wrap .genesis-nav-menu.responsive-menu .sub-menu li a:hover,
       .nav-secondary .wrap .genesis-nav-menu.responsive-menu .sub-menu a {
         padding: 15px; }
+  .nav-secondary .genesis-nav-menu.responsive-menu {
+    display: flex; }
   .nav-secondary .genesis-nav-menu.responsive-menu > .menu-item-has-children:after {
-    padding: 8px 10px 0px 0px; }
+    padding: 8px 25px 0px 0px; }
   .nav-secondary .genesis-nav-menu.responsive-menu .sub-menu {
     left: -9999px;
     opacity: 0;
@@ -5487,6 +5520,8 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
   /* ## Entries
 ---------------------------------------------------------------------- */
+  .content .post img {
+    width: 48.3695652174%; }
   /* ## Buttons
 ---------------------------------------------------------------------- */
   /* ## Entry Meta
@@ -5495,6 +5530,10 @@ li.comment {
 ---------------------------------------------------------------------- */
   /* ## Comments
 ---------------------------------------------------------------------- */
+  .comment-respond,
+  .entry-comments,
+  .entry-pings {
+    max-width: 920px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
   /* ## Case grid
@@ -6228,6 +6267,9 @@ li.comment {
 ---------------------------------------------------------------------- */
   /* ## Genesis
 ---------------------------------------------------------------------- */
+  .archive-description,
+  .author-box {
+    max-width: 1200px; }
   /* ## Titles
 ---------------------------------------------------------------------- */
   /* ## WordPress
@@ -6268,6 +6310,8 @@ li.comment {
 ---------------------------------------------------------------------------------------------------- */
   /* ## Entries
 ---------------------------------------------------------------------- */
+  .content .post img {
+    width: 48.75%; }
   /* ## Buttons
 ---------------------------------------------------------------------- */
   /* ## Entry Meta
@@ -6276,6 +6320,10 @@ li.comment {
 ---------------------------------------------------------------------- */
   /* ## Comments
 ---------------------------------------------------------------------- */
+  .comment-respond,
+  .entry-comments,
+  .entry-pings {
+    max-width: 1200px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
   /* ## Case grid

@@ -39,8 +39,8 @@ textarea:focus,
 }
 
 a {
-	color: $color-primary-one;
-	text-decoration: none;
+	color: $color-primary;
+	text-decoration: underline;
 	
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition:    all 0.2s ease-in-out;
@@ -51,7 +51,7 @@ a {
 
 a:hover,
 a:focus {
-	color: $color-black;
+	color: tint($color-primary, 40%);
 	text-decoration: none;
 }
 
@@ -149,6 +149,15 @@ h5 {
 
 h6 {
 	@include font(1.8, 2.6);
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+	text-decoration: none;
 }
 
 /* ## Objects

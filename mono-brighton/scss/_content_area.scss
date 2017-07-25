@@ -11,6 +11,22 @@
 .content .entry {
 }
 
+.content .post{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $color-black;
+	img{
+		margin-bottom: 20px;
+	}
+}
+.content .post:last-child{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.content .post .entry-footer {
+    clear: both;
+}
+
 .gridcontainer p:last-child,
 .entry-content p:last-child{
 	margin-bottom:0;
@@ -49,23 +65,12 @@
 
 .gridcontainer a,
 .entry-content a {
-	border-bottom: 4px solid $color-grey;
-    box-shadow: inset 0 0px 0 $color-grey;
-    text-decoration: none;
-	padding:1px 2px;
 	
-	-webkit-transition: box-shadow .5s ease-in-out;
-	-moz-transition:    box-shadow .5s ease-in-out;
-	-ms-transition:     box-shadow .5s ease-in-out;
-	-o-transition:      box-shadow .5s ease-in-out;
-	transition:         box-shadow .5s ease-in-out;
 }
 
 .gridcontainer a:hover,
 .entry-content a:hover {
-	color:shade( $color-grey, 40%);
-    border-bottom: 4px solid $color-grey;
-    box-shadow: inset 0 -30px 0 $color-grey;
+	
 }
 
 .gridcontainer.Black a,
@@ -299,8 +304,12 @@
 ---------------------------------------------------------------------- */
 
 p.entry-meta {
-	@include font(1.6, 2.4);
+	@include font(1.4, 2.2);
 	margin-bottom: 0;
+	a{
+		text-decoration: none;
+		font-weight: 600;
+	}
 }
 
 .entry-header .entry-meta {
@@ -394,27 +403,39 @@ p.entry-meta {
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	background-color: $color-white;
+	margin: 0 auto;
+	width: 90%;
 	margin-bottom: 40px;
 }
 
 .comment-respond,
 .entry-pings {
-	padding: 40px 40px 16px;
 }
 
 .entry-comments {
-	padding: 40px;
 }
-
+.logged-in-as{
+	@include font(1.4, 2.2);
+}
 .comment-header {
 	@include font(1.6, 2.4);
 }
+.comment-form{
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.comment-form-comment{
+	textarea{
+		width: 100%;
+	}
+}
+.logged-in-as a:last-child {
+    float: right;
+}
 
 li.comment {
-	background-color: $color-white;
-	border: 2px solid $color-white;
-	border-right: 0;
+	
 }
 
 .comment-content {
@@ -424,7 +445,6 @@ li.comment {
 
 .comment-list li {
 	margin-top: 24px;
-	padding: 32px;
 }
 
 .comment-list li li {
