@@ -3726,12 +3726,14 @@ p.entry-meta {
 
 /* ## Featured image
 ---------------------------------------------------------------------- */
-.featured-image .site-header {
-  margin-top: 0px;
+.featured-image .before-header {
   background-color: transparent; }
 
-.featured-image .site-header.dark {
-  margin-top: 0px; }
+.featured-image .site-header {
+  background-color: transparent; }
+
+.featured-image .nav-secondary {
+  background-color: transparent; }
 
 .featured-section {
   margin-top: 0px;
@@ -3748,29 +3750,11 @@ p.entry-meta {
   margin-top: 0px; }
 
 .image-section {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d1d1d0+0,ffffff+100&1+0,0+100 */
-  background: -moz-linear-gradient(top, rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d2029', endColorstr='#00ffffff',GradientType=0 );
-  /* IE6-9 */
-  /*
-    background: url(images/pattern_02.png) left top, linear-gradient(to bottom, rgba(0, 23, 35, 0.2) 0%, rgba(0, 23, 35, 0.5) 30%, rgba(0, 23, 35, 0.8) 80%, rgba(0, 23, 35, 0.9) 100%);
-
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0.9) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.2)), color-stop(30%,rgba(0,0,0,0.5)), color-stop(80%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0.9)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.5) 30%,rgba(0,0,0,0.8) 80%,rgba(0,0,0,0.9) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#e6000000',GradientType=0 );
-	overflow: hidden;
-	table-layout: fixed;
-	width: 100%;
-	*/ }
+  height: 50vh;
+  background: -webkit-linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
+  background: -o-linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
+  background: linear-gradient(rgba(29, 32, 41, 0.75) 0%, rgba(29, 32, 41, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d2029', endColorstr='#00ffffff',GradientType=0 ); }
 
 /* ## Case grid
 ---------------------------------------------------------------------- */
