@@ -35,7 +35,12 @@
 	float: left;
 	padding: 25px 0;
 	margin-left: 5%;
-	width: 200px;
+}
+.title-area p {
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
 }
 
 .header-full-width .title-area {
@@ -57,9 +62,6 @@
 
 .title-area .site-title > a {
     display: block;
-    background: url(images/monovoce_logo.svg) no-repeat left top;
-    width: 200px;
-    height: 24px;
     margin-bottom: 0px;
 	text-indent: -9999px;
 }
@@ -78,6 +80,14 @@
 .header-image .site-title {
 	display: block;
 	text-indent: -9999px;
+}
+
+.site-logo {
+    display: block;
+}
+#site-logo{
+	width: 206px;
+	height: 50px;
 }
 
 /* ## Widget Area

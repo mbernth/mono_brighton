@@ -8,6 +8,9 @@ include_once( get_stylesheet_directory() . '/lib/svg_icomoon.php' );
 //* Setup Theme
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 
+//* Setup custom header
+include_once( get_stylesheet_directory() . '/lib/custom-header.php' );
+
 //* Setup extended search to include ACF content
 // include_once( get_stylesheet_directory() . '/lib/custom-search-acf-wordpress.php' );
 

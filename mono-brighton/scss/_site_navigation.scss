@@ -8,6 +8,9 @@
 	position: static;
 }
 
+.genesis-nav-menu{
+	position: relative;
+}
 
 .genesis-nav-menu.responsive-menu .sub-menu {
 	display: none;
@@ -20,7 +23,6 @@
 	-o-transition:      opacity .4s ease-in-out;
 	transition:         opacity .4s ease-in-out;
 	width: 300px;
-	top: 59px;
 	z-index: 99;
 }
 .genesis-nav-menu .menu-item:hover > .sub-menu {
@@ -57,6 +59,17 @@
 
 /* ## Accessible Menu
 ---------------------------------------------------------------------- */
+
+.menu .menu-item:focus {
+	position: static;
+}
+
+.menu .menu-item > a:focus + ul.sub-menu,
+.menu .menu-item.sfHover > ul.sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
 /* ## Site Header Navigation
 ---------------------------------------------------------------------- */
 .site-header .sub-menu .sub-menu {
