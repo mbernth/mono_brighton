@@ -6,7 +6,7 @@
 	float: left;
 	width: 100%;
 	position:relative;
-	background-color: tint($color-black, 20%);
+	background-color: shade($color-primary, 60%);
 	@include font(1.0, 1.2);
 	font-weight:400;
 	color:$color-white;

@@ -23,16 +23,16 @@ function style_guide_add_body_class( $classes ) {
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
 //* Remove before header
-remove_action( 'genesis_before_header', 'monobrighton_before_header', 15 );
+// remove_action( 'genesis_before_header', 'monobrighton_before_header', 15 );
 
 // Remove secondary navigation
-remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 
 // Remove breadcrumbs
-remove_action('genesis_before_loop', 'genesis_do_breadcrumbs');
+// remove_action('genesis_before_loop', 'genesis_do_breadcrumbs');
 
 //* Remove site footer widgets
-remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+// remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 
 // Setup Swatches
 include_once( get_stylesheet_directory() . '/lib/swatches.php' );

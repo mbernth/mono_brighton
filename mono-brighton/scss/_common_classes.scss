@@ -25,6 +25,10 @@
 ---------------------------------------------------------------------- */
 
 .breadcrumb {
+	display: block;
+	float: left;
+	width: 100%;
+	background-color: $color-white;
 	margin-bottom: 20px;
 	@include font(1.4, 2.4);
 	[class^="icon-"]{
@@ -70,22 +74,24 @@
 
 .entry-title a,
 .sidebar .widget-title a {
-	color: $color-black;
+	color: $color-primary;
 	text-decoration:none;
 }
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: $color-black;
+	color: tint($color-primary, 20%);
 }
 
 .widget-title {
+	color: $color-black;
 	@include font(2.6, 2.6);
 	margin-bottom: 20px;
     margin-top: 6px;
 }
 
 .footer-widgets .widget-title {
+	color: $color-white;
 }
 
 /* ## WordPress

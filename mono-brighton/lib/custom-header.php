@@ -41,9 +41,9 @@ function sm_genesis_do_header() {
  <svg id="site-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 586.42 141.73">
   <defs>
     <style>
-      .cls-1 {fill: #262b53;}
+      .cls-1 {fill: #4A90E2;}
       .cls-2 {fill: #fff;}
-      .cls-3 {fill: #96222b;}
+      .cls-3 {fill: #D0021B;}
     </style>
   </defs>
   <title>brighton_logo</title>
