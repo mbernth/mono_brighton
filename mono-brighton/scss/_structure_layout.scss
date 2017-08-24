@@ -28,7 +28,12 @@
 		}
 	}
 }
-
+.sidebar-primary{
+	background-color:transparent;
+}
+.sidebar-secondary{
+	background-color:transparent;
+}
 /* ### Site Containers Full-width
 --------------------------------------------- */
 
@@ -93,12 +98,12 @@
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
 .gridcontainer.black{
-	background-color: $color-black;
+	background-color: shade($color-black, 40%);
 	color: $color-white;
 	.row_headline{
 		color: $color-white;
 	}
 }
 .gridcontainer.grey{
-	background-color: tint($color-black, 60%);
+	background-color: tint($color-black, 90%);
 }

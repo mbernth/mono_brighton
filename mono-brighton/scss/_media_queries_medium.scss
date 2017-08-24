@@ -1,13 +1,12 @@
 /* # Medium screens
----------------------------------------------------------------------------------------------------- */
-/* ## 64em / 1024 pixel
+----------------------------------------------------------------------------------------------------
 ---------------------------------------------
 ---------------------------------------------
 --------------------------------------------- */
 
 
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: $mq-medium) {
 
 @import "flexible_grids_fallback_medium";
 	
@@ -48,7 +47,6 @@
 		grid-template-columns:4fr 2fr;
 		grid-column-gap:30px;
 		grid-row-gap:30px;
-		margin-bottom: 30px;
 	}
 	.sidebar-content .site-inner .content-sidebar-wrap{
 		grid-template-columns:2fr 4fr;
@@ -67,7 +65,6 @@
 		grid-template-columns:5fr 1fr;
 		grid-column-gap:30px;
 		grid-row-gap:30px;
-		margin-bottom: 30px;
 		.content-sidebar-wrap{
 			display: grid;
 			grid-template-columns:3fr 1fr;

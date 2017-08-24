@@ -1,6 +1,5 @@
 /* # Large screens
----------------------------------------------------------------------------------------------------- */
-/* ## 80em / 1280 pixel
+----------------------------------------------------------------------------------------------------
 ---------------------------------------------
 ---------------------------------------------
 --------------------------------------------- */
@@ -14,68 +13,68 @@
 .content-sidebar .site-inner{
 	.content-sidebar-wrap{
 		float: left;
-		margin-bottom: 30px;
+		margin-bottom: $margin-large+px;
 		.content{
 			float: left;
-			@include structure(780, 1200);
+			@include structure($content-cs-large, $target-large);
 			.gridcontainer.coll2 section{
 				float: left;
-				@include grid(2, 30, 780);
+				@include grid(2, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll3 section{
 				float: left;
-				@include grid(3, 30, 780);
+				@include grid(3, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll4 section{
 				float: left;
-				@include grid(2, 30, 780);
+				@include grid(2, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll5 section{
 				float: left;
-				@include grid(2, 30, 780);
+				@include grid(2, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll6 section{
 				float: left;
-				@include grid(4, 30, 780);
+				@include grid(4, $margin-large, $content-cs-large);
 			}
 		}
 		.sidebar-primary{
 			float: right;
-			@include structure(390, 1200);
+			@include structure($sidebar-p-cs-large, $target-large);
 		}
 	}
 }
 .sidebar-content .site-inner{
 	.content-sidebar-wrap{
 		float: left;
-		margin-bottom: 30px;
+		margin-bottom: $margin-large+px;
 		.content{
 			float: right;
-			@include structure(780, 1200);
+			@include structure($content-cs-large, $target-large);
 			.gridcontainer.coll2 section{
 				float: left;
-				@include grid(2, 30, 780);
+				@include grid(2, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll3 section{
 				float: left;
-				@include grid(3, 30, 780);
+				@include grid(3, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll4 section{
 				float: left;
-				@include grid(2, 30, 780);
+				@include grid(2, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll5 section{
 				float: left;
-				@include grid(2, 30, 780);
+				@include grid(2, $margin-large, $content-cs-large);
 			}
 			.gridcontainer.coll6 section{
 				float: left;
-				@include grid(4, 30, 780);
+				@include grid(4, $margin-large, $content-cs-large);
 			}
 		}
 		.sidebar-primary{
 			float: left;
-			@include structure(390, 1200);
+			@include structure($sidebar-p-cs-large, $target-large);
 		}
 	}
 }
@@ -83,125 +82,125 @@
 .content-sidebar-sidebar .site-inner{
 	.content-sidebar-wrap{
 		float: left;
-		margin-bottom: 30px;
-		@include structure(975, 1200);
+		margin-bottom: $margin-large+px;
+		@include structure($contentwrap-css-large, $target-large);
 		.content{
 			float: left;
-			@include structure(709, 975);
+			@include structure($content-css-large, $contentwrap-css-large);
 			.gridcontainer.coll2 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll3 section{
 				float: left;
-				@include grid(3, 30, 709);
+				@include grid(3, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll4 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll5 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll6 section{
 				float: left;
-				@include grid(4, 30, 709);
+				@include grid(4, $margin-large, $content-css-large);
 			}
 		}
 		.sidebar-primary{
 			float: right;
-			@include structure(236, 975);
+			@include structure($sidebar-p-css-large, $contentwrap-css-large);
 		}
 	}
 	.sidebar-secondary{
 		float: right;
 		margin-top: 0px;
-		@include structure(195, 1200);
-		margin-bottom: 30px;
+		@include structure($sidebar-s-css-large, $target-large);
+		margin-bottom: $margin-large+px;
 	}
 }
 .sidebar-sidebar-content .site-inner{
 	.content-sidebar-wrap{
 		float: right;
-		margin-bottom: 30px;
-		@include structure(975, 1200);
+		margin-bottom: $margin-large+px;
+		@include structure($contentwrap-css-large, $target-large);
 		.content{
 			float: right;
-			@include structure(709, 975);
+			@include structure($content-css-large, $contentwrap-css-large);
 			.gridcontainer.coll2 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll3 section{
 				float: left;
-				@include grid(3, 30, 709);
+				@include grid(3, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll4 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll5 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll6 section{
 				float: left;
-				@include grid(4, 30, 709);
+				@include grid(4, $margin-large, $content-css-large);
 			}
 		}
 		.sidebar-primary{
 			float: left;
-			@include structure(178, 975);
+			@include structure($sidebar-p-css-large, $contentwrap-css-large);
 		}
 	}
 	.sidebar-secondary{
 		float: left;
 		margin-top: 0px;
-		@include structure(195, 1200);
-		margin-bottom: 30px;
+		@include structure($sidebar-s-css-large, $target-large);
+		margin-bottom: $margin-large+px;
 	}
 }
 
 .sidebar-content-sidebar .site-inner{
 	.content-sidebar-wrap{
 		float: right;
-		margin-bottom: 30px;
-		@include structure(975, 1200);
+		margin-bottom: $margin-large+px;
+		@include structure($contentwrap-css-large, $target-large);
 		.content{
 			float: left;
-			@include structure(709, 975);
+			@include structure($content-css-large, $contentwrap-css-large);
 			.gridcontainer.coll2 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll3 section{
 				float: left;
-				@include grid(3, 30, 709);
+				@include grid(3, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll4 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll5 section{
 				float: left;
-				@include grid(2, 30, 709);
+				@include grid(2, $margin-large, $content-css-large);
 			}
 			.gridcontainer.coll6 section{
 				float: left;
-				@include grid(4, 30, 709);
+				@include grid(4, $margin-large, $content-css-large);
 			}
 		}
 		.sidebar-primary{
 			float: right;
-			@include structure(178, 975);
+			@include structure($sidebar-p-css-large, $contentwrap-css-large);
 		}
 	}
 	.sidebar-secondary{
 		float: left;
 		margin-top: 0px;
-		@include structure(195, 1200);
-		margin-bottom: 30px;
+		@include structure($sidebar-s-css-large, $target-large);
+		margin-bottom: $margin-large+px;
 	}
 }
 
@@ -236,7 +235,7 @@
 			.gridcontainer.coll5 section,
 			.gridcontainer.coll6 section{
 				float: inherit;
-				@include grid(1, 0, 593);
+				@include grid(1, $margin-zero, $content-cs-large);
 			}
 		}
 		.sidebar-primary{
@@ -251,6 +250,7 @@
 	.content-sidebar-wrap{
 		float: inherit;
 		width: auto;
+		margin-bottom: 0px;
 		.content{
 			float: inherit;
 			width: auto;
@@ -260,7 +260,7 @@
 			.gridcontainer.coll5 section,
 			.gridcontainer.coll6 section{
 				float: inherit;
-				@include grid(1, 0, 709);
+				@include grid(1, $margin-zero, $content-css-large);
 			}
 		}
 		.sidebar-primary{
@@ -283,28 +283,28 @@
 ---------------------------------------------------------------------- */
 .full-width-content .content .gridcontainer.coll2 section{
 	float:left;
-	margin-bottom:30px;
-	@include grid(2, 30, 1200);
+	margin-bottom:$margin-large+px;
+	@include grid(2, $margin-large, $target-large);
 }
 .full-width-content .content .gridcontainer.coll3 section{
 	float:left;
-	margin-bottom:30px;
-	@include grid(3, 30, 1200);
+	margin-bottom:$margin-large+px;
+	@include grid(3, $margin-large, $target-large);
 }
 .full-width-content .content .gridcontainer.coll4 section{
 	float:left;
-	margin-bottom:30px;
-	@include grid(4, 30, 1200);
+	margin-bottom:$margin-large+px;
+	@include grid(4, $margin-large, $target-large);
 }
 .full-width-content .content .gridcontainer.coll5 section{
 	float:left;
-	margin-bottom:30px;
-	@include grid(5, 30, 1200);
+	margin-bottom:$margin-large+px;
+	@include grid(5, $margin-large, $target-large);
 }
 .full-width-content .content .gridcontainer.coll6 section{
 	float:left;
-	margin-bottom:30px;
-	@include grid(6, 30, 1200);
+	margin-bottom:$margin-large+px;
+	@include grid(6, $margin-large, $target-large);
 }
 .full-width-content .content .gridcontainer.non.coll1 section,
 .full-width-content .content .gridcontainer.non.coll2 section,
@@ -323,20 +323,20 @@
 }
 
 .content .gridcontainer.non.coll2 section{
-	@include grid(2, 0, 1200);
+	@include grid(2, $margin-zero, $target-large);
 }
 .content .gridcontainer.non.coll3 section {
-	@include grid(3, 0, 1200);
+	@include grid(3, $margin-zero, $target-large);
 }
 
 .content .gridcontainer.non.coll4 section {
-	@include grid(4, 0, 1200);
+	@include grid(4, $margin-zero, $target-large);
 }
 .content .gridcontainer.non.coll5 section {
-	@include grid(5, 0, 1200);
+	@include grid(5, $margin-zero, $target-large);
 }
 .content .gridcontainer.non.coll6 section {
-	@include grid(6, 0, 1200);
+	@include grid(6, $margin-zero, $target-large);
 }
 
 .content .gridcontainer.non .wrap section.wysiwyg,
@@ -370,7 +370,7 @@
 .content .gridcontainer.non.coll6 section{
 	float:inherit;
 	margin-bottom:inherit;
-	@include grid(1, 0, 1200);
+	@include grid(1, $margin-zero, $target-large);
 }
 .content .gridcontainer.non .wrap section.wysiwyg,
 .full-width-content .content .gridcontainer.non .wrap section.wysiwyg {
@@ -421,8 +421,8 @@
 /* Grid fallback */
 .footer-widgets .wrap .widget-area{
 	float: left;
-	@include grid(4, 30, 1200);
-	margin-bottom: 30px;
+	@include grid(4, $margin-large, $target-large);
+	margin-bottom: $margin-large+px;
 }
 /* Grid fallback end */
 	
@@ -431,7 +431,7 @@
 /* Grid fallback reset */
 .footer-widgets .wrap .widget-area{
 	float: none;
-	@include grid(1, 0, 1200);
+	@include grid(1, $margin-zero, $target-large);
 	margin-bottom: inherit;
 }
 /* Grid fallback reset end */

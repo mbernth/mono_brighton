@@ -12,20 +12,20 @@
 /* Grid fallback */
 .footer-widgets .wrap .widget-area{
 	float: left;
-	@include grid(2, 30, 800);
-	margin-bottom: 30px;
+	@include grid(2, $margin-small, $target-small);
+	margin-bottom: $margin-small+px;
 }
 /* Grid fallback end */
 	
 @supports (display: grid) {
 	
-/* Grid fallback reset */
-.footer-widgets .wrap .widget-area{
-	float: none;
-	@include grid(1, 0, 800);
-	margin-bottom: inherit;
-}
-/* Grid fallback reset end */	
+	/* Grid fallback reset */
+	.footer-widgets .wrap .widget-area{
+		float: none;
+		@include grid(1, $margin-zero, $target-small);
+		margin-bottom: inherit;
+	}
+	/* Grid fallback reset end */	
 
 }
 /* ## Social Icons

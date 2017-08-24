@@ -122,6 +122,58 @@ p.standard {
 	background-image: linear-gradient($from, $to);
 }
 
+/* ## Media Queries
+--------------------------------------------- */
+$mq-small: 55.625em; /* 890 pixel */
+$mq-medium: 64em; /* 1024 pixel */
+$mq-large: 80em; /* 1280 pixel */
+
+/* ## Site Structure
+--------------------------------------------- */
+
+/* Full width content target
+--------------------------------------------- */
+$target-default: 320;
+$target-small: 800;
+$target-medium: 920;
+$target-large: 1200;
+
+/* Margins */
+$margin-zero: 0;
+$margin-default: 30;
+$margin-small: 30;
+$margin-medium: 30;
+$margin-large: 30;
+
+/* Content Sidebar, Sidebar Content
+--------------------------------------------- */
+/* Content */
+$content-cs-medium: 593;
+$content-cs-large: 780;
+
+/* Primary Sidebar */
+$sidebar-p-cs-medium: 297;
+$sidebar-p-cs-large: 390;
+
+/* Sidebar Sidebar, Sidebar Sidebar Content
+--------------------------------------------- */
+
+/* Content Wrap */
+$contentwrap-css-medium: 742;
+$contentwrap-css-large: 975;
+
+/* Content */
+$content-css-medium: 534;
+$content-css-large: 709;
+
+/* Primary Sidebar */
+$sidebar-p-css-medium: 178;
+$sidebar-p-css-large: 236;
+
+/* Secondary Sidebar */
+$sidebar-s-css-medium: 148;
+$sidebar-s-css-large: 195;
+
 /* ## Grid
 --------------------------------------------- */
 
