@@ -80,7 +80,7 @@
 }
 
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item a{
-	background-color:$color-grey;
+	background-color:tint($color-black, 80%);
 	color:$color-black;
 }
 

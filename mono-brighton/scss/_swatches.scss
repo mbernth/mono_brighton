@@ -3,12 +3,22 @@
 
 .swatches{
 	display: grid;
-	grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-columns:repeat(1, 1fr);
 	grid-column-gap:30px;
 	grid-row-gap:30px;
 	padding: 30px;
 	box-shadow: 0px 0px 5px tint($color-black, 80%);
 	margin-bottom: 30px;
+}
+@media only screen and (min-width: $mq-small) {
+	.swatches{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+@media only screen and (min-width: $mq-medium) {
+	.swatches{
+		grid-template-columns:repeat(4, 1fr);
+	}
 }
 .entry-content ul[class*="swatch"]{
 	display: flex;
@@ -26,6 +36,8 @@
 	height: 40px;
 	list-style-type: none;
 }
+
+/*
 .swatch-row-one:nth-child(1){
 	padding: 4px 0;
 	line-height: 1em;
@@ -49,32 +61,20 @@
 	grid-row-end: 2;
 }
 .swatch-primary{
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 3;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
 }
 .swatch-secondary{
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 2;
-	grid-row-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
 }
 .swatch-active{
 	grid-column-start: 1;
 	grid-column-end: 2;
-	grid-row-start: 3;
-	grid-row-end: 4;
-}
-.swatch-succes{
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 3;
-	grid-row-end: 4;
-}
-.swatch-alert{
-	grid-column-start: 3;
-	grid-column-end: 4;
 	grid-row-start: 3;
 	grid-row-end: 4;
 }
@@ -96,7 +96,7 @@
 	grid-row-start: 4;
 	grid-row-end: 5;
 }
-
+*/
 /* # Black Colour */
 /* ## Lighter
 ================================================ */
@@ -345,103 +345,6 @@
   background-color: shade($color-active, 80%);
 }
 
-/*  Succes Colour  */
-/* ## Lighter
-================================================ */
-.swatch-succes .swatch-row-one:nth-child(1) {
-  	background-color: transparent;
-	width: 100%;
-	text-align: left;
-	height: auto;
-}
-.swatch-succes .swatch-row-one:nth-child(2) {
-  	background-color: $color-succes;
-	margin-bottom: 10px;
-	height: 100px;
-	width: 100%;
-	box-shadow: 0px 5px 5px tint($color-black, 90%);
-}
-.swatch-succes .swatch-row-one:nth-child(3) {
-  background-color: $color-succes;
-}
-.swatch-succes .swatch-row-one:nth-child(4) {
-  background-color: tint($color-succes, 20%);
-}
-.swatch-succes .swatch-row-one:nth-child(5) {
-  background-color: tint($color-succes, 40%);
-}
-.swatch-succes .swatch-row-one:nth-child(6) {
-  background-color: tint($color-succes, 60%);
-}
-.swatch-succes .swatch-row-one:nth-child(7) {
-  background-color: tint($color-succes, 80%);
-}
-/* ## Darker
-================================================ */
-.swatch-succes .swatch-row-two:nth-child(8) {
-  background-color: $color-succes;
-}
-.swatch-succes .swatch-row-two:nth-child(9) {
-  background-color: shade($color-succes, 20%);
-}
-.swatch-succes .swatch-row-two:nth-child(10) {
-  background-color: shade($color-succes, 40%);
-}
-.swatch-succes .swatch-row-two:nth-child(11) {
-  background-color: shade($color-succes, 60%);
-}
-.swatch-succes .swatch-row-two:nth-child(12) {
-  background-color: shade($color-succes, 80%);
-}
-
-/*  Alert Colour  */
-/* ## Lighter
-================================================ */
-.swatch-alert .swatch-row-one:nth-child(1) {
-  	background-color: transparent;
-	width: 100%;
-	text-align: left;
-	height: auto;
-}
-.swatch-alert .swatch-row-one:nth-child(2) {
-  	background-color: $color-alert;
-	margin-bottom: 10px;
-	height: 100px;
-	width: 100%;
-	box-shadow: 0px 5px 5px tint($color-black, 90%);
-}
-.swatch-alert .swatch-row-one:nth-child(3) {
-  background-color: $color-alert;
-}
-.swatch-alert .swatch-row-one:nth-child(4) {
-  background-color: tint($color-alert, 20%);
-}
-.swatch-alert .swatch-row-one:nth-child(5) {
-  background-color: tint($color-alert, 40%);
-}
-.swatch-alert .swatch-row-one:nth-child(6) {
-  background-color: tint($color-alert, 60%);
-}
-.swatch-alert .swatch-row-one:nth-child(7) {
-  background-color: tint($color-alert, 80%);
-}
-/* ## Darker
-================================================ */
-.swatch-alert .swatch-row-two:nth-child(8) {
-  background-color: $color-alert;
-}
-.swatch-alert .swatch-row-two:nth-child(9) {
-  background-color: shade($color-alert, 20%);
-}
-.swatch-alert .swatch-row-two:nth-child(10) {
-  background-color: shade($color-alert, 40%);
-}
-.swatch-alert .swatch-row-two:nth-child(11) {
-  background-color: shade($color-alert, 60%);
-}
-.swatch-alert .swatch-row-two:nth-child(12) {
-  background-color: shade($color-alert, 80%);
-}
 
 /*  Accent 1 Colour  */
 /* ## Lighter

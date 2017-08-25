@@ -79,7 +79,7 @@ html>body .entry ul {
     margin-left: 0!important;
     list-style: none!important;
     overflow: visible;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 
 .gform_wrapper ul li.gfield {
@@ -239,14 +239,14 @@ html>body .entry ul {
 
 .gform_wrapper .ginput_complex .ginput_left,
 .gform_wrapper .ginput_complex .ginput_right {
-    width: 48.5%;
+    width: 50%;
     display: -moz-inline-stack;
     display: inline-block;
     vertical-align: top
 }
 
 .gform_wrapper .ginput_complex .ginput_right {
-    margin-left: 1.6%
+    padding-left: 30px;
 }
 
 .gform_wrapper .gfield_error .ginput_complex .ginput_left,
@@ -340,7 +340,7 @@ html>body .entry ul {
 .gform_wrapper .ginput_complex.ginput_container.no_first_name.has_middle_name.has_last_name span {
     display: -moz-inline-stack;
     display: inline-block;
-    width: 100%;
+    width: 50%;
     vertical-align: top
 }
 
@@ -425,7 +425,7 @@ body .gform_wrapper label.gfield_label+div.ginput_container {
 
 .gform_wrapper .top_label input.medium,
 .gform_wrapper .top_label select.medium {
-    width: 47.5%
+    width: 50%;
 }
 
 .gform_wrapper .hidden_label input.large,
@@ -873,7 +873,9 @@ div.gf_page_steps+div.validation_error {
 .gform_wrapper .ginput_complex .ginput_right {
     min-height: 2.813em
 }
-
+.gform_wrapper .ginput_complex .ginput_full{
+	width: 100%;
+}
 .gform_wrapper .ginput_complex .ginput_full input[type=email],
 .gform_wrapper .ginput_complex .ginput_full input[type=number],
 .gform_wrapper .ginput_complex .ginput_full input[type=password],
@@ -2289,6 +2291,7 @@ body .gform_wrapper img.delete_list_item {
 
 .ginput_complex{
 	display: flex;
+	flex-flow: wrap;
 	justify-content: space-between;
 }
 
@@ -2341,7 +2344,7 @@ div.ginput_complex.ginput_container.gf_name_has_5 span:first-child {
 .ui-datepicker {
     width: 216px;
     height: auto;
-    margin: 5px auto 0;
+    margin: 0px auto 0;
     font: 9pt Arial, sans-serif;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
     -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);

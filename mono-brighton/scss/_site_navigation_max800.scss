@@ -34,9 +34,9 @@ ul.genesis-nav-menu li{
 ul.genesis-nav-menu li:last-child{
 }
 ul.genesis-nav-menu li li{
-	background-color: $color-grey;
+	background-color: tint($color-black, 60%);
 	li{
-		background-color: tint($color-grey, 60%);
+		background-color: tint($color-black, 40%);
 	}
 }
 	

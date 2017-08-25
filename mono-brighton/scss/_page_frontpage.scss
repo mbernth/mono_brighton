@@ -20,7 +20,7 @@
 
 .home-section .site-header.dark {
 	margin-top:0px;
-	background-color: $color-primary-one;
+	background-color: $color-primary;
 }
 
 /* # Slider
@@ -38,7 +38,7 @@
 
 .slide_content h2,
 .slide_content h3 {
-	color:$color-grey;
+	color:$color-black;
 }
 
 .full-width-content .gridcontainer.fullscreen.Black {
@@ -47,7 +47,7 @@
 
 .full-width-content .gridcontainer.fullscreen.Black .slide_content h1 {
 	@include font(7.8, 7.8);
-	color:$color-primary-two;
+	color:$color-primary;
 	text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.5);
 }
 .slide_content h2{
@@ -66,7 +66,7 @@
 }
 
 .full-width-content .gridcontainer.fullscreen.Black .slide_content .button {
-    background-color: shade($color-primary-three, 20%);
+    background-color: shade($color-primary, 20%);
     color: $color-white;
 	text-transform:uppercase;
 }

@@ -14,10 +14,6 @@ function mono_swatches() {
 	$secondary_rgb = get_field( 'secondary_colour_rgb' );
 	$active = get_field( 'active_colour' );
 	$active_rgb = get_field( 'active_colour_rgb' );
-	$succes = get_field( 'succes_colour' );
-	$succes_rgb = get_field( 'succes_colour_rgb' );
-	$alert = get_field( 'alert_colour' );
-	$alert_rgb = get_field( 'alert_colour_rgb' );
 	$accent_one = get_field( 'accent_1_colour' );
 	$accent_one_rgb = get_field( 'accent_1_colour_rgb' );
 	$accent_two = get_field( 'accent_2_colour' );
@@ -93,7 +89,7 @@ function mono_swatches() {
 		</ul>
 		
 		<ul class="swatch-active">
-			<li class="swatch-row-one"><h6>Active</h6>HEX: #'.$active.'<br>RGB: '.$active_rgb.'</li>
+			<li class="swatch-row-one"><h6>Active</h6><p><em>Active/Focuced</em></p>HEX: #'.$active.'<br>RGB: '.$active_rgb.'</li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>
@@ -108,40 +104,10 @@ function mono_swatches() {
 			<li class="swatch-row-two"></li>
 		</ul>
 		
-		<ul class="swatch-succes">
-			<li class="swatch-row-one"><h6>Succes</h6>HEX: #'.$succes.'<br>RGB: '.$succes_rgb.'</li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-		</ul>
 		
-		<ul class="swatch-alert">
-			<li class="swatch-row-one"><h6>Alert</h6>HEX: #'.$alert.'<br>RGB: '.$alert_rgb.'</li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			<li class="swatch-row-one"></li>
-			
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-			<li class="swatch-row-two"></li>
-		</ul>
 		
 		<ul class="swatch-accent-one">
-			<li class="swatch-row-one"><h6>Accent 1</h6>HEX: #'.$accent_one.'<br>RGB: '.$accent_one_rgb.'</li>
+			<li class="swatch-row-one"><h6>Accent 1</h6><p><em>Succes</em></p>HEX: #'.$accent_one.'<br>RGB: '.$accent_one_rgb.'</li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>
@@ -157,7 +123,7 @@ function mono_swatches() {
 		</ul>
 		
 		<ul class="swatch-accent-two">
-			<li class="swatch-row-one"><h6>Accent 2</h6>HEX: #'.$accent_two.'<br>RGB: '.$accent_two_rgb.'</li>
+			<li class="swatch-row-one"><h6>Accent 2</h6><p><em>Warning</em></p>HEX: #'.$accent_two.'<br>RGB: '.$accent_two_rgb.'</li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>
@@ -173,7 +139,7 @@ function mono_swatches() {
 		</ul>
 		
 		<ul class="swatch-accent-three">
-			<li class="swatch-row-one"><h6>Accent 3</h6>HEX: #'.$accent_three.'<br>RGB: '.$accent_three_rgb.'</li>
+			<li class="swatch-row-one"><h6>Accent 3</h6><p><em>Error/Alert</em></p>HEX: #'.$accent_three.'<br>RGB: '.$accent_three_rgb.'</li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>
 			<li class="swatch-row-one"></li>

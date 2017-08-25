@@ -108,7 +108,7 @@ blockquote::before {
 	left: -50px;
 	position: relative;
 	top: 30px;
-	color:shade($color-grey, 40%);
+	color:$color-black;
 }
 
 
@@ -341,7 +341,7 @@ input:focus[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-	background-color: $color-primary-one;
+	background-color: $color-primary;
 	color: $color-white;
 }
 
