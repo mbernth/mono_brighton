@@ -2557,8 +2557,7 @@ th {
   .gridcontainer .wrap {
     display: -ms-grid;
     display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px; }
+    grid-gap: 30px; }
   .gridcontainer.non {
     padding: 0; }
     .gridcontainer.non .row_headline {
@@ -2566,8 +2565,7 @@ th {
     .gridcontainer.non .wrap {
       display: -ms-grid;
       display: grid;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px; }
+      grid-gap: 0px; }
   .gridcontainer.coll1 .wrap {
     grid-template-columns: 1fr; }
   .gridcontainer.coll2 .wrap {
@@ -5661,21 +5659,29 @@ p.entry-meta {
   background-color: #3b73b5;
   text-decoration: none; }
 
+.archive-pagination li a:hover,
+.archive-pagination li.pagination-previous a:hover,
+.archive-pagination li.pagination-next a:hover {
+  box-shadow: 0px 5px 3px 0px rgba(14, 28, 45, 0.25); }
+
 .archive-pagination li.pagination-previous a,
 .archive-pagination li.pagination-next a {
   background-color: #4A90E2;
-  color: #0E1C2D;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 24px;
   line-height: 2.4rem;
-  padding: 22px;
+  padding: 20px;
   width: 60px;
   text-decoration: none;
-  bottom: -3px;
+  bottom: -6px;
   position: relative; }
+  .archive-pagination li.pagination-previous a [class^="icon-"],
+  .archive-pagination li.pagination-next a [class^="icon-"] {
+    color: #ffffff; }
 
 .archive-pagination li.pagination-previous a .icon-arrow-left7,
 .archive-pagination li.pagination-next a .icon-untitled2 {

@@ -199,19 +199,27 @@ p.entry-meta {
 	background-color: shade($color-primary, 20%);
 	text-decoration: none;
 }
+.archive-pagination li a:hover,
+.archive-pagination li.pagination-previous a:hover,
+.archive-pagination li.pagination-next a:hover{
+	box-shadow: 0px 5px 3px 0px rgba(14, 28, 45, 0.25);
+}
 
 .archive-pagination li.pagination-previous a,
 .archive-pagination li.pagination-next a{
 	background-color: $color-primary;
-	color: $color-black;
+	color: $color-white;
 	cursor: pointer;
 	display: inline-block;
 	@include font(1.6, 2.4);
-	padding: 22px;
+	padding: 20px;
 	width:60px;
 	text-decoration: none;
-	bottom: -3px;
+	bottom: -6px;
     position: relative;
+	[class^="icon-"]{
+		color: $color-white;
+	}
 }
 
 .archive-pagination li.pagination-previous a .icon-arrow-left7,

@@ -221,3 +221,18 @@ include_once( get_stylesheet_directory() . '/lib/flexible_grids_content.php' );
 
 // Enables the confirmation anchor on all forms
 add_filter( 'gform_confirmation_anchor', '__return_true' );
+
+
+//* Post archive page
+// =====================================================================================================================
+
+//* Customize the next page link
+add_filter ( 'genesis_next_link_text' , 'sp_next_page_link' );
+function sp_next_page_link ( $text ) {
+    return '<svg class="icon-arrow-right5"><use xlink:href="#icon-arrow-right5"></use></svg>';
+}
+//* Customize the previous page link
+add_filter ( 'genesis_prev_link_text' , 'sp_previous_page_link' );
+function sp_previous_page_link ( $text ) {
+    return '<svg class="icon-arrow-left5"><use xlink:href="#icon-arrow-left5"></use></svg>';
+}

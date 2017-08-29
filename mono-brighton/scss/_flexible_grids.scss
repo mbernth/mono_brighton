@@ -16,8 +16,7 @@
 	.wrap{
 		display: -ms-grid;
 		display: grid;
-		grid-column-gap:30px;
-		grid-row-gap:30px;
+		grid-gap:30px;
 	}
 }
 .gridcontainer.non{
@@ -28,8 +27,7 @@
 	.wrap{
 		display: -ms-grid;
 		display: grid;
-		grid-column-gap:0px;
-		grid-row-gap:0px;
+		grid-gap:0px;
 	}
 }
 .gridcontainer.coll1{
