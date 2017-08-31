@@ -34,6 +34,48 @@
 .sidebar-secondary{
 	background-color:transparent;
 }
+
+@supports (display: grid) {
+	.site-container{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"before-header"
+			"site-header"
+			"nav-secondary"
+			"nav-secondary"
+			"breadcrumb"
+			"site-inner"
+			"footer-widgets"
+			"site-footer"
+			;
+		.bgenesis-skip-link{
+			grid-area:genesis-skip-link;
+		}
+		.before-header{
+			grid-area:before-header;
+		}
+		.site-header{
+			grid-area:site-header;
+		}
+		.nav-secondary{
+			grid-area:nav-secondary;
+		}
+		.breadcrumb{
+			grid-area:breadcrumb;
+		}
+		.site-inner{
+			grid-area:site-inner;
+		}
+		.footer-widgets{
+			grid-area:footer-widgets;
+		}
+		.site-footer{
+			grid-area:site-footer;
+		}
+	}
+}
+
 /* ### Site Containers Full-width
 --------------------------------------------- */
 

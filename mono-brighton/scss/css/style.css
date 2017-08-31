@@ -2366,6 +2366,28 @@ th {
 .sidebar-secondary {
   background-color: transparent; }
 
+@supports (display: grid) {
+  .site-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "before-header" "site-header" "nav-secondary" "nav-secondary" "breadcrumb" "site-inner" "footer-widgets" "site-footer"; }
+    .site-container .bgenesis-skip-link {
+      grid-area: genesis-skip-link; }
+    .site-container .before-header {
+      grid-area: before-header; }
+    .site-container .site-header {
+      grid-area: site-header; }
+    .site-container .nav-secondary {
+      grid-area: nav-secondary; }
+    .site-container .breadcrumb {
+      grid-area: breadcrumb; }
+    .site-container .site-inner {
+      grid-area: site-inner; }
+    .site-container .footer-widgets {
+      grid-area: footer-widgets; }
+    .site-container .site-footer {
+      grid-area: site-footer; } }
+
 /* ### Site Containers Full-width
 --------------------------------------------- */
 .full-width-content .site-inner {
