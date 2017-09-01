@@ -2370,8 +2370,8 @@ th {
   .site-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "before-header" "site-header" "nav-secondary" "nav-secondary" "breadcrumb" "site-inner" "footer-widgets" "site-footer"; }
-    .site-container .bgenesis-skip-link {
+    grid-template-areas: "before-header" "site-header" "nav-secondary" "breadcrumb" "site-inner" "footer-widgets" "site-footer"; }
+    .site-container .genesis-skip-link {
       grid-area: genesis-skip-link; }
     .site-container .before-header {
       grid-area: before-header; }
