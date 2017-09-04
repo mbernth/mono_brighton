@@ -21,8 +21,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "reset";
 
 /*
-# Mixins
+# Variables
 	## Colours
+	## Typography
+	## Media Queries
+	## Site Structure
+*/
+	@import "variables";
+/*
+# Mixins
 	## Typography
 	## Border Radius
 	## Gradients

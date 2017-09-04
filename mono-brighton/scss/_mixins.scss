@@ -1,50 +1,8 @@
 /* # MIXINS
 ---------------------------------------------------------------------------------------------------- */
 
-/* ## Colours
---------------------------------------------- */
-
-/* White */
-$color-white: #ffffff;
-$color-black_rgb: rgba(255, 255, 255, 1) ; /* White */
-
-/* Black */
-$color-black: #0E1C2D; /* Black */
-$color-black_rgb: rgba(14, 28, 45, 1); /* Black */
-
-/* Primary */
-$color-primary: #4A90E2; /* Colour */
-$color-primary_rgb: rgba(74, 144, 226, 1) ; /* Colour */
-
-/* Secondary */
-$color-secondary: #00D3A7; /* Colour */
-$color-secondary_rgb: rgba(0, 211, 167, 1) ; /* Colour */
-
-/* Active - Active/Focuced*/
-$color-active: #4A90E2; /* Colour */
-$color-active_rgb: rgba(74, 144, 226, 1) ; /* Colour */
-
-/* Accent 1 - Succes */
-$color-accent-one: #00D3A7; /* Colour */
-$color-accent-one_rgb: rgba(208, 2, 27, 1) ; /* Colour */
-
-/* Accent 2 - Warning */
-$color-accent-two: #FF4000; /* Colour */
-$color-accent-two_rgb: rgba(255, 64, 0, 1) ; /* Colour */
-
-/* Accent 3 - Error/Alert */
-$color-accent-three: #D0021B; /* Colour */
-$color-accent-three_rgb: rgba(208, 2, 27, 1) ; /* Colour */
-
-
 /* ## Typography
---------------------------------------------- */
-
-/* Primary Font Faminly */
-$font-bread: 'Montserrat', Helvetica, Arial, sans-serif;
-$font-headlines: 'Montserrat', Helvetica, Arial, sans-serif;
-
-/* $font-headlines: CelesteWeb-Book, sans-serif; */
+---------------------------------------------------------------------- */
 
 /* Basic Font Sizes mixin */
 @mixin font-size($sizeValue: 1.6) {
@@ -69,7 +27,7 @@ p.standard {
 }
 
 /* ## Border Radius
---------------------------------------------- */
+---------------------------------------------------------------------- */
 
 @mixin corners($radius){
 	-webkit-border-radius: $radius + px;
@@ -78,7 +36,7 @@ p.standard {
 }
 
 /* ## Gradients
---------------------------------------------- */
+---------------------------------------------------------------------- */
 
 @mixin linear-gradient($from, $to) {
 	/* Fallback for sad browsers */
@@ -97,60 +55,8 @@ p.standard {
 	background-image: linear-gradient($from, $to);
 }
 
-/* ## Media Queries
---------------------------------------------- */
-$mq-small: 55.625em; /* 890 pixel */
-$mq-medium: 64em; /* 1024 pixel */
-$mq-large: 80em; /* 1280 pixel */
-
-/* ## Site Structure
---------------------------------------------- */
-
-/* Full width content target
---------------------------------------------- */
-$target-default: 320;
-$target-small: 800;
-$target-medium: 920;
-$target-large: 1200;
-
-/* Margins */
-$margin-zero: 0;
-$margin-default: 30;
-$margin-small: 30;
-$margin-medium: 30;
-$margin-large: 30;
-
-/* Content Sidebar, Sidebar Content
---------------------------------------------- */
-/* Content */
-$content-cs-medium: 593;
-$content-cs-large: 780;
-
-/* Primary Sidebar */
-$sidebar-p-cs-medium: 297;
-$sidebar-p-cs-large: 390;
-
-/* Sidebar Sidebar, Sidebar Sidebar Content
---------------------------------------------- */
-
-/* Content Wrap */
-$contentwrap-css-medium: 742;
-$contentwrap-css-large: 975;
-
-/* Content */
-$content-css-medium: 534;
-$content-css-large: 709;
-
-/* Primary Sidebar */
-$sidebar-p-css-medium: 178;
-$sidebar-p-css-large: 236;
-
-/* Secondary Sidebar */
-$sidebar-s-css-medium: 148;
-$sidebar-s-css-large: 195;
-
 /* ## Grid
---------------------------------------------- */
+---------------------------------------------------------------------- */
 
 /* Grid mixin */
 @mixin collwidth($colls, $margin, $target) {
