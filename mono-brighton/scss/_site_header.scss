@@ -49,8 +49,8 @@
 }
 
 .site-title {
-	@include font(3.2, 3.2);
-	font-weight: 400;
+	@include font($g_font-site-title-size, $g_font-site-title-lineh);
+	font-weight: $g_font-site-title-6-weight;
 	line-height: 0;
 }
 
@@ -120,8 +120,8 @@
 	max-width:100%;
 }
 .before-header .widget{
-	@include font(1, 1);
-	font-weight:400;
+	@include font($g_font-before-header-size, $g_font-before-header-lineh);
+	font-weight:$g_font-before-header-6-weight;
 	text-transform:uppercase;
 	letter-spacing:1px;
 	text-align:right;

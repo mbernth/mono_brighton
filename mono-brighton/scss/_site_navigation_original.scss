@@ -3,9 +3,9 @@
 
 .genesis-nav-menu {
 	clear: both;
-	@include font(1.2, 1.2);
-	font-family: $font-headlines;
-	font-weight: 600;
+	@include font($g_font-nav-size, $g_font-nav-lineh);
+	font-family: $font-navigation;
+	font-weight: $g_font-nav-weight;
 	text-transform:uppercase;
 	width: 100%;
 	text-align: center;
@@ -21,7 +21,7 @@
 	text-decoration: none;
 	display: block;
 	padding: 44px 20px;
-	font-weight:600;
+	font-weight:$g_font-nav-weight;
 	letter-spacing:0.2em;
 }
 
