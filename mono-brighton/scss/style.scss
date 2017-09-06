@@ -143,13 +143,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "site_navigation_max800";
 
 /*
-	@import "site_navigation_hamburger";
-
-	@import "site_navigation_hamburger";
-	@import "site_navigation";
-*/
-
-/*
 # Content Area
 	## Entries
 	## Buttons
@@ -157,10 +150,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Pagination
 	## Comments
 	## Featured image
-	## Case grid
 */
 	@import "content_area";
 /*
+	## Case Grid
+	## Site Team
+	## Site Team Slide
+	## Pin
+
+	@import "case_grid";
 	@import "site_team";
 	@import "site_team_slide";
 	@import "pin";
@@ -204,6 +202,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	# Small
 	# Medium
 	# Large
+	# Xlarge
 */
 	@import "media_queries_small";
 	@import "media_queries_medium";

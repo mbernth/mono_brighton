@@ -189,7 +189,17 @@ select {
 	@include font($g_font-input-size, $g_font-input-lineh);
 	font-weight: $g_font-input-weight;
 	color: $g_font-input-color;
+	@include corners($radius);
 }
+
+.black {
+	input,
+	textarea,
+	select{
+		background-color: tint($color-black, 80%);
+	}
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -307,6 +317,7 @@ input[type="submit"],
 	font-weight: $g_font-button-weight;
 	color: $g_font-button-color;
 	background-color: $g_font-button-background-color;
+	@include corners($radius);
 	padding: 15px 24px;
 	width: 100%;
 	max-width:270px;
