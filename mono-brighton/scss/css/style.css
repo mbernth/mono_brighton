@@ -236,6 +236,7 @@ input[type="search"] {
 /* ## Media Queries
 ---------------------------------------------------------------------- */
 /* 890 pixel */
+/* 1023 pixel */
 /* 1024 pixel */
 /* 1280 pixel */
 /* 1280 pixel */
@@ -5395,7 +5396,7 @@ body div#ui-datepicker-div[style] {
   margin-bottom: -1px;
   text-align: center; }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 63.938em) {
   /* # Site Navigation
 ---------------------------------------------------------------------------------------------------- */
   .site-header ul.genesis-nav-menu {
