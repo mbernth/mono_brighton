@@ -1,4 +1,4 @@
-/* # Small screens
+/* # Large screens
 ----------------------------------------------------------------------------------------------------
 ---------------------------------------------
 ---------------------------------------------
@@ -6,10 +6,10 @@
 
 
 
-@media only screen and (min-width: $mq-small) {
-	
-@import "flexible_grids_fallback_small";
-	
+@media only screen and (min-width: $mq-xlarge) {
+
+@import "flexible_grids_fallback_xlarge";
+
 /* # Defaults
 ---------------------------------------------------------------------------------------------------- */
 /* ## Typographical Elements
@@ -24,46 +24,88 @@
 ---------------------------------------------------------------------- */
 /* ## Screen Reader Text
 ---------------------------------------------------------------------- */
-
 	
 /* # Structure, Layout and Grid
 ---------------------------------------------------------------------------------------------------- */
-/* ## Site Containers
----------------------------------------------------------------------- */
-.site-inner{
-	width: 100%;
-}
 .content-sidebar .site-inner,
 .sidebar-content .site-inner,
 .content-sidebar-sidebar .site-inner,
 .sidebar-sidebar-content .site-inner,
 .sidebar-content-sidebar .site-inner{
-	width: 90%;
-	max-width: $target-small+px;
+	max-width: $target-xlarge+px;
+	margin-bottom: 80px;
 }
-/* ### Site Containers Full-width
+/* ## Site Containers
 ---------------------------------------------------------------------- */
+@supports (display: grid) {
+    .content-sidebar .site-inner .content-sidebar-wrap,
+	.sidebar-content .site-inner .content-sidebar-wrap{
+		grid-gap:$margin-xlarge+px;
+	}
+    .content-sidebar-sidebar .site-inner,
+	.sidebar-sidebar-content .site-inner,
+	.sidebar-content-sidebar .site-inner{
+		grid-gap:$margin-xlarge+px;
+		.content-sidebar-wrap{
+			grid-gap:$margin-xlarge+px;
+		}
+    }
+}
+/* ### Site Containers Full-width 
+--------------------------------------------- */
 .full-width-content .site-inner .content .entry{
-	max-width: $target-small+px;
+	max-width: $target-xlarge+px;
 }
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer{
 	.row_headline{
-		max-width: $target-small+px;
+		max-width: $target-xlarge+px;
 	}
 	.wrap{
-		max-width: $target-small+px;
+		max-width: $target-xlarge+px;
 	}
 }
-.gridcontainer.non{
-	.wrap{
-		max-width: 100%;
+.gridcontainer{
+	.backimage{
+		min-height: 550px;
 	}
+}
+
+@supports (display: grid) {
+    .content-sidebar .site-inner,
+    .sidebar-content .site-inner,
+    .content-sidebar-sidebar .site-inner,
+    .sidebar-sidebar-content .site-inner,
+    .sidebar-content-sidebar .site-inner{
+	    .gridcontainer.coll3{
+		    .wrap{
+                grid-template-columns:repeat(3, 1fr);
+                grid-gap:$margin-xlarge+px;
+		    }
+	    }
+	    .gridcontainer.coll4{
+		    .wrap{
+                grid-template-columns:repeat(2, 1fr);
+                grid-gap:$margin-xlarge+px;
+		    }
+	    }
+	    .gridcontainer.coll5{
+		    .wrap{
+                grid-template-columns:repeat(2, 1fr);
+                grid-gap:$margin-xlarge+px;
+		    }
+	    }
+	    .gridcontainer.coll6{
+		    .wrap{
+               grid-template-columns:repeat(4, 1fr);
+                grid-gap:$margin-xlarge+px;
+		    }
+	    }
+    }
 }
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
-/* @import "flexible_grids_small"; */
 
 /* # Common Classes
 ---------------------------------------------------------------------------------------------------- */
@@ -73,7 +115,7 @@
 ---------------------------------------------------------------------- */
 .archive-description,
 .author-box {
-	max-width: $target-small+px;
+	max-width: $target-xlarge+px;
 }
 /* ## Titles
 ---------------------------------------------------------------------- */
@@ -120,16 +162,9 @@
 ---------------------------------------------------------------------------------------------------- */
 /* ## Entries
 ---------------------------------------------------------------------- */
-.archive .site-inner{
-	float: left;
-	margin-bottom: 40px;
-}
 .content .post{
 	img{
-		float: left;
-		margin-right: $margin-small+px;
-		@include structure(385, $target-small);
-		margin-bottom: inherit;
+		@include structure(585, $target-xlarge)
 	}
 }
 /* ## Buttons
@@ -143,7 +178,7 @@
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	max-width: $target-small+px;
+	max-width: $target-xlarge+px;
 }
 /* ## Featured image
 ---------------------------------------------------------------------- */
@@ -156,15 +191,7 @@
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets .wrap {
-	max-width: $target-small+px;
-}
-	
-@supports (display: grid) {
-	.footer-widgets .wrap {
-		display: grid;
-		grid-template-columns:repeat(2, 1fr);
-		grid-gap:$margin-small+px;
-	}
+	max-width: $target-xlarge+px;
 }
 /* ## Social Icons
 ---------------------------------------------------------------------- */
@@ -192,8 +219,8 @@
 --------------------------------------------- */
 /* ### Scale up
 --------------------------------------------- */
-
 	
 }
-/* # Small screens end
+
+/* # Large screens end
 ---------------------------------------------------------------------------------------------------- */

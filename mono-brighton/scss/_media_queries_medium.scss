@@ -35,7 +35,7 @@
 .content-sidebar-sidebar .site-inner,
 .sidebar-sidebar-content .site-inner,
 .sidebar-content-sidebar .site-inner{
-	max-width: 920px;
+	max-width: $target-medium+px;
 }
 
 
@@ -45,8 +45,7 @@
 	.sidebar-content .site-inner .content-sidebar-wrap{
 		display: grid;
 		grid-template-columns:4fr 2fr;
-		grid-column-gap:30px;
-		grid-row-gap:30px;
+		grid-gap:$margin-medium+px;
 	}
 	.sidebar-content .site-inner .content-sidebar-wrap{
 		grid-template-columns:2fr 4fr;
@@ -63,13 +62,11 @@
 	.sidebar-content-sidebar .site-inner{
 		display: grid;
 		grid-template-columns:5fr 1fr;
-		grid-column-gap:30px;
-		grid-row-gap:30px;
+		grid-gap:$margin-medium+px;
 		.content-sidebar-wrap{
 			display: grid;
 			grid-template-columns:3fr 1fr;
-			grid-column-gap:30px;
-			grid-row-gap:30px;
+			grid-gap:$margin-medium+px;
 		}
 		.sidebar-secondary{
 			margin-top: 0;
@@ -107,16 +104,16 @@
 /* ### Site Containers Full-width 
 --------------------------------------------- */
 .full-width-content .site-inner .content .entry{
-	max-width: 920px;
+	max-width: $target-medium+px;
 }
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer{
 	.row_headline{
-		max-width: 920px;
+		max-width: $target-medium+px;
 	}
 	.wrap{
-		max-width: 920px;
+		max-width: $target-medium+px;
 	}
 }
 .gridcontainer{
@@ -211,7 +208,7 @@
 ---------------------------------------------------------------------- */
 .archive-description,
 .author-box {
-	max-width: 920px;
+	max-width: $target-medium+px;
 }
 /* ## Titles
 ---------------------------------------------------------------------- */
@@ -267,7 +264,7 @@
 ---------------------------------------------------------------------- */
 .content .post{
 	img{
-		@include structure(445, 920)
+		@include structure(445, $target-medium)
 	}
 }
 /* ## Buttons
@@ -281,7 +278,7 @@
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	max-width: 920px;
+	max-width: $target-medium+px;
 }
 /* ## Featured image
 ---------------------------------------------------------------------- */
@@ -294,7 +291,7 @@
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets .wrap {
-	max-width: 920px;
+	max-width: $target-medium+px;
 }
 @supports (display: grid) {
 .footer-widgets .wrap {

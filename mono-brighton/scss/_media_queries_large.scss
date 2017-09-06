@@ -32,7 +32,7 @@
 .content-sidebar-sidebar .site-inner,
 .sidebar-sidebar-content .site-inner,
 .sidebar-content-sidebar .site-inner{
-	max-width: 1200px;
+	max-width: $target-large+px;
 	margin-bottom: 60px;
 }
 /* ## Site Containers
@@ -40,16 +40,16 @@
 /* ### Site Containers Full-width 
 --------------------------------------------- */
 .full-width-content .site-inner .content .entry{
-	max-width: 1200px;
+	max-width: $target-large+px;
 }
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer{
 	.row_headline{
-		max-width: 1200px;
+		max-width: $target-large+px;
 	}
 	.wrap{
-		max-width: 1200px;
+		max-width: $target-large+px;
 	}
 }
 .gridcontainer{
@@ -97,7 +97,7 @@
 ---------------------------------------------------------------------- */
 .archive-description,
 .author-box {
-	max-width: 1200px;
+	max-width: $target-large+px;
 }
 /* ## Titles
 ---------------------------------------------------------------------- */
@@ -146,7 +146,7 @@
 ---------------------------------------------------------------------- */
 .content .post{
 	img{
-		@include structure(585, 1200)
+		@include structure(585, $target-large)
 	}
 }
 /* ## Buttons
@@ -160,7 +160,7 @@
 .comment-respond,
 .entry-comments,
 .entry-pings {
-	max-width: 1200px;
+	max-width: $target-large+px;
 }
 /* ## Featured image
 ---------------------------------------------------------------------- */
@@ -173,7 +173,7 @@
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets .wrap {
-	max-width: 1200px;
+	max-width: $target-large+px;
 }
 /* ## Social Icons
 ---------------------------------------------------------------------- */

@@ -137,6 +137,34 @@ $g_font-nav-size: 1.2;
 $g_font-nav-lineh: 1.2;
 $g_font-nav-weight: 600;
 
+/* Global Entry Meta values */
+$g_font-meta-size:1.4;
+$g_font-meta-lineh:2.2;
+$g_font-meta-weight:600;
+
+/* Global Pagination values */
+$g_font-pagination-size:1.6;
+$g_font-pagination-lineh:2.4;
+$g_font-pagination-weight:400;
+
+/* Global Comments values */
+$g_font-logged-in-size:1.4;
+$g_font-logged-in-lineh:2.2;
+$g_font-logged-in-weight:400;
+$g_font-comment-header-size:1.6;
+$g_font-comment-header-lineh:2.4;
+$g_font-comment-header-weight:600;
+
+/* Global Footer Widgets values */
+$g_font-footer-widgets-size:1.4;
+$g_font-footer-widgets-lineh:2;
+$g_font-footer-widgets-weight:400;
+
+/* Global Site Footer values */
+$g_font-site-footer-size:1.0;
+$g_font-site-footer-lineh:1.2;
+$g_font-site-footer-weight:400;
+
 /* ## Border Radius
 ---------------------------------------------------------------------- */
 /* Globals */
@@ -148,6 +176,8 @@ $radius: 5;
 $mq-small: 55.625em; /* 890 pixel */
 $mq-medium: 64em; /* 1024 pixel */
 $mq-large: 80em; /* 1280 pixel */
+$mq-large: 80em; /* 1280 pixel */
+$mq-xlarge: 93.75em; /* 1500 pixel */
 
 
 /* ## Site Structure
@@ -167,33 +197,41 @@ $margin-default: 30;
 $margin-small: 30;
 $margin-medium: 30;
 $margin-large: 30;
-$margin-xlarge: 40px;
+$margin-xlarge: 40;
 
 /* Content Sidebar, Sidebar Content
+ - Primarily for Grid fallback
 --------------------------------------------- */
 /* Content */
 $content-cs-medium: 593;
 $content-cs-large: 780;
+$content-cs-xlarge: 907;
 
 /* Primary Sidebar */
 $sidebar-p-cs-medium: 297;
 $sidebar-p-cs-large: 390;
+$sidebar-p-cs-xlarge: 453;
 
 /* Sidebar Sidebar, Sidebar Sidebar Content
+ - Primarily for Grid fallback
 --------------------------------------------- */
 
 /* Content Wrap */
 $contentwrap-css-medium: 742;
 $contentwrap-css-large: 975;
+$contentwrap-css-xlarge: 1133;
 
 /* Content */
 $content-css-medium: 534;
 $content-css-large: 709;
+$content-css-xlarge: 820;
 
 /* Primary Sidebar */
 $sidebar-p-css-medium: 178;
 $sidebar-p-css-large: 236;
+$sidebar-p-css-xlarge: 273;
 
 /* Secondary Sidebar */
 $sidebar-s-css-medium: 148;
 $sidebar-s-css-large: 195;
+$sidebar-s-css-xlarge: 227;
