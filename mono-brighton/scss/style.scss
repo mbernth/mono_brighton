@@ -21,14 +21,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	@import "reset";
 
 /*
-# Variables
-	## Colours
-	## Typography
-	## Media Queries
-	## Site Structure
-*/
-	@import "variables";
-/*
 # Mixins
 	## Typography
 	## Border Radius
@@ -41,6 +33,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 # Tint and Shade
 */
 	@import "tint_shade";
+
+/*
+# Variables
+	## Colours
+	## Typography
+	## Media Queries
+	## Site Structure
+*/
+	@import "variables";
 
 /*
 # Swatches
@@ -60,6 +61,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	## Headings
 	## Objects
 	## Forms
+	### Forms Colored Rows
 	## Tables
 	## Screen Reader Text
 */

@@ -184,6 +184,34 @@ input[type="search"] {
   box-sizing: border-box; }
 
 /*
+# Mixins
+	## Typography
+	## Border Radius
+	## Gradients
+	## Grid
+*/
+/* # MIXINS
+---------------------------------------------------------------------------------------------------- */
+/* ## Typography
+---------------------------------------------------------------------- */
+/* Basic Font Sizes mixin */
+p.standard {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 26px;
+  line-height: 2.6rem; }
+
+/* ## Border Radius
+---------------------------------------------------------------------- */
+/* ## Gradients
+---------------------------------------------------------------------- */
+/* ## Grid
+---------------------------------------------------------------------- */
+/* Grid mixin */
+/*
+# Tint and Shade
+*/
+/*
 # Variables
 	## Colours
 	## Typography
@@ -258,34 +286,6 @@ input[type="search"] {
 /* Content */
 /* Primary Sidebar */
 /* Secondary Sidebar */
-/*
-# Mixins
-	## Typography
-	## Border Radius
-	## Gradients
-	## Grid
-*/
-/* # MIXINS
----------------------------------------------------------------------------------------------------- */
-/* ## Typography
----------------------------------------------------------------------- */
-/* Basic Font Sizes mixin */
-p.standard {
-  font-size: 18px;
-  font-size: 1.8rem;
-  line-height: 26px;
-  line-height: 2.6rem; }
-
-/* ## Border Radius
----------------------------------------------------------------------- */
-/* ## Gradients
----------------------------------------------------------------------- */
-/* ## Grid
----------------------------------------------------------------------- */
-/* Grid mixin */
-/*
-# Tint and Shade
-*/
 /*
 # Swatches
 # Style Guide
@@ -1950,6 +1950,7 @@ p.standard {
 	## Headings
 	## Objects
 	## Forms
+	### Forms Colored Rows
 	## Tables
 	## Screen Reader Text
 */
@@ -2005,7 +2006,7 @@ a {
 
 a:hover,
 a:focus {
-  color: tint(#4A90E2, 40%);
+  color: #92bcee;
   text-decoration: none; }
 
 p {
@@ -2148,11 +2149,6 @@ select {
   -moz-border-radius: 5px;
   border-radius: 5px; }
 
-.black input,
-.black textarea,
-.black select {
-  background-color: #cfd2d5; }
-
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -2200,14 +2196,6 @@ select[multiple]:focus {
 select[multiple] option:checked {
   background-color: #dbe9f9; }
 
-.Black input,
-.Black select,
-.Black textarea,
-.Red input,
-.Red select,
-.Red textarea {
-  color: #ffffff; }
-
 input:focus,
 textarea:focus {
   outline: none; }
@@ -2223,7 +2211,7 @@ input[type="radio"] {
   line-height: 26px;
   line-height: 2.6rem;
   font-weight: 400;
-  color: tint(#0E1C2D, 60%); }
+  color: #9fa4ab; }
 
 ::-webkit-input-placeholder {
   font-size: 16px;
@@ -2231,7 +2219,7 @@ input[type="radio"] {
   line-height: 26px;
   line-height: 2.6rem;
   font-weight: 400;
-  color: tint(#0E1C2D, 60%); }
+  color: #9fa4ab; }
 
 button,
 input[type="button"],
@@ -2253,7 +2241,12 @@ input[type="submit"],
   padding: 15px 24px;
   width: 100%;
   max-width: 270px;
-  float: right; }
+  float: right;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
 
 button:hover,
 input:hover[type="button"],
@@ -2266,7 +2259,7 @@ input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
   color: #ffffff;
-  background-color: shade(#4A90E2, 20%);
+  background-color: #6ea6e8;
   box-shadow: 0px 5px 3px 0px rgba(14, 28, 45, 0.25); }
 
 .entry-content .button:hover,
@@ -2292,7 +2285,7 @@ input:focus[type="submit"],
 .footer-widgets input:focus[type="submit"],
 .footer-widgets .button:focus {
   color: #ffffff;
-  background-color: shade(#4A90E2, 20%); }
+  background-color: #6ea6e8; }
 
 .button {
   display: inline-block; }
@@ -2300,6 +2293,96 @@ input:focus[type="submit"],
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button {
   display: none; }
+
+/* ### Forms Colored Rows
+--------------------------------------------- */
+.black input,
+.black textarea,
+.black select {
+  background-color: #e7e8ea; }
+
+.black input[type="text"]:focus,
+.black input[type="text"]:active,
+.black input[type="email"]:focus,
+.black input[type="email"]:active,
+.black input[type="number"]:focus,
+.black input[type="number"]:active,
+.black input[type="tel"]:focus,
+.black input[type="tel"]:active {
+  border: 1px solid #4A90E2; }
+
+.black textarea:focus,
+.black select[multiple]:focus {
+  border: 1px solid #4A90E2; }
+
+.black select[multiple] option:checked {
+  background-color: #dbe9f9; }
+
+.black label {
+  color: #cfd2d5; }
+
+.black button,
+.black input[type="button"],
+.black input[type="reset"],
+.black input[type="submit"],
+.black .button {
+  background-color: #4A90E2; }
+
+.black button:hover,
+.black input:hover[type="button"],
+.black input:hover[type="reset"],
+.black input:hover[type="submit"],
+.black .button:hover,
+.black button:focus,
+.black input:focus[type="button"],
+.black input:focus[type="reset"],
+.black input:focus[type="submit"],
+.black .button:focus {
+  background-color: #6ea6e8; }
+
+.grey input,
+.grey textarea,
+.grey select {
+  background-color: #cfd2d5; }
+
+.grey input[type="text"]:focus,
+.grey input[type="text"]:active,
+.grey input[type="email"]:focus,
+.grey input[type="email"]:active,
+.grey input[type="number"]:focus,
+.grey input[type="number"]:active,
+.grey input[type="tel"]:focus,
+.grey input[type="tel"]:active {
+  border: 1px solid #4A90E2; }
+
+.grey textarea:focus,
+.grey select[multiple]:focus {
+  border: 1px solid #4A90E2; }
+
+.grey select[multiple] option:checked {
+  background-color: #dbe9f9; }
+
+.grey label {
+  color: #0E1C2D; }
+
+.grey button,
+.grey input[type="button"],
+.grey input[type="reset"],
+.grey input[type="submit"],
+.grey .button {
+  background-color: #4A90E2; }
+
+.grey button:hover,
+.grey input:hover[type="button"],
+.grey input:hover[type="reset"],
+.grey input:hover[type="submit"],
+.grey .button:hover,
+.grey button:focus,
+.grey input:focus[type="button"],
+.grey input:focus[type="reset"],
+.grey input:focus[type="submit"],
+.grey .button:focus {
+  background-color: #6ea6e8; }
 
 /* ## Tables
 ---------------------------------------------------------------------- */
@@ -5627,17 +5710,26 @@ body div#ui-datepicker-div[style] {
 
 .gridcontainer a.button,
 .entry-content a.button {
-  float: none;
-  max-width: 270px;
-  margin: 0 auto;
+  display: block;
   position: relative;
   clear: both;
-  display: block;
-  text-align: center;
-  background-color: #4A90E2;
+  float: none;
+  margin: 0 auto;
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 18px;
+  line-height: 1.8rem;
+  font-weight: 400;
   color: #ffffff;
-  padding: 15px 24px;
+  text-align: center;
   text-decoration: none;
+  background-color: #4A90E2;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+  padding: 15px 24px;
+  max-width: 270px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   -ms-transition: all .2s ease-in-out;
@@ -5646,7 +5738,7 @@ body div#ui-datepicker-div[style] {
 
 .gridcontainer a.button:hover,
 .entry-content a.button:hover {
-  background-color: #3b73b5;
+  background-color: #6ea6e8;
   box-shadow: 0px 5px 3px 0px rgba(14, 28, 45, 0.25); }
 
 .gridcontainer section a.button {

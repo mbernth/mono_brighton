@@ -93,17 +93,21 @@
 
 .gridcontainer a.button,
 .entry-content a.button {
-	float:none;
-	max-width:270px;
-	margin:0 auto;
+	display:block;
 	position:relative;
 	clear:both;
-	display:block;
+	float:none;
+	margin:0 auto;
+	@include font($g_font-button-size, $g_font-button-lineh);
+	font-weight: $g_font-button-weight;
+	color: $g_font-button-color;
 	text-align:center;
-	background-color: $color-primary;
-	color: $color-white;
-	padding:15px 24px;
 	text-decoration: none;
+	background-color: $g_font-button-background-color;
+	@include corners($radius);
+	border: 0;
+	padding: 15px 24px;
+	max-width:270px;
 	-webkit-transition: all .2s ease-in-out;
 	-moz-transition:    all .2s ease-in-out;
 	-ms-transition:     all .2s ease-in-out;
@@ -112,16 +116,20 @@
 }
 .gridcontainer a.button:hover,
 .entry-content a.button:hover {
-	background-color: shade( $color-primary, 20%);
-	box-shadow: 0px 5px 3px 0px rgba(14, 28, 45, 0.25);
+	background-color: $g_font-button-background-color-hover;
+	box-shadow: $g_font-button-box-shadow-hover;
 }
 .gridcontainer section a.button{
 	max-width: 200px;
 }
 
-.full-width-content .gridcontainer.Black .button{
+.gridcontainer.black .button{
 }
-.full-width-content .gridcontainer.Black .button:hover{
+.gridcontainer.black .button:hover{
+}
+.gridcontainer.grey .button{
+}
+.gridcontainer.grey .button:hover{
 }
 
 
