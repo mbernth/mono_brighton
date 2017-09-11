@@ -30,9 +30,7 @@ p.standard {
 ---------------------------------------------------------------------- */
 
 @mixin corners($radius){
-	-webkit-border-radius: $radius + px;
-	   -moz-border-radius: $radius + px;
-			border-radius: $radius + px;
+	border-radius: $radius + px;
 }
 
 /* ## Gradients

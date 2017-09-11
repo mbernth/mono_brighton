@@ -178,12 +178,31 @@ $mq-small: 55.625em; /* 890 pixel */
 $mq-nav:63.938em; /* 1023 pixel */
 $mq-medium: 64em; /* 1024 pixel */
 $mq-large: 80em; /* 1280 pixel */
-$mq-large: 80em; /* 1280 pixel */
 $mq-xlarge: 93.75em; /* 1500 pixel */
 
 
 /* ## Site Structure
 ---------------------------------------------------------------------- */
+// Edit these variables to change layout
+$site-inner-default:320; // Max width of site container
+$site-inner-small:800; // Max width of site container
+$site-inner-medium:920; // Max width of site container
+$site-inner-large:1200; // Max width of site container
+$site-inner-xlarge:1400; // Max width of site container
+
+$grid-gap-zero:0; // Margin between elements
+$grid-gap-default:30; // Margin between elements
+$grid-gap-small:30; // Margin between elements
+$grid-gap-medium:30; // Margin between elements
+$grid-gap-large:30; // Margin between elements
+$grid-gap-xlarge:40; // Margin between elements
+
+$site-inner-fr:1; // Number of fractions for .site-inner
+$content-fr:3; // Mumber of fractions for .content-sidebar-wrap
+$main-fr:9; // Number of fractions for .content
+$aside-p-fr:3; // Number of fractions for .sidebar-primary
+$aside-s-fr:3; // Number of fractions for .sidebar-secondary
+$main-cols:2; // Number of columns for Main content
 
 /* Full width content target
 --------------------------------------------- */
